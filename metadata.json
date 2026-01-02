@@ -1,5 +1,5 @@
 {
-  "name": "EduPanel v7.9 - Sample Data Integration",
+  "name": "EduPanel",
   "description": "Se ha integrado un botón para descargar un archivo CSV de ejemplo basado en el contenido proporcionado por el usuario, facilitando la creación de contenidos para los docentes.",
   "requestFramePermissions": []
 }

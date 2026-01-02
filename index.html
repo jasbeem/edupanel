@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>EduPanel v7.9 - Sistema de Evaluación</title>
+    <title>EduPanel v8.0 - Sistema de Evaluación</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
@@ -49,10 +49,26 @@
         }
 
         .rosc_container { position: relative; width: 100%; max-width: 480px; aspect-ratio: 1/1; margin: auto; }
-        .perspective-1000 { perspective: 1000px; }
-        .preserve-3d { transform-style: preserve-3d; }
-        .backface-hidden { backface-visibility: hidden; }
-        .rotate-y-180 { transform: rotateY(180deg); }
+        
+        /* Ajustes de compatibilidad 3D para Firefox */
+        .perspective-1000 { 
+            perspective: 1000px; 
+            -webkit-perspective: 1000px;
+        }
+        .preserve-3d { 
+            transform-style: preserve-3d; 
+            -webkit-transform-style: preserve-3d;
+        }
+        .backface-hidden { 
+            backface-visibility: hidden; 
+            -webkit-backface-visibility: hidden;
+            /* Forza renderizado en Firefox */
+            transform: translateZ(0); 
+        }
+        .rotate-y-180 { 
+            transform: rotateY(180deg); 
+            -webkit-transform: rotateY(180deg);
+        }
         
         .scrollbar-hide::-webkit-scrollbar { display: none; }
         .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
@@ -62,6 +78,8 @@
             position: relative;
             overflow: hidden;
             border: 1px solid rgba(255,255,255,0.05);
+            /* Asegura que esté detrás en el eje Z */
+            transform: translateZ(-1px);
         }
         .card-back-pcb::before {
             content: "";
@@ -492,7 +510,8 @@
                     </div>
                     
                     <div className="flex-grow flex items-center justify-center relative overflow-hidden pb-10">
-                        <div className="h-full w-full grid grid-rows-3 grid-flow-col gap-4 auto-cols-fr overflow-x-auto scrollbar-hide px-4" style={{ marginTop: '20px' }}>
+                        {/* auto-cols-fr cambiado a minmax para evitar colapso en Firefox */}
+                        <div className="h-full w-full grid grid-rows-3 grid-flow-col gap-4 auto-cols-[minmax(150px,1fr)] overflow-x-auto scrollbar-hide px-4" style={{ marginTop: '20px' }}>
                             {cards.map(card => {
                                 const isF = flipped.includes(card.id) || matched.includes(card.id);
                                 const isM = matched.includes(card.id);
@@ -628,7 +647,7 @@ pareja;Hardware;TECLADO;RATON;PANTALLA;TORRE;PLACA;MICRO`;
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
                             </div>
                             <div>
-                                <h1 className="text-xl font-black tracking-tighter text-slate-900 dark:text-white leading-none uppercase italic">EduPanel v7.9</h1>
+                                <h1 className="text-xl font-black tracking-tighter text-slate-900 dark:text-white leading-none uppercase italic">EduPanel v8.0</h1>
                                 <span className="text-[9px] uppercase font-black tracking-[0.4em] text-indigo-500 leading-none tracking-widest">Módulo Académico</span>
                             </div>
                         </div>
@@ -670,7 +689,7 @@ pareja;Hardware;TECLADO;RATON;PANTALLA;TORRE;PLACA;MICRO`;
                           : null}
                     </main>
 
-                    <footer className="py-4 text-center text-[10px] font-black uppercase tracking-[0.5em] opacity-20 italic text-slate-900 dark:text-white shrink-0">EduPanel v7.9 • Gestión Educativa Suite</footer>
+                    <footer className="py-4 text-center text-[10px] font-black uppercase tracking-[0.5em] opacity-20 italic text-slate-900 dark:text-white shrink-0">EduPanel v8.0 • Gestión Educativa Suite</footer>
                 </div>
             );
         };
