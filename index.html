@@ -1,33 +1,45 @@
-
 <!DOCTYPE html>
-<html lang="es" class="dark">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>EduPanel v8.2 - Sistema de Evaluación</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPanel - Secundaria & Bachillerato</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
     
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎮</text></svg>">
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
+    <!-- Tailwind CSS (Local) -->
+    <script src="./libs/tailwind/tailwind.js"></script>
     <script>
         tailwind.config = {
             darkMode: 'class',
             theme: {
                 extend: {
-                    fontFamily: { sans: ['Plus Jakarta Sans', 'sans-serif'] },
-                    animation: { 
-                        'bounce-slow': 'bounce 3s infinite',
-                        'in-up': 'inUp 0.5s ease-out'
+                    colors: {
+                        glass: "rgba(255, 255, 255, 0.1)",
+                    },
+                    animation: {
+                        'bounce-short': 'bounce-short 1s ease-in-out infinite',
+                        'blob': 'blob 7s infinite',
+                        'fade-in': 'fadeIn 0.5s ease-out forwards',
+                        'slide-down': 'slideDown 0.2s ease-out forwards',
                     },
                     keyframes: {
-                        inUp: {
-                            '0%': { transform: 'translateY(10px)', opacity: '0' },
-                            '100%': { transform: 'translateY(0)', opacity: '1' }
+                        'bounce-short': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        blob: {
+                            '0%': { transform: 'translate(0px, 0px) scale(1)' },
+                            '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
+                            '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
+                            '100%': { transform: 'translate(0px, 0px) scale(1)' },
+                        },
+                        fadeIn: {
+                            '0%': { opacity: '0', transform: 'translateY(10px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        slideDown: {
+                            '0%': { opacity: '0', transform: 'translateY(-10px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
                         }
                     }
                 }
@@ -35,263 +47,1016 @@
         }
     </script>
 
-    <style type="text/css">
-        body { transition: background-color 0.5s ease; overflow: hidden; height: 100vh; width: 100vw; }
-        .dark body { background-color: #020617; color: #f8fafc; }
-        body { background-color: #f8fafc; color: #0f172a; }
-        
-        .glass { 
-            background: rgba(255, 255, 255, 0.03); 
-            backdrop-filter: blur(12px); 
-            border: 1px solid rgba(255, 255, 255, 0.08); 
-        }
-        .light .glass {
-            background: rgba(15, 23, 42, 0.03);
-            border: 1px solid rgba(15, 23, 42, 0.08);
-        }
+    <!-- React & ReactDOM -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    
+    <!-- Babel -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
-        .rosc_container { position: relative; width: 100%; max-width: 480px; aspect-ratio: 1/1; margin: auto; }
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap');
         
-        /* 3D Core - Optimizado para Firefox */
-        .perspective-1200 { 
-            perspective: 1200px; 
-            -webkit-perspective: 1200px;
+        body { font-family: 'Inter', sans-serif; }
+        
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
         }
-        .preserve-3d { 
-            transform-style: preserve-3d; 
-            -webkit-transform-style: preserve-3d;
-            position: relative;
-            width: 100%;
-            height: 100%;
-        }
-        .backface-hidden { 
-            backface-visibility: hidden !important; 
-            -webkit-backface-visibility: hidden !important;
-            position: absolute;
-            inset: 0;
-            width: 100%;
-            height: 100%;
+        .dark .glass {
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.05);
         }
         
-        .scrollbar-hide::-webkit-scrollbar { display: none; }
-        .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
-
-        .card-back-pcb {
-            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-            position: relative;
-            overflow: hidden;
-            border: 1px solid rgba(255,255,255,0.05);
-            transform: translateZ(1px); /* Firefox fix */
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
         }
-        .card-back-pcb::before {
-            content: "";
-            position: absolute;
-            inset: 0;
-            background-image: url("https://www.transparenttextures.com/patterns/brushed-alum.png");
-            opacity: 0.15;
-            mix-blend-mode: overlay;
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
         }
+        
+        /* Custom Scrollbar for Modal and Avatars */
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 8px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background-color: rgba(156, 163, 175, 0.5);
+            border-radius: 20px;
+        }
+        .dark .custom-scrollbar::-webkit-scrollbar-thumb {
+            background-color: rgba(75, 85, 99, 0.5);
+        }
+        
+        /* 3D Card Effect */
+        .perspective-1000 { perspective: 1000px; }
+        .rotate-y-180 { transform: rotateY(180deg); }
+        .transform-style-preserve-3d { transform-style: preserve-3d; }
+        .backface-hidden { backface-visibility: hidden; }
 
-        .hangman_slot {
-            flex: 0 0 auto;
-            width: clamp(20px, 6vw, 40px);
-            aspect-ratio: 2/3;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-bottom: 3px solid #6366f1;
-            font-weight: 900;
-            font-size: clamp(0.9rem, 3vw, 1.8rem);
+        /* Login Background Animation */
+        .bg-grid-pattern {
+            background-image: linear-gradient(to right, rgba(99, 102, 241, 0.1) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(99, 102, 241, 0.1) 1px, transparent 1px);
+            background-size: 40px 40px;
         }
     </style>
-<script type="importmap">
-{
-  "imports": {
-    "react": "https://esm.sh/react@^19.2.3",
-    "react/": "https://esm.sh/react@^19.2.3/"
-  }
-}
-</script>
+<link rel="stylesheet" href="/index.css">
 </head>
-<body class="min-h-screen">
+<body class="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-white transition-colors duration-300 min-h-screen selection:bg-indigo-500 selection:text-white overflow-x-hidden">
     <div id="root"></div>
 
     <script type="text/babel">
-        const { useState, useEffect, useMemo, useRef } = React;
+        const { useState, useEffect, useMemo, useRef, useLayoutEffect } = React;
 
-        const ALPHABET = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ".split("");
-        const MAX_MISTAKES_ROSCO = 5; 
-        const MAX_MISTAKES_AHORCADO = 6; 
+        // --- CONFIGURACIÓN API ---
+        const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzsZVnrJ4BNILsDHS8tZUMnpxDRCir5KoxTsUlbSDmaJWzYLrpuJ3QEkWVUqDTIqP_k/exec";
+
+        // --- MULTI-TENANCY HELPER ---
+        const getAppId = () => {
+            const params = new URLSearchParams(window.location.search);
+            return params.get('id') || 'default';
+        };
+
+        // --- AVATARES ---
+        const AVATARS = [
+            "🐶", "🐱", "🐭", "🐹", "🐰", "🦊", "🐻", "🐼", "🐨", "🐯",
+            "🦁", "🐮", "🐷", "🐸", "🐵", "🐔", "🐧", "🐦", "🦆", "🦅",
+            "🦉", "🦇", "🐺", "🐗", "🐴", "🦄", "🐝", "🐞", "🦋", "🐌"
+        ];
+
+        // --- GLOBAL HELPERS ---
         
-        // --- COMPONENTES ---
+        const parseCSV = (text) => {
+            const cleanText = text.replace(/^\uFEFF/, '');
+            const lines = cleanText.split(/\r?\n/);
+            // Eliminados arrays de sopa y clasificador
+            const rosco = [], hangman = [], trueFalse = [], memory = [];
+            let subject = "General", topic = "Varios";
 
-        const Rosco = ({ roscoItems, onBack }) => {
-            const items = useMemo(() => {
-                return ALPHABET.map(letter => {
-                    const match = roscoItems.find(it => it.letter.toUpperCase() === letter);
-                    if (match) {
-                        const modeLabel = match.mode.toLowerCase().includes('empieza') ? 'EMPIEZA CON LA' : 'CONTIENE LA LETRA';
-                        return { 
-                            letter, 
-                            word: match.word.toUpperCase(), 
-                            definition: match.definition, 
-                            titleLabel: `${modeLabel} ${letter}`,
-                            disabled: false 
-                        };
-                    }
-                    return { letter, word: "---", definition: "Sin datos", titleLabel: letter, disabled: true };
-                });
-            }, [roscoItems]);
-
-            const [idx, setIdx] = useState(0);
-            const [ans, setAns] = useState({});
-            const [score, setScore] = useState(0);
-            const [mistakes, setMistakes] = useState(0);
-            const [input, setInput] = useState('');
-            const [done, setDone] = useState(false);
-            const [feedback, setFeedback] = useState(null); 
-            const [locked, setLocked] = useState(false);
-            const inputRef = useRef(null);
-
-            const next = (currAnswers, currentMistakes) => {
-                if (currentMistakes >= MAX_MISTAKES_ROSCO) {
-                    setDone(true);
-                    return;
+            // Buscar la primera línea de datos válida para extraer Asignatura y Tema
+            const firstDataLine = lines.find(l => l.trim() && !l.trim().startsWith('#') && l.includes(';'));
+            if(firstDataLine) {
+                const parts = firstDataLine.split(';');
+                if(parts.length >= 2) {
+                    subject = parts[0].trim();
+                    topic = parts[1].trim();
                 }
-                let n = (idx + 1) % items.length;
-                let count = 0;
-                while ((currAnswers[n] || items[n].disabled) && count < items.length) {
-                    n = (n + 1) % items.length;
-                    count++;
-                }
-                if (count >= items.length) {
-                    setDone(true);
-                } else {
-                    setIdx(n);
-                    setInput('');
-                    setTimeout(() => inputRef.current?.focus(), 50);
-                }
-            };
+            }
 
-            useEffect(() => { if (items[idx]?.disabled && !done) next(ans, mistakes); }, [idx]);
-
-            const check = () => {
-                if (items[idx].disabled || locked) return;
-                const isCorrect = input.trim().toUpperCase() === items[idx].word.toUpperCase();
+            for (let i = 0; i < lines.length; i++) {
+                const line = lines[i].trim();
+                if (!line || line.startsWith('#') || line.startsWith('Asignatura;')) continue;
                 
-                if (isCorrect) {
-                    const newAns = { ...ans, [idx]: 'correct' };
-                    setAns(newAns); 
-                    setScore(s => s + 30); 
-                    next(newAns, mistakes);
-                } else {
-                    const updatedMistakes = mistakes + 1;
-                    setMistakes(updatedMistakes);
-                    const newAns = { ...ans, [idx]: 'wrong' };
-                    setAns(newAns);
-                    setScore(s => Math.max(0, s - 5));
-                    setFeedback(`Incorrecto. Era: ${items[idx].word}`);
-                    setLocked(true);
-
-                    setTimeout(() => {
-                        setFeedback(null);
-                        setLocked(false);
-                        next(newAns, updatedMistakes);
-                    }, 2000);
+                const cols = line.split(';').map(c => c.trim());
+                const type = cols[2]?.toLowerCase();
+                
+                if (type === 'rosco') {
+                    const hint = cols[3]; // 'empieza' or 'contiene'
+                    const def = cols[5];
+                    const word = cols[6];
+                    const letter = cols[4];
+                    if(def && word && letter) {
+                         rosco.push({ letter: letter.toUpperCase(), definition: def, word: word, hint: hint });
+                    }
+                } else if (type === 'ahorcado') {
+                     hangman.push({ hint: cols[3], word: cols[4] });
+                } else if (type === 'pareja') {
+                     for(let k=4; k<cols.length; k+=2) {
+                         if(cols[k] && cols[k+1]) memory.push({ term: cols[k], definition: cols[k+1] });
+                     }
+                } else if (type === 'verdadero') {
+                     trueFalse.push({ statement: cols[4], isTrue: cols[5].toUpperCase() === 'VERDADERO', explanation: cols[6] });
                 }
+            }
+            return { subject, topic, rosco, hangman, trueFalse, memory };
+        };
+
+        const SAMPLE_CSV = `Asignatura;Tema;Tipo;Pregunta;R1;R2;R3;R4;Tiempo;Correcta;URL Imagen
+Tecnología y Digitalización 2º;La Madera;rosco;empieza;A;Madera fabricada con virutas prensadas con cola;aglomerado
+Tecnología y Digitalización 2º;La Madera;rosco;empieza;B;Herramienta manual que taladra agujeros pequeños;barrena
+Tecnología y Digitalización 2º;La Madera;ahorcado;Madera formada por chapas finas pegadas;CONTRACHAPADO
+Tecnología y Digitalización 2º;La Madera;ahorcado;Herramienta para eliminar mucha madera rapido;ESCOFINA
+Tecnología y Digitalización 2º;La Madera;ahorcado;Proceso que garantiza que la madera sea renovable;REFORESTACION
+Tecnología y Digitalización 2º;La Madera;pareja;Maderas y clasificacion;PINO;BLANDA;ROBLE;DURA;CAOBA;TROPICAL
+Tecnología y Digitalización 2º;La Madera;verdadero;Maderas;El pino es un ejemplo de madera dura;FALSO;El pino es una madera blanda de crecimiento rapido`;
+
+        // ... (COMPONENTS: Toggle, ReportsTab, AdminDashboard, Navbar - se mantienen igual) ...
+        const Toggle = ({ label, checked, onChange }) => (
+            <label className="flex items-center justify-between p-3 bg-white dark:bg-slate-800 rounded-xl cursor-pointer shadow-sm hover:shadow-md transition-all border border-slate-100 dark:border-slate-700">
+                <span className="font-medium text-sm text-slate-700 dark:text-slate-200">{label}</span>
+                <div className="relative inline-flex items-center cursor-pointer">
+                    <input type="checkbox" className="sr-only peer" checked={checked} onChange={onChange} />
+                    <div className="w-11 h-6 bg-slate-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-indigo-300 dark:peer-focus:ring-indigo-800 rounded-full peer dark:bg-slate-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-indigo-600"></div>
+                </div>
+            </label>
+        );
+
+        const ReportsTab = ({ reports, loading, error, onRefresh }) => {
+            const [filterSubject, setFilterSubject] = useState('Todas');
+            const [filterTopic, setFilterTopic] = useState('Todos');
+            const [filterUser, setFilterUser] = useState('');
+            const [filterAppId, setFilterAppId] = useState('');
+
+            // Helper to get value case-insensitively from object
+            const getValue = (obj, keys) => {
+                if (!obj) return undefined;
+                const objKeys = Object.keys(obj);
+                for (let key of keys) {
+                    if (obj[key] !== undefined) return obj[key]; // Exact match
+                    const found = objKeys.find(k => k.toLowerCase().trim() === key.toLowerCase()); // Fuzzy match
+                    if (found) return obj[found];
+                }
+                return undefined;
             };
 
-            if (done) return (
-                <div className="max-w-md mx-auto text-center p-12 glass rounded-[3rem] shadow-2xl animate-in-up border-2 border-indigo-500/20">
-                    <h2 className="text-4xl font-black mb-4 tracking-tighter text-slate-900 dark:text-white uppercase italic">Finalizado</h2>
-                    <p className="text-sm font-black text-indigo-500 uppercase tracking-widest mb-6">
-                        {mistakes >= MAX_MISTAKES_ROSCO ? "⚠️ Vidas Agotadas" : "🏁 Rosco Completado"}
-                    </p>
-                    <div className="grid grid-cols-1 gap-6 mb-8">
-                        <div className="p-8 glass rounded-3xl border-b-8 border-indigo-500 bg-indigo-500/5">
-                            <span className="block text-7xl font-black text-indigo-500 leading-none">{score}</span>
-                            <span className="text-xs uppercase font-black opacity-40 tracking-widest text-slate-600 dark:text-indigo-200 mt-2 block">Puntos Finales</span>
-                        </div>
-                        <div className="p-8 glass rounded-3xl border-b-8 border-red-500 bg-red-500/5">
-                            <span className="block text-7xl font-black text-red-500 leading-none">{mistakes}</span>
-                            <span className="text-xs uppercase font-black opacity-40 tracking-widest text-slate-600 dark:text-red-200 mt-2 block">Errores</span>
-                        </div>
-                    </div>
-                    <button onClick={onBack} className="w-full py-6 bg-indigo-600 text-white rounded-2xl font-black text-xl shadow-2xl hover:bg-indigo-500 transition-all">Regresar</button>
+            const safeString = (val) => String(val || '').trim();
+
+            const subjects = useMemo(() => {
+                if (!Array.isArray(reports)) return ['Todas'];
+                const s = new Set(
+                    reports
+                        .filter(r => r) // remove nulls
+                        .map(r => safeString(getValue(r, ['subject', 'asignatura']) || 'General'))
+                        .filter(Boolean)
+                );
+                return ['Todas', ...Array.from(s).sort()];
+            }, [reports]);
+
+            const topics = useMemo(() => {
+                if (!Array.isArray(reports)) return ['Todos'];
+                const t = new Set(
+                    reports
+                        .filter(r => r)
+                        .map(r => safeString(getValue(r, ['topic', 'situacion', 'tema']) || 'General'))
+                        .filter(Boolean)
+                );
+                return ['Todos', ...Array.from(t).sort()];
+            }, [reports]);
+
+            const filteredReports = useMemo(() => {
+                if (!Array.isArray(reports)) return [];
+                return reports.filter(r => {
+                    if (!r) return false;
+                    
+                    const rSubject = safeString(getValue(r, ['subject', 'asignatura']) || 'General');
+                    const rTopic = safeString(getValue(r, ['topic', 'situacion', 'tema']) || 'General');
+                    const rUser = safeString(getValue(r, ['user', 'alumno', 'usuario', 'nombre']));
+                    const rAppId = safeString(getValue(r, ['appId', 'id_app', 'id', 'app_id']));
+                    
+                    const matchSubject = filterSubject === 'Todas' || rSubject === filterSubject;
+                    const matchTopic = filterTopic === 'Todos' || rTopic === filterTopic;
+                    const matchUser = filterUser === '' || rUser.toLowerCase().includes(filterUser.toLowerCase());
+                    const matchAppId = filterAppId === '' || rAppId.toLowerCase().includes(filterAppId.toLowerCase());
+                    
+                    return matchSubject && matchTopic && matchUser && matchAppId;
+                });
+            }, [reports, filterSubject, filterTopic, filterUser, filterAppId]);
+
+            if (loading) return (
+                <div className="flex flex-col items-center justify-center p-12 text-indigo-500 animate-pulse">
+                    <span className="text-4xl mb-2">📊</span>
+                    <p className="font-bold">Cargando datos de Google Sheets...</p>
+                </div>
+            );
+            
+            if (error) return (
+                <div className="p-8 text-center text-red-500 bg-red-50 dark:bg-red-900/20 rounded-2xl border border-red-200 dark:border-red-800">
+                    <p className="font-bold mb-2">Error al cargar reportes</p>
+                    <p className="text-sm">{error}</p>
+                    <button onClick={onRefresh} className="mt-4 px-4 py-2 bg-red-100 dark:bg-red-800 text-red-700 dark:text-red-100 rounded-lg text-sm font-bold">Reintentar</button>
                 </div>
             );
 
             return (
-                <div className="max-w-6xl mx-auto h-[calc(100vh-140px)] flex flex-col px-4 animate-in-up">
-                    <div className="flex justify-between items-center mb-4 shrink-0 px-2">
-                        <div className="text-left">
-                            <h2 className="text-xl md:text-2xl font-black tracking-tighter text-slate-900 dark:text-white uppercase italic leading-none">PASAPALABRA</h2>
+                <div className="space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-500">
+                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 bg-white dark:bg-slate-800 p-4 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700">
+                        <div>
+                            <label className="block text-xs font-bold text-slate-500 uppercase mb-1">ID App</label>
+                            <input 
+                                type="text" 
+                                value={filterAppId} 
+                                onChange={e => setFilterAppId(e.target.value)} 
+                                placeholder="Filtrar por ID..."
+                                className="w-full p-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900 focus:ring-2 focus:ring-indigo-500 outline-none transition-all placeholder:text-slate-400"
+                            />
                         </div>
-                    </div>
+                        <div>
+                            <label className="block text-xs font-bold text-slate-500 uppercase mb-1">Alumno</label>
+                            <input 
+                                type="text" 
+                                value={filterUser} 
+                                onChange={e => setFilterUser(e.target.value)} 
+                                placeholder="Buscar nombre..."
+                                className="w-full p-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900 focus:ring-2 focus:ring-indigo-500 outline-none transition-all placeholder:text-slate-400"
+                            />
+                        </div>
+                        <div>
+                            <label className="block text-xs font-bold text-slate-500 uppercase mb-1">Asignatura</label>
+                            <select value={filterSubject} onChange={e => setFilterSubject(e.target.value)} className="w-full p-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900 focus:ring-2 focus:ring-indigo-500 outline-none transition-all">
+                                {subjects.map(s => <option key={s} value={s}>{s}</option>)}
+                            </select>
+                        </div>
+                        <div className="flex gap-2">
+                            <div className="flex-1">
+                                <label className="block text-xs font-bold text-slate-500 uppercase mb-1">Tema</label>
+                                <select value={filterTopic} onChange={e => setFilterTopic(e.target.value)} className="w-full p-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900 focus:ring-2 focus:ring-indigo-500 outline-none transition-all">
+                                    {topics.map(t => <option key={t} value={t}>{t}</option>)}
+                                </select>
+                            </div>
+                            <div className="flex items-end">
+                                <button onClick={onRefresh} className="p-2.5 bg-indigo-100 hover:bg-indigo-200 dark:bg-indigo-900/40 dark:hover:bg-indigo-900/60 text-indigo-700 dark:text-indigo-300 rounded-xl font-bold transition-colors"><span>🔄</span></button>
+                            </div>
+                        </div>
+                     </div>
+                     
+                     <div className="overflow-hidden rounded-2xl border border-slate-200 dark:border-slate-700 shadow-xl bg-white dark:bg-slate-900 min-h-[200px]">
+                        <div className="overflow-x-auto">
+                            <table className="w-full text-left text-sm whitespace-nowrap">
+                                <thead className="bg-slate-50 dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700 uppercase font-black text-xs text-slate-500">
+                                    <tr>
+                                        <th className="p-4">Fecha</th>
+                                        <th className="p-4">ID App</th>
+                                        <th className="p-4">Usuario</th>
+                                        <th className="p-4">Juego</th>
+                                        <th className="p-4">Asignatura</th>
+                                        <th className="p-4">Tema</th>
+                                        <th className="p-4 text-right">Puntuación</th>
+                                        <th className="p-4 text-right">Tiempo</th>
+                                    </tr>
+                                </thead>
+                                <tbody className="divide-y divide-slate-100 dark:divide-slate-800">
+                                    {filteredReports.length === 0 ? (
+                                        <tr>
+                                            <td colSpan="8" className="p-8 text-center text-slate-400">
+                                                {Array.isArray(reports) && reports.length > 0 ? "No hay coincidencias con los filtros seleccionados." : (
+                                                    <div className="flex flex-col items-center gap-4">
+                                                        <span>No hay registros disponibles.</span>
+                                                        <div className="p-4 bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-700 rounded-xl max-w-lg text-left text-xs text-yellow-800 dark:text-yellow-200">
+                                                            <strong>⚠️ ¿Tabla vacía pero tienes datos?</strong>
+                                                            <p className="mt-1">Si acabas de actualizar el App Script, es posible que estés viendo una versión "cacheada" antigua de la URL.</p>
+                                                            <p className="mt-2">1. Ve a Google Apps Script.</p>
+                                                            <p>2. Pulsa <strong>Implementar > Gestionar implementaciones</strong>.</p>
+                                                            <p>3. Pulsa el icono de lápiz (Editar) > Versión: <strong>Nueva versión</strong>.</p>
+                                                            <p>4. Pulsa <strong>Implementar</strong>.</p>
+                                                        </div>
+                                                        <button onClick={onRefresh} className="px-4 py-2 bg-indigo-50 dark:bg-indigo-900/20 text-indigo-600 dark:text-indigo-300 rounded-lg text-sm font-bold hover:bg-indigo-100 transition-colors">Actualizar Tabla</button>
+                                                    </div>
+                                                )}
+                                            </td>
+                                        </tr>
+                                    ) : (
+                                        filteredReports.map((row, i) => (
+                                            <tr key={i} className="hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors">
+                                                <td className="p-4 text-slate-500">{(() => {
+                                                    const dateVal = getValue(row, ['timestamp', 'fecha']);
+                                                    if (!dateVal) return '-';
+                                                    return new Date(dateVal).toLocaleString('es-ES', {
+                                                        day: '2-digit',
+                                                        month: '2-digit',
+                                                        year: 'numeric',
+                                                        hour: '2-digit',
+                                                        minute: '2-digit'
+                                                    });
+                                                })()}</td>
+                                                <td className="p-4 text-xs font-mono text-slate-400">{getValue(row, ['appId', 'id_app']) || '-'}</td>
+                                                <td className="p-4 font-bold text-slate-700 dark:text-slate-200">{getValue(row, ['user', 'alumno']) || 'Anónimo'}</td>
+                                                <td className="p-4">
+                                                    <span className={`px-2 py-1 rounded-md text-xs font-bold uppercase tracking-wider ${
+                                                        safeString(getValue(row, ['game', 'juego'])).includes('rosco') ? 'bg-pink-100 text-pink-700 dark:bg-pink-900/30 dark:text-pink-300' :
+                                                        safeString(getValue(row, ['game', 'juego'])).includes('ahorcado') ? 'bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-300' :
+                                                        'bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300'
+                                                    }`}>
+                                                        {getValue(row, ['game', 'juego'])}
+                                                    </span>
+                                                </td>
+                                                <td className="p-4 text-slate-600 dark:text-slate-400">{getValue(row, ['subject', 'asignatura'])}</td>
+                                                <td className="p-4 text-slate-600 dark:text-slate-400">{getValue(row, ['topic', 'situacion'])}</td>
+                                                <td className="p-4 text-right font-black text-indigo-600 dark:text-indigo-400 text-lg">{getValue(row, ['score', 'puntuacion']) || 0}</td>
+                                                <td className="p-4 text-right font-mono text-slate-500">
+                                                    {(() => {
+                                                        const t = getValue(row, ['time', 'tiempo']);
+                                                        if (!t) return '-';
+                                                        let str = String(t).trim();
+                                                        // Forcefully remove leading quote if present in display logic
+                                                        if (str.startsWith("'")) {
+                                                            str = str.substring(1);
+                                                        }
+                                                        
+                                                        // Handle Google Sheets ISO date string "1899-12-30T..." if it still occurs
+                                                        if (str.includes('T') && str.includes('Z')) {
+                                                            try {
+                                                                const date = new Date(str);
+                                                                if (!isNaN(date.getTime())) {
+                                                                    const h = date.getUTCHours().toString().padStart(2, '0');
+                                                                    const m = date.getUTCMinutes().toString().padStart(2, '0');
+                                                                    const s = date.getUTCSeconds().toString().padStart(2, '0');
+                                                                    return `${h}:${m}:${s}`;
+                                                                }
+                                                            } catch(e) {}
+                                                        }
+                                                        if (str.includes(':')) return str;
+                                                        // Format raw seconds
+                                                        const sec = parseInt(t, 10);
+                                                        if (isNaN(sec)) return '-';
+                                                        const h = Math.floor(sec / 3600).toString().padStart(2, '0');
+                                                        const m = Math.floor((sec % 3600) / 60).toString().padStart(2, '0');
+                                                        const s = (sec % 60).toString().padStart(2, '0');
+                                                        return `${h}:${m}:${s}`;
+                                                    })()}
+                                                </td>
+                                            </tr>
+                                        ))
+                                    )}
+                                </tbody>
+                            </table>
+                        </div>
+                        <div className="p-3 bg-slate-50 dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700 text-xs text-center text-slate-500">Mostrando {filteredReports.length} registros</div>
+                     </div>
+                </div>
+            );
+        };
 
-                    <div className="flex-grow grid lg:grid-cols-2 gap-8 items-center overflow-hidden">
-                        <div className="rosc_container scale-90 sm:scale-100">
-                            <div className="absolute inset-0 flex flex-col items-center justify-center z-10 pointer-events-none text-center">
-                                <div className="text-[48px] font-black text-indigo-600 dark:text-white leading-none tracking-tighter">{score}</div>
-                                <div className="flex gap-2 mt-4">
-                                    {[...Array(MAX_MISTAKES_ROSCO)].map((_, i) => (
-                                        <div 
-                                            key={i} 
-                                            className={`w-4 h-4 rounded-full transition-all duration-700 border-2 ${i < mistakes ? 'bg-red-500/10 border-red-500/20' : 'bg-rose-500 border-rose-300 shadow-[0_0_10px_rgba(244,63,94,0.4)]'}`}
-                                        ></div>
-                                    ))}
+        // ... (AdminDashboard, Navbar, RoscoGame - se mantienen igual) ...
+        const AdminDashboard = ({ data, appId, onLogout }) => {
+            const [globalConfig, setGlobalConfig] = useState({});
+            const [activeTab, setActiveTab] = useState('config'); 
+            const [reportsData, setReportsData] = useState(null);
+            const [loadingReports, setLoadingReports] = useState(false);
+            const [reportsError, setReportsError] = useState(null);
+            const [showHelp, setShowHelp] = useState(false); 
+            
+            const [isSaving, setIsSaving] = useState(false);
+            const [saveStatus, setSaveStatus] = useState(null);
+
+            const currentConfig = useMemo(() => {
+                return globalConfig[appId] || { disabledCats: [], disabledSits: [] };
+            }, [globalConfig, appId]);
+
+            const { uniqueCats, uniqueSits } = useMemo(() => {
+                if (!data) return { uniqueCats: [], uniqueSits: [] };
+                const cats = new Set();
+                const sits = new Set();
+                if(data.subject) cats.add(data.subject);
+                if(data.topic) sits.add(data.topic);
+                return { uniqueCats: [...cats].sort(), uniqueSits: [...sits].sort() };
+            }, [data]);
+
+            useEffect(() => {
+                const saved = localStorage.getItem('edupanel_multitenant_config');
+                if(saved) {
+                    try {
+                        setGlobalConfig(JSON.parse(saved));
+                    } catch(e) {
+                        console.error("Error parsing config", e);
+                    }
+                }
+                fetchCloudConfig();
+            }, []);
+
+            const fetchCloudConfig = async () => {
+                try {
+                    const response = await fetch(`${GOOGLE_SCRIPT_URL}?type=config&_t=${Date.now()}`);
+                    const json = await response.json();
+                    if (json && !json.error && typeof json === 'object') {
+                        setGlobalConfig(prev => ({...prev, ...json}));
+                        localStorage.setItem('edupanel_multitenant_config', JSON.stringify(json));
+                    }
+                } catch (e) {
+                    console.warn("Could not fetch cloud config, using local.", e);
+                }
+            };
+
+            const updateLocalConfig = (newCurrentConfig) => {
+                const newGlobal = {
+                    ...globalConfig,
+                    [appId]: newCurrentConfig
+                };
+                setGlobalConfig(newGlobal);
+                localStorage.setItem('edupanel_multitenant_config', JSON.stringify(newGlobal));
+                setSaveStatus(null);
+            };
+
+            const toggleCat = (cat) => {
+                const prev = currentConfig.disabledCats || [];
+                const next = prev.includes(cat) ? prev.filter(c => c !== cat) : [...prev, cat];
+                updateLocalConfig({ ...currentConfig, disabledCats: next });
+            };
+
+            const toggleSit = (sit) => {
+                const prev = currentConfig.disabledSits || [];
+                const next = prev.includes(sit) ? prev.filter(s => s !== sit) : [...prev, sit];
+                updateLocalConfig({ ...currentConfig, disabledSits: next });
+            };
+
+            const handleSaveToCloud = async () => {
+                setIsSaving(true);
+                setSaveStatus(null);
+                try {
+                    let latestGlobal = { ...globalConfig };
+                    try {
+                        const response = await fetch(`${GOOGLE_SCRIPT_URL}?type=config&_t=${Date.now()}`);
+                        const json = await response.json();
+                        if (json && !json.error && typeof json === 'object') {
+                            latestGlobal = json;
+                        }
+                    } catch (e) {
+                        console.warn("Fetch before save failed, proceeding with local state merge.");
+                    }
+
+                    latestGlobal[appId] = currentConfig;
+
+                    const saveResponse = await fetch(GOOGLE_SCRIPT_URL, {
+                        method: 'POST',
+                        body: JSON.stringify({
+                            type: 'saveConfig',
+                            config: latestGlobal
+                        })
+                    });
+                    
+                    const saveJson = await saveResponse.json();
+                    if (saveJson.result === 'success') {
+                        setGlobalConfig(latestGlobal);
+                        localStorage.setItem('edupanel_multitenant_config', JSON.stringify(latestGlobal));
+                        setSaveStatus('success');
+                        setTimeout(() => setSaveStatus(null), 3000);
+                    } else {
+                        throw new Error(saveJson.error || "Error al guardar");
+                    }
+                } catch (e) {
+                    console.error("Save failed", e);
+                    setSaveStatus('error');
+                } finally {
+                    setIsSaving(false);
+                }
+            };
+
+            const fetchReports = async () => {
+                setLoadingReports(true);
+                setReportsError(null);
+                try {
+                    // Added unique timestamp to prevent caching
+                    const response = await fetch(`${GOOGLE_SCRIPT_URL}?type=reports&_t=${Date.now()}`);
+                    if (!response.ok) throw new Error(`HTTP Error: ${response.status}`);
+                    
+                    const text = await response.text();
+                    
+                    let json;
+                    try {
+                        json = JSON.parse(text);
+                    } catch (e) {
+                        console.error("Invalid JSON:", text);
+                        throw new Error("Respuesta inválida del servidor (no es JSON). Verifica el App Script.");
+                    }
+
+                    if (json.error) throw new Error(json.error);
+                    setReportsData(Array.isArray(json) ? json : []);
+                } catch (e) {
+                    console.error("Error fetching reports:", e);
+                    setReportsError("Error de conexión: " + e.message);
+                } finally {
+                    setLoadingReports(false);
+                }
+            };
+
+            useEffect(() => {
+                if (activeTab === 'reports' && !reportsData) {
+                    fetchReports();
+                }
+            }, [activeTab]);
+
+            return (
+                <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-white font-sans p-8 transition-colors relative">
+                    {/* (Contenido del modal de ayuda y headers se mantienen igual...) */}
+                    {showHelp && (
+                        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-in fade-in duration-300">
+                            <div className="bg-white dark:bg-slate-900 rounded-[2.5rem] shadow-2xl w-full max-w-4xl max-h-[90vh] overflow-hidden flex flex-col border border-slate-200 dark:border-slate-800 animate-in zoom-in-95 duration-300">
+                                <div className="p-6 border-b border-slate-100 dark:border-slate-800 flex justify-between items-center bg-slate-50/50 dark:bg-slate-800/50">
+                                    <div className="flex items-center gap-3">
+                                        <span className="text-3xl">🛠️</span>
+                                        <div>
+                                            <h2 className="text-xl font-black text-slate-900 dark:text-white">Guía de Configuración Técnica</h2>
+                                            <p className="text-xs text-slate-500 font-medium uppercase tracking-wider">Google Apps Script & Multi-tenancy</p>
+                                        </div>
+                                    </div>
+                                    <button onClick={() => setShowHelp(false)} className="p-2 hover:bg-slate-200 dark:hover:bg-slate-700 rounded-full transition-colors">
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div className="p-8 overflow-y-auto space-y-10 custom-scrollbar">
+                                    <section>
+                                        <h3 className="text-lg font-black text-green-600 mb-4 flex items-center gap-2">
+                                            <span className="bg-green-100 dark:bg-green-900/30 w-8 h-8 rounded-lg flex items-center justify-center text-sm">1</span>
+                                            Instalación del Backend (Google Sheets)
+                                        </h3>
+                                        <div className="mb-6 space-y-4 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                                            <p className="font-bold">Para evitar errores de conexión ("Script Error" o "Network Error"), sigue estos pasos EXACTAMENTE:</p>
+                                            <div className="pl-4 border-l-4 border-indigo-200 dark:border-indigo-800 space-y-2">
+                                                <p>1. Crea una nueva <strong>Hoja de Cálculo de Google</strong>.</p>
+                                                <p>2. Ve al menú <strong>Extensiones</strong> {'>'} <strong>Apps Script</strong>.</p>
+                                                <p>3. Borra cualquier código existente y pega el código que encontrarás más abajo.</p>
+                                                <p>4. Dale un nombre al proyecto (arriba a la izquierda) y pulsa el icono de <strong>Guardar</strong> (💾).</p>
+                                            </div>
+                                            <div className="bg-indigo-50 dark:bg-indigo-900/20 p-4 rounded-xl border border-indigo-100 dark:border-indigo-800">
+                                                <h4 className="font-black text-indigo-700 dark:text-indigo-300 mb-2">🚀 Despliegue (IMPORTANTE)</h4>
+                                                <ol className="list-decimal pl-5 space-y-2 marker:text-indigo-500">
+                                                    <li>Pulsa el botón azul <strong>Implementar</strong> (arriba a la derecha) {'>'} <strong>Nueva implementación</strong>.</li>
+                                                    <li>Haz clic en el engranaje (⚙️) junto a "Seleccionar tipo" y elige <strong>Aplicación web</strong>.</li>
+                                                    <li>En "Descripción", pon "Versión 1".</li>
+                                                    <li>En "Ejecutar como", selecciona <strong>Yo (tu email)</strong>.</li>
+                                                    <li>
+                                                        <span className="bg-red-100 text-red-700 px-1 font-bold rounded">CRÍTICO:</span> 
+                                                        En "Quién tiene acceso", selecciona <strong>Cualquier persona</strong> (o "Anyone").
+                                                    </li>
+                                                    <li>Pulsa <strong>Implementar</strong>.</li>
+                                                    <li>Copia la "URL de la aplicación web" generada (termina en <code>/exec</code>).</li>
+                                                    <li>Pega esa URL en la constante <code>GOOGLE_SCRIPT_URL</code> al inicio del código de esta página (`index.html`).</li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                        <div className="relative group mt-4">
+                                            <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                                                <button onClick={() => navigator.clipboard.writeText(`const SHEET_CONFIG = "Config"; const SHEET_REPORTS = "Reportes"; const ADMIN_PASS = "123456"; function doGet(e) { const type = e.parameter.type; const ss = SpreadsheetApp.getActiveSpreadsheet(); if (type === 'config') { let sheet = ss.getSheetByName(SHEET_CONFIG); if (!sheet) return ContentService.createTextOutput(JSON.stringify({})).setMimeType(ContentService.MimeType.JSON); const data = sheet.getRange("A1").getValue(); return ContentService.createTextOutput(data || "{}").setMimeType(ContentService.MimeType.JSON); } if (type === 'reports') { let sheet = ss.getSheetByName(SHEET_REPORTS); if (!sheet) return ContentService.createTextOutput(JSON.stringify([])).setMimeType(ContentService.MimeType.JSON); const lastRow = sheet.getLastRow(); if (lastRow < 2) return ContentService.createTextOutput(JSON.stringify([])).setMimeType(ContentService.MimeType.JSON); const rows = sheet.getDataRange().getValues(); const headers = rows.shift(); const reports = rows.map(r => { let obj = {}; headers.forEach((h, i) => obj[h] = r[i]); return obj; }); return ContentService.createTextOutput(JSON.stringify(reports)).setMimeType(ContentService.MimeType.JSON); } return ContentService.createTextOutput(JSON.stringify({result: "error"})).setMimeType(ContentService.MimeType.JSON); } function doPost(e) { try { const data = JSON.parse(e.postData.contents); const ss = SpreadsheetApp.getActiveSpreadsheet(); if (data.type === 'login') { if (data.user === 'Bedoya' && data.password === ADMIN_PASS) { return ContentService.createTextOutput(JSON.stringify({result: 'success'})).setMimeType(ContentService.MimeType.JSON); } return ContentService.createTextOutput(JSON.stringify({result: 'error'})).setMimeType(ContentService.MimeType.JSON); } if (data.type === 'saveConfig') { let sheet = ss.getSheetByName(SHEET_CONFIG); if (!sheet) sheet = ss.insertSheet(SHEET_CONFIG); sheet.getRange("A1").setValue(JSON.stringify(data.config)); return ContentService.createTextOutput(JSON.stringify({result: 'success'})).setMimeType(ContentService.MimeType.JSON); } if (data.type === 'report') { let sheet = ss.getSheetByName(SHEET_REPORTS); if (!sheet) { sheet = ss.insertSheet(SHEET_REPORTS); } if (sheet.getLastRow() === 0) { sheet.appendRow(["timestamp", "appId", "user", "subject", "topic", "game", "score", "time"]); } const r = data.report; sheet.appendRow([new Date(), r.appId, r.user, r.subject, r.topic, r.game, r.score, r.time]); return ContentService.createTextOutput(JSON.stringify({result: 'success'})).setMimeType(ContentService.MimeType.JSON); } return ContentService.createTextOutput(JSON.stringify({result: 'success'})).setMimeType(ContentService.MimeType.JSON); } catch (err) { return ContentService.createTextOutput(JSON.stringify({result: 'error', error: err.toString()})).setMimeType(ContentService.MimeType.JSON); } }`)} className="bg-indigo-600 text-white text-xs px-3 py-1 rounded-md shadow-lg font-bold hover:bg-indigo-700 transition-colors">Copiar Código</button>
+                                            </div>
+                                            <pre className="bg-slate-800 text-slate-100 p-4 rounded-xl text-xs overflow-x-auto font-mono border border-slate-700 custom-scrollbar max-h-64">
+{`/* CÓDIGO PARA APPS SCRIPT (Resumido) */
+const SHEET_CONFIG = "Config";
+const SHEET_REPORTS = "Reportes";
+const ADMIN_PASS = "123456"; // CAMBIA ESTA CONTRASEÑA...`}
+                                            </pre>
+                                        </div>
+                                    </section>
+                                </div>
+                                <div className="p-6 bg-slate-50 dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 flex justify-end">
+                                    <button onClick={() => setShowHelp(false)} className="px-6 py-3 bg-slate-900 dark:bg-white text-white dark:text-slate-900 rounded-xl font-bold hover:opacity-90 transition-opacity">Entendido</button>
                                 </div>
                             </div>
-                            {items.map((item, i) => {
-                                const angle = (i / items.length) * 2 * Math.PI - Math.PI / 2;
-                                const x = 50 + 42 * Math.cos(angle);
-                                const y = 50 + 42 * Math.sin(angle);
-                                const status = ans[i];
-                                const active = i === idx;
-                                let bgColor = 'bg-slate-300 dark:bg-slate-800/40 text-slate-500 opacity-20';
-                                if (status === 'correct') bgColor = 'bg-green-500 text-white shadow-[0_0_10px_rgba(34,197,94,0.4)] opacity-100';
-                                else if (status === 'wrong') bgColor = 'bg-red-500 text-white opacity-100';
-                                else if (active) bgColor = 'bg-indigo-600 text-white scale-125 z-20 shadow-xl ring-4 ring-indigo-500/20 opacity-100';
-                                else if (!item.disabled) bgColor = 'bg-slate-400 dark:bg-slate-700 text-white opacity-100';
+                        </div>
+                    )}
+                    <header className="flex flex-col md:flex-row justify-between items-center mb-8 max-w-6xl mx-auto gap-4">
+                        <div className="flex items-center gap-4">
+                            <h1 className="text-3xl font-black italic tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-600">Panel de Administración</h1>
+                            <span className="bg-indigo-100 text-indigo-700 dark:bg-indigo-900/50 dark:text-indigo-300 px-3 py-1 rounded-full text-xs font-bold border border-indigo-200 dark:border-indigo-800">ID: {appId}</span>
+                        </div>
+                        <div className="flex items-center gap-3">
+                            <button onClick={() => setShowHelp(true)} className="px-4 py-2 bg-indigo-50 dark:bg-indigo-900/20 text-indigo-600 dark:text-indigo-300 border border-indigo-100 dark:border-indigo-800 rounded-xl font-bold text-sm hover:bg-indigo-100 dark:hover:bg-indigo-900/40 transition-colors flex items-center gap-2">
+                                <span>ℹ️</span> Ayuda Técnica
+                            </button>
+                            <button onClick={onLogout} className="px-4 py-2 bg-red-100 text-red-600 rounded-xl font-bold text-sm hover:bg-red-200 transition-colors">Salir</button>
+                        </div>
+                    </header>
+                    <div className="max-w-6xl mx-auto mb-8 flex border-b border-slate-200 dark:border-white/10">
+                        <button onClick={() => setActiveTab('config')} className={`px-8 py-3 text-sm font-bold border-b-2 transition-all ${activeTab === 'config' ? 'border-indigo-500 text-indigo-500' : 'border-transparent text-slate-500 hover:text-slate-800 dark:hover:text-slate-300'}`}>⚙️ Configuración</button>
+                        <button onClick={() => setActiveTab('reports')} className={`px-8 py-3 text-sm font-bold border-b-2 transition-all ${activeTab === 'reports' ? 'border-indigo-500 text-indigo-500' : 'border-transparent text-slate-500 hover:text-slate-800 dark:hover:text-slate-300'}`}>📊 Resultados Alumnos</button>
+                    </div>
+                    <div className="max-w-6xl mx-auto min-h-[500px]">
+                        {activeTab === 'config' ? (
+                            <div className="space-y-8 animate-in-up">
+                                <div className="grid md:grid-cols-2 gap-8">
+                                    <div className="glass p-8 rounded-[2rem] border border-slate-200 dark:border-white/5 bg-white/50 dark:bg-white/5">
+                                        <h3 className="text-indigo-500 font-bold uppercase mb-6 tracking-widest border-b border-slate-200 dark:border-white/10 pb-2 flex items-center gap-2"><span>📚</span> Asignaturas Activas ({appId})</h3>
+                                        <div className="space-y-2 max-h-[400px] overflow-y-auto scrollbar-hide">
+                                            {uniqueCats.length > 0 ? uniqueCats.map(cat => (
+                                                <Toggle key={cat} label={cat} checked={!currentConfig.disabledCats?.includes(cat)} onChange={() => toggleCat(cat)} />
+                                            )) : <p className="text-sm text-slate-500">No hay asignaturas cargadas.</p>}
+                                        </div>
+                                    </div>
+                                    <div className="glass p-8 rounded-[2rem] border border-slate-200 dark:border-white/5 bg-white/50 dark:bg-white/5">
+                                        <h3 className="text-purple-500 font-bold uppercase mb-6 tracking-widest border-b border-slate-200 dark:border-white/10 pb-2 flex items-center gap-2"><span>💡</span> Situaciones de Aprendizaje ({appId})</h3>
+                                        <div className="space-y-2 max-h-[400px] overflow-y-auto scrollbar-hide">
+                                            {uniqueSits.length > 0 ? uniqueSits.map(sit => (
+                                                <Toggle key={sit} label={sit} checked={!currentConfig.disabledSits?.includes(sit)} onChange={() => toggleSit(sit)} />
+                                            )) : <p className="text-sm text-slate-500">No hay temas cargados.</p>}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="flex justify-end pt-4">
+                                    <button 
+                                        onClick={handleSaveToCloud} 
+                                        disabled={isSaving}
+                                        className={`px-8 py-4 rounded-2xl font-bold text-white shadow-xl transition-all flex items-center gap-3 ${
+                                            saveStatus === 'success' ? 'bg-green-500' : 
+                                            saveStatus === 'error' ? 'bg-red-500' :
+                                            'bg-gradient-to-r from-indigo-600 to-purple-600 hover:shadow-indigo-500/30 hover:-translate-y-1 active:translate-y-0'
+                                        }`}
+                                    >
+                                        {isSaving ? (
+                                            <>
+                                                <svg className="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>
+                                                Guardando...
+                                            </>
+                                        ) : saveStatus === 'success' ? (
+                                            <><span>✅</span> ¡Guardado!</>
+                                        ) : saveStatus === 'error' ? (
+                                            <><span>⚠️</span> Error al guardar</>
+                                        ) : (
+                                            <><span>☁️</span> Guardar Configuración en Nube</>
+                                        )}
+                                    </button>
+                                </div>
+                            </div>
+                        ) : (
+                            <ReportsTab reports={reportsData} loading={loadingReports} error={reportsError} onRefresh={fetchReports} />
+                        )}
+                    </div>
+                </div>
+            );
+        };
+
+        const Navbar = ({ theme, onToggleTheme, currentView, onGoHome, onLogin, onLogout, user, userAvatar, gameData, isAdmin }) => {
+            const [showUserMenu, setShowUserMenu] = useState(false);
+            const userMenuRef = useRef(null);
+
+            useEffect(() => {
+                const handleClickOutside = (event) => {
+                    if (userMenuRef.current && !userMenuRef.current.contains(event.target)) {
+                        setShowUserMenu(false);
+                    }
+                };
+                document.addEventListener('mousedown', handleClickOutside);
+                return () => document.removeEventListener('mousedown', handleClickOutside);
+            }, []);
+
+            return (
+                <nav className="sticky top-0 z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl border-b border-slate-200 dark:border-slate-800 px-6 py-4 flex justify-between items-center transition-colors duration-300">
+                    <div className="flex items-center gap-3 cursor-pointer group" onClick={onGoHome}>
+                        <div className="bg-indigo-600 text-white p-2.5 rounded-xl group-hover:bg-indigo-500 transition-all shadow-lg shadow-indigo-600/20">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h1 className="text-xl font-black tracking-tighter leading-none">EduPanel</h1>
+                            <span className="text-[10px] uppercase tracking-widest font-bold text-indigo-500">Suite Educativa</span>
+                        </div>
+                        {!isAdmin && gameData && (
+                            <div className="hidden md:flex flex-col ml-4 pl-4 border-l border-slate-300 dark:border-slate-700">
+                                <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest leading-tight">{gameData.subject}</span>
+                                <span className="text-sm font-bold text-slate-700 dark:text-slate-200 leading-tight truncate max-w-[200px]">{gameData.topic}</span>
+                            </div>
+                        )}
+                    </div>
+                    <div className="flex items-center gap-3">
+                        {user && (
+                            <div className="relative" ref={userMenuRef}>
+                                <button 
+                                    onClick={() => setShowUserMenu(!showUserMenu)}
+                                    className="flex items-center gap-2 mr-2 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 py-1.5 px-3 rounded-full border border-slate-200 dark:border-slate-700 transition-all cursor-pointer"
+                                >
+                                    <span className="text-xl">{userAvatar}</span>
+                                    <span className="text-sm font-bold text-slate-700 dark:text-slate-200">{user}</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" className={`h-4 w-4 text-slate-400 transition-transform ${showUserMenu ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </button>
+                                {showUserMenu && (
+                                    <div className="absolute right-0 top-full mt-2 w-48 bg-white dark:bg-slate-900 rounded-xl shadow-2xl border border-slate-200 dark:border-slate-700 overflow-hidden animate-slide-down origin-top-right">
+                                        <div className="p-3 border-b border-slate-100 dark:border-slate-800">
+                                            <p className="text-xs text-slate-500 uppercase font-bold tracking-wider">Cuenta</p>
+                                            <p className="font-medium text-slate-900 dark:text-white truncate">{user}</p>
+                                        </div>
+                                        <button 
+                                            onClick={() => { setShowUserMenu(false); onLogout(); }}
+                                            className="w-full text-left px-4 py-3 text-red-500 hover:bg-red-50 dark:hover:bg-red-900/20 text-sm font-bold flex items-center gap-2 transition-colors"
+                                        >
+                                            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+                                            </svg>
+                                            Cerrar Sesión
+                                        </button>
+                                    </div>
+                                )}
+                            </div>
+                        )}
+                        {currentView !== 'HOME' && currentView !== 'LOGIN' && (
+                            <button onClick={onGoHome} className="px-5 py-2 text-xs font-bold rounded-full bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 transition-colors uppercase tracking-wider">Inicio</button>
+                        )}
+                        {!user && (
+                            <button onClick={onLogin} className="p-2.5 rounded-xl text-slate-500 hover:text-indigo-500 transition-colors" title="Admin">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
+                                </svg>
+                            </button>
+                        )}
+                        <button onClick={onToggleTheme} className="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:scale-110 transition-all">
+                            {theme === 'light' ? '🌙' : '☀️'}
+                        </button>
+                    </div>
+                </nav>
+            );
+        };
+
+        // --- GAME ENGINES ---
+        // (Rosco, Hangman, TrueFalse, Memory se mantienen igual)
+        const RoscoGame = ({ data, onBack, user, subject, topic }) => {
+            const [currentIdx, setCurrentIdx] = useState(0);
+            const [answers, setAnswers] = useState({});
+            const [userInput, setUserInput] = useState('');
+            const [gameOver, setGameOver] = useState(false);
+            const [score, setScore] = useState(0);
+            const [lives, setLives] = useState(5);
+            const [feedback, setFeedback] = useState(null); 
+            const [startTime] = useState(Date.now());
+            const [isSaving, setIsSaving] = useState(false);
+
+            // Logic to randomize if there are duplicate letters, and sort A-Z
+            const gameItems = useMemo(() => {
+                if (!data || data.length === 0) return [];
+                const groups = {};
+                // Group by letter
+                data.forEach(item => {
+                    const l = item.letter.charAt(0).toUpperCase();
+                    if (!groups[l]) groups[l] = [];
+                    groups[l].push(item);
+                });
+                // Pick one random from each group and sort alphabetically
+                const sortedKeys = Object.keys(groups).sort();
+                return sortedKeys.map(key => {
+                    const group = groups[key];
+                    // Random choice if more than one definition for the same letter
+                    return group[Math.floor(Math.random() * group.length)];
+                });
+            }, [data]);
+
+            const currentItem = gameItems[currentIdx];
+
+            const formatTime = (seconds) => {
+                const h = Math.floor(seconds / 3600);
+                const m = Math.floor((seconds % 3600) / 60);
+                const s = seconds % 60;
+                return `${h.toString().padStart(2, '0')}:${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+            };
+
+            const saveReport = async (finalScore) => {
+                const timeSpent = Math.floor((Date.now() - startTime) / 1000);
+                const timeFormatted = formatTime(timeSpent);
+                setIsSaving(true);
+                try {
+                    await fetch(GOOGLE_SCRIPT_URL, {
+                        method: 'POST',
+                        body: JSON.stringify({
+                            type: 'report',
+                            report: {
+                                appId: getAppId(),
+                                user: user,
+                                subject: subject,
+                                topic: topic,
+                                game: 'rosco',
+                                score: finalScore, 
+                                time: `'${timeFormatted}`
+                            }
+                        })
+                    });
+                } catch (e) {
+                    console.error("Error saving report", e);
+                } finally {
+                    setIsSaving(false);
+                }
+            };
+
+            const handleCheck = () => {
+                if(!currentItem) return;
+                const normalize = (str) => str.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
+                const isCorrect = normalize(userInput) === normalize(currentItem.word);
+                
+                if (isCorrect) {
+                    const newScore = score + 30;
+                    setScore(newScore);
+                    const newAnswers = { ...answers, [currentIdx]: 'CORRECT' };
+                    setAnswers(newAnswers);
+                    setUserInput('');
+                    moveToNext(newAnswers);
+                } else {
+                    setFeedback({ word: currentItem.word });
+                    setScore(s => s - 10);
+                    setLives(l => l - 1);
+                }
+            };
+
+            const handleFeedbackDismiss = () => {
+                setFeedback(null);
+                setUserInput('');
+                if (lives <= 0) {
+                    setGameOver(true);
+                } else {
+                    const newAnswers = { ...answers, [currentIdx]: 'WRONG' };
+                    setAnswers(newAnswers);
+                    moveToNext(newAnswers);
+                }
+            };
+
+            const moveToNext = (currentAnswers) => {
+                let next = (currentIdx + 1) % gameItems.length;
+                let count = 0;
+                while (currentAnswers[next] && currentAnswers[next] !== 'PENDING' && count < gameItems.length) {
+                    next = (next + 1) % gameItems.length;
+                    count++;
+                }
+                if (count >= gameItems.length) {
+                    setGameOver(true);
+                } else {
+                    setCurrentIdx(next);
+                }
+            };
+
+            const handlePasapalabra = () => {
+                setUserInput('');
+                moveToNext(answers);
+            };
+
+            useEffect(() => {
+                if (gameOver && lives > 0) {
+                    saveReport(score);
+                }
+            }, [gameOver]);
+
+            if (gameItems.length === 0) return <div className="p-10 text-center font-bold text-slate-500">No hay datos para el Rosco.</div>;
+
+            if (gameOver) {
+                const corrects = Object.values(answers).filter(v => v === 'CORRECT').length;
+                return (
+                    <div className="max-w-xl mx-auto text-center p-10 bg-white dark:bg-slate-800 rounded-3xl shadow-2xl mt-10 animate-in fade-in zoom-in relative">
+                        {isSaving && <div className="absolute top-4 right-4 text-xs text-indigo-500 font-bold animate-pulse">Guardando resultado...</div>}
+                        <div className={`inline-block p-6 rounded-full mb-6 ${lives > 0 ? 'bg-indigo-100 dark:bg-indigo-900/30' : 'bg-red-100 dark:bg-red-900/30'}`}>
+                            <span className="text-6xl">{lives > 0 ? '🏆' : '💀'}</span>
+                        </div>
+                        <h2 className="text-4xl font-black mb-4 dark:text-white">{lives > 0 ? '¡Rosco Terminado!' : 'Fin del Juego'}</h2>
+                        <div className="grid grid-cols-2 gap-4 mb-8 text-lg font-bold">
+                            <div className="p-4 bg-green-100 text-green-700 rounded-2xl border border-green-200">
+                                ✅ Aciertos: {corrects}
+                            </div>
+                            <div className="p-4 bg-red-100 text-red-700 rounded-2xl border border-red-200">
+                                ❌ Fallos: {gameItems.length - corrects}
+                            </div>
+                        </div>
+                        <div className="p-6 bg-slate-50 dark:bg-slate-900 rounded-2xl mb-8 border-2 border-slate-200 dark:border-slate-700">
+                            <p className="text-sm text-slate-500 uppercase font-bold tracking-widest mb-1">Puntuación Final</p>
+                            <p className="text-5xl font-black text-indigo-600 dark:text-indigo-400">{score}</p>
+                        </div>
+                        <button onClick={onBack} className="px-8 py-4 bg-indigo-600 text-white rounded-2xl font-bold hover:bg-indigo-700 transition-colors shadow-xl shadow-indigo-600/20 w-full">Volver al Panel</button>
+                    </div>
+                );
+            }
+
+            const isContiene = currentItem.hint && currentItem.hint.toLowerCase().includes('contiene');
+
+            return (
+                <div className="relative">
+                    {/* Error Feedback Modal */}
+                    {feedback && (
+                        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm animate-in fade-in">
+                            <div className="bg-white dark:bg-slate-900 rounded-3xl p-8 max-w-md w-full text-center shadow-2xl border-4 border-red-500 animate-in zoom-in-95">
+                                <div className="text-6xl mb-4">❌</div>
+                                <h3 className="text-2xl font-black text-red-500 mb-2">¡Incorrecto!</h3>
+                                <p className="text-slate-500 font-bold mb-6">La respuesta correcta era:</p>
+                                <div className="p-4 bg-slate-100 dark:bg-slate-800 rounded-xl mb-8">
+                                    <p className="text-3xl font-black text-slate-800 dark:text-white uppercase tracking-widest">{feedback.word}</p>
+                                </div>
+                                <button onClick={handleFeedbackDismiss} className="w-full py-4 bg-red-500 hover:bg-red-600 text-white font-bold rounded-xl shadow-lg shadow-red-500/30 transition-all">Continuar</button>
+                            </div>
+                        </div>
+                    )}
+
+                    <div className="grid lg:grid-cols-2 gap-8 items-center max-w-6xl mx-auto mt-4 animate-in fade-in pb-10">
+                        {/* RUEDA (ROSCO) */}
+                        <div className="relative aspect-square w-full max-w-[500px] mx-auto select-none">
+                            <div className="absolute inset-[10%] rounded-full border-[2px] border-slate-200 dark:border-slate-700 border-dashed animate-[spin_60s_linear_infinite] opacity-50"></div>
+                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center w-32 h-32 bg-white dark:bg-slate-800 rounded-full shadow-2xl z-20 border-4 border-slate-100 dark:border-slate-700 transition-all">
+                                <span className="text-5xl font-black text-indigo-600 dark:text-indigo-400">{currentItem.letter}</span>
+                                <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-1">Turno</span>
+                            </div>
+                            {gameItems.map((item, idx) => {
+                                const total = gameItems.length;
+                                const angle = (idx / total) * 2 * Math.PI - Math.PI / 2; 
+                                const radius = 42; 
+                                const x = 50 + radius * Math.cos(angle);
+                                const y = 50 + radius * Math.sin(angle);
+                                
+                                const status = answers[idx]; 
+                                const isActive = idx === currentIdx;
+                                
+                                let baseClasses = "absolute w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center text-sm md:text-lg font-black transition-all duration-500 shadow-md border-2";
+                                let statusClasses = "";
+                                
+                                if (isActive) {
+                                    statusClasses = "bg-indigo-600 border-indigo-400 text-white scale-125 z-10 ring-4 ring-indigo-200 dark:ring-indigo-900 shadow-xl shadow-indigo-600/40";
+                                } else if (status === 'CORRECT') {
+                                    statusClasses = "bg-green-500 border-green-400 text-white";
+                                } else if (status === 'WRONG') {
+                                    statusClasses = "bg-red-500 border-red-400 text-white";
+                                } else {
+                                    statusClasses = "bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-600 text-slate-700 dark:text-slate-300 group-hover:scale-110";
+                                }
 
                                 return (
-                                    <div key={i} className={`absolute w-7 h-7 md:w-9 md:h-9 rounded-full flex items-center justify-center text-[10px] font-bold transition-all duration-300 ${bgColor}`} 
-                                         style={{ left: `${x}%`, top: `${y}%`, transform: 'translate(-50%, -50%)' }}>
+                                    <div 
+                                        key={idx} 
+                                        className={`${baseClasses} ${statusClasses}`} 
+                                        style={{ left: `${x}%`, top: `${y}%`, transform: `translate(-50%, -50%) ${isActive ? 'scale(1.25)' : 'scale(1)'}` }}
+                                    >
                                         {item.letter}
                                     </div>
                                 );
                             })}
                         </div>
-                        <div className="flex flex-col gap-4">
-                            <div className={`glass p-8 rounded-[2.5rem] border-l-8 transition-all duration-500 min-h-[160px] flex flex-col justify-center relative ${feedback ? 'border-red-500 bg-red-500/5' : 'border-indigo-600'}`}>
-                                {feedback ? (
-                                    <div className="text-center">
-                                        <h4 className="text-red-500 font-black uppercase text-[10px] mb-2 tracking-widest italic">ERROR</h4>
-                                        <p className="text-2xl font-black text-red-500 leading-tight">{feedback}</p>
+                        {/* CONTROLES Y DEFINICIÓN */}
+                        <div className="flex flex-col justify-center space-y-6 lg:pl-10">
+                            <div className="flex justify-between items-center bg-slate-100 dark:bg-slate-800/50 p-4 rounded-2xl border border-slate-200 dark:border-slate-700">
+                                <div className="flex items-center gap-2">
+                                    <span className="text-2xl">❤️</span>
+                                    <div className="flex gap-1">
+                                        {[...Array(5)].map((_, i) => (
+                                            <div key={i} className={`w-3 h-3 rounded-full transition-all ${i < lives ? 'bg-red-500' : 'bg-slate-300 dark:bg-slate-700'}`} />
+                                        ))}
                                     </div>
-                                ) : (
-                                    <>
-                                        <h4 className="text-[12px] uppercase font-black tracking-widest text-indigo-500 mb-3 flex items-center gap-2 italic">
-                                            {items[idx].titleLabel}
-                                        </h4>
-                                        <p className="text-xl md:text-2xl font-bold leading-relaxed text-slate-900 dark:text-white italic">"{items[idx].definition}"</p>
-                                    </>
-                                )}
+                                </div>
+                                <div className="font-mono font-bold text-xl text-indigo-600 dark:text-indigo-400">
+                                    PTS: {score}
+                                </div>
                             </div>
-                            <input 
-                                ref={inputRef}
-                                type="text" 
-                                value={input} 
-                                disabled={locked} 
-                                onChange={e => setInput(e.target.value)} 
-                                onKeyDown={e => e.key === 'Enter' && check()} 
-                                placeholder="Escribe tu respuesta..." 
-                                className="w-full p-6 glass rounded-2xl border-2 border-indigo-600/10 focus:border-indigo-600 outline-none text-2xl font-black text-slate-900 dark:text-white transition-all bg-white/50 dark:bg-slate-900/50" 
-                                autoFocus
-                            />
-                            <div className="grid grid-cols-2 gap-3">
-                                <button onClick={check} disabled={locked} className="py-4 bg-green-500 text-white rounded-xl font-black shadow-lg hover:bg-green-400 transition-colors uppercase italic text-sm">Comprueba</button>
-                                <button onClick={() => next(ans, mistakes)} disabled={locked} className="py-4 bg-amber-500 text-white rounded-xl font-black shadow-lg hover:bg-amber-400 transition-colors uppercase italic text-sm">PASA   PALABRA</button>
+                            <div className="bg-white dark:bg-slate-800 p-8 rounded-[2.5rem] shadow-2xl border border-slate-100 dark:border-slate-700 relative overflow-hidden transition-all">
+                                <div className={`absolute top-0 left-0 w-full h-2 ${isContiene ? 'bg-amber-500' : 'bg-indigo-500'}`}></div>
+                                <div className="flex items-center gap-3 mb-6">
+                                    <span className={`px-3 py-1 rounded-lg text-xs font-black uppercase tracking-widest text-white ${isContiene ? 'bg-amber-500' : 'bg-indigo-500'}`}>
+                                        {isContiene ? `Contiene la ${currentItem.letter}` : `Empieza por ${currentItem.letter}`}
+                                    </span>
+                                </div>
+                                <p className="text-xl md:text-2xl font-medium leading-relaxed text-slate-600 dark:text-slate-300 mb-8 min-h-[100px]">
+                                    {currentItem.definition}
+                                </p>
+                                <div className="space-y-4">
+                                    <input 
+                                        type="text" 
+                                        value={userInput} 
+                                        onChange={(e) => setUserInput(e.target.value)} 
+                                        onKeyDown={(e) => e.key === 'Enter' && handleCheck()} 
+                                        placeholder="Escribe tu respuesta..." 
+                                        className="w-full p-5 rounded-2xl bg-slate-50 dark:bg-slate-900 border-2 border-slate-200 dark:border-slate-700 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/10 outline-none text-lg font-bold transition-all text-slate-900 dark:text-white placeholder:font-normal placeholder:text-slate-400" 
+                                        autoFocus 
+                                        autoComplete="off"
+                                    />
+                                    <div className="grid grid-cols-2 gap-4">
+                                        <button 
+                                            onClick={handleCheck} 
+                                            className="py-4 bg-indigo-600 hover:bg-indigo-700 active:scale-95 text-white rounded-2xl font-bold transition-all shadow-xl shadow-indigo-600/20 flex items-center justify-center gap-2"
+                                        >
+                                            <span>✓</span> Comprobar
+                                        </button>
+                                        <button 
+                                            onClick={handlePasapalabra} 
+                                            className="py-4 bg-slate-200 dark:bg-slate-700 hover:bg-slate-300 dark:hover:bg-slate-600 active:scale-95 text-slate-600 dark:text-slate-200 rounded-2xl font-bold transition-all flex items-center justify-center gap-2"
+                                        >
+                                            <span>⏩</span> Pasapalabra
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -299,69 +1064,172 @@
             );
         };
 
-        const Ahorcado = ({ items, onBack }) => {
-            const [cur, setCur] = useState(0);
-            const [used, setUsed] = useState([]);
-            const [fails, setFails] = useState(0);
-            const word = items[cur].word.toUpperCase();
-            const won = word.split('').every(l => used.includes(l) || l === ' ');
-            const lost = fails >= MAX_MISTAKES_AHORCADO; 
-            const guess = (l) => { if (!used.includes(l) && !won && !lost) { setUsed([...used, l]); if (!word.includes(l)) setFails(f => f + 1); } };
-            
+        const HangmanGame = ({ data, onBack, user, subject, topic }) => {
+             const [itemIdx, setItemIdx] = useState(0);
+            const [usedLetters, setUsedLetters] = useState([]);
+            const [mistakes, setMistakes] = useState(0);
+            const [status, setStatus] = useState('PLAYING');
+            const [score, setScore] = useState(0);
+            const [totalScore, setTotalScore] = useState(0); // Puntuación acumulada de todas las palabras
+            const [globalStartTime] = useState(Date.now()); // Tiempo inicio de la sesión
+            const [isSaving, setIsSaving] = useState(false);
+
+            // Randomly select up to 10 words if more are available
+            const gameItems = useMemo(() => {
+                if(!data || data.length === 0) return [];
+                // Clone and shuffle
+                const shuffled = [...data].sort(() => 0.5 - Math.random());
+                return shuffled.slice(0, 10);
+            }, [data]);
+
+            const currentItem = gameItems[itemIdx];
+            const word = currentItem ? currentItem.word.toUpperCase() : '';
+
+            const formatTime = (seconds) => {
+                const h = Math.floor(seconds / 3600);
+                const m = Math.floor((seconds % 3600) / 60);
+                const s = seconds % 60;
+                return `${h.toString().padStart(2, '0')}:${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+            };
+
+            const saveReport = async (finalTotalScore) => {
+                const timeSpent = Math.floor((Date.now() - globalStartTime) / 1000);
+                const timeFormatted = formatTime(timeSpent);
+                setIsSaving(true);
+                try {
+                    await fetch(GOOGLE_SCRIPT_URL, {
+                        method: 'POST',
+                        body: JSON.stringify({
+                            type: 'report',
+                            report: {
+                                appId: getAppId(),
+                                user: user,
+                                subject: subject,
+                                topic: topic,
+                                game: 'ahorcado',
+                                score: finalTotalScore,
+                                time: `'${timeFormatted}`
+                            }
+                        })
+                    });
+                } catch (e) {
+                    console.error("Error saving report", e);
+                } finally {
+                    setIsSaving(false);
+                }
+            };
+
+            const handleLetter = (letter) => {
+                if (usedLetters.includes(letter) || status !== 'PLAYING') return;
+                
+                const isCorrect = word.includes(letter);
+                setUsedLetters(prev => [...prev, letter]);
+                
+                if (isCorrect) {
+                    setScore(s => s + 50);
+                } else {
+                    setScore(s => s - 10);
+                    setMistakes(m => m + 1);
+                }
+            };
+
+            // Escuchar eventos de teclado físico
+            useEffect(() => {
+                const handleKeyDown = (e) => {
+                    if (status !== 'PLAYING') return;
+                    const key = e.key.toUpperCase();
+                    const validChars = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ";
+                    if (validChars.includes(key)) {
+                        handleLetter(key);
+                    }
+                };
+                window.addEventListener('keydown', handleKeyDown);
+                return () => window.removeEventListener('keydown', handleKeyDown);
+            }, [status, usedLetters, word]);
+
+            useEffect(() => {
+                if (mistakes >= 6) {
+                    setStatus('LOST');
+                } else if (word && word.split('').every(l => usedLetters.includes(l) || l === ' ')) {
+                    setStatus('WON');
+                }
+            }, [usedLetters, mistakes, word]);
+
+            const handleNextOrFinish = () => {
+                if(isSaving) return; // Prevent double submission
+                const newTotalScore = totalScore + score;
+                
+                if (itemIdx < gameItems.length - 1) { 
+                    setTotalScore(newTotalScore);
+                    setItemIdx(i => i + 1); 
+                    setUsedLetters([]); 
+                    setMistakes(0); 
+                    setStatus('PLAYING'); 
+                    setScore(0);
+                } else {
+                    // Send report only at the end
+                    saveReport(newTotalScore);
+                    // Wait a moment before going back
+                    setTimeout(onBack, 2000); 
+                }
+            };
+
+            if (!currentItem) return (
+                <div className="flex flex-col items-center justify-center p-8 text-center">
+                    <h2 className="text-3xl font-black mb-4 dark:text-white">¡Juego Terminado!</h2>
+                    {isSaving && <p className="text-indigo-500 animate-pulse font-bold">Guardando puntuación total...</p>}
+                    {!isSaving && <button onClick={onBack} className="mt-4 px-6 py-2 bg-slate-200 rounded-lg font-bold">Volver</button>}
+                </div>
+            );
+
             return (
-                <div className="max-w-4xl mx-auto h-[calc(100vh-140px)] flex flex-col gap-4 overflow-hidden px-2 animate-in-up">
-                    <div className="flex justify-between items-center px-2 shrink-0">
-                        <div className="text-left">
-                            <h2 className="text-xl md:text-2xl font-black tracking-tighter text-slate-900 dark:text-white uppercase italic leading-none">AHORCADO</h2>
-                            <p className="opacity-50 font-black uppercase text-[8px] tracking-[0.2em] text-slate-600 dark:text-indigo-300 italic mt-1 leading-none">IDENTIFICACIÓN • NIVEL {cur + 1} / {items.length}</p>
-                        </div>
+                <div className="max-w-6xl mx-auto flex flex-col items-center gap-4 mt-4 animate-in fade-in relative">
+                    {/* Score Header */}
+                    <div className="absolute top-0 right-0 p-4 bg-white dark:bg-slate-800 rounded-xl shadow-lg border border-slate-200 dark:border-slate-700 z-10">
+                        <p className="text-xs font-bold text-slate-500 uppercase tracking-wider">Acumulado</p>
+                        <p className="text-2xl font-black text-indigo-600 dark:text-indigo-400">{totalScore + score}</p>
                     </div>
 
-                    <div className="flex-grow flex flex-col md:flex-row gap-6 items-center justify-center overflow-hidden">
-                        <div className="glass p-5 rounded-3xl flex flex-col items-center border-b-4 border-indigo-600 shadow-xl w-full max-w-[200px] shrink-0">
-                            <svg width="130" height="160" viewBox="0 0 200 250" className="stroke-slate-900 dark:stroke-white fill-none stroke-[8]">
-                                <path d="M20 230 L180 230 M60 230 L60 20 L140 20 L140 50" />
-                                {fails > 0 && <circle cx="140" cy="80" r="25" />}
-                                {fails > 1 && <line x1="140" y1="105" x2="140" y2="170" />}
-                                {fails > 2 && <line x1="140" y1="120" x2="110" y2="150" />}
-                                {fails > 3 && <line x1="140" y1="120" x2="170" y2="150" />}
-                                {fails > 4 && <line x1="140" y1="170" x2="110" y2="210" />}
-                                {fails > 5 && <line x1="140" y1="170" x2="170" y2="210" />}
-                            </svg>
+                    <div className="grid lg:grid-cols-2 gap-8 w-full items-center">
+                        <div className="bg-white dark:bg-slate-800 p-4 rounded-3xl flex justify-center border-b-4 border-slate-200 dark:border-slate-700">
+                             <svg width="150" height="200" viewBox="0 0 200 250" className="stroke-slate-900 dark:stroke-white fill-none stroke-[6]">
+                                <line x1="20" y1="230" x2="180" y2="230" /><line x1="60" y1="230" x2="60" y2="20" /><line x1="60" y1="20" x2="140" y2="20" /><line x1="140" y1="20" x2="140" y2="50" />
+                                {mistakes > 0 && <circle cx="140" cy="80" r="25" />}{mistakes > 1 && <line x1="140" y1="105" x2="140" y2="170" />}{mistakes > 2 && <line x1="140" y1="120" x2="110" y2="150" />}{mistakes > 3 && <line x1="140" y1="120" x2="170" y2="150" />}{mistakes > 4 && <line x1="140" y1="170" x2="110" y2="210" />}{mistakes > 5 && <line x1="140" y1="170" x2="170" y2="210" />}
+                             </svg>
                         </div>
-
-                        <div className="flex-grow w-full flex flex-col gap-6 overflow-hidden">
-                            <div className="bg-indigo-600/5 p-5 rounded-2xl border border-indigo-600/10 shadow-sm shrink-0">
-                                <span className="text-[9px] uppercase font-black tracking-widest text-indigo-500 mb-2 block italic">PISTA DEL CONCEPTO</span>
-                                <p className="text-lg font-bold italic text-slate-900 dark:text-white leading-tight">"{items[cur].hint}"</p>
-                            </div>
+                        <div className="space-y-6 w-full overflow-hidden">
+                            <div className="bg-yellow-500/10 border-2 border-yellow-500/20 p-4 rounded-2xl text-center"><h4 className="text-xs font-bold uppercase text-yellow-600 mb-1">Pista:</h4><p className="text-md font-medium italic leading-tight">"{currentItem.hint}"</p></div>
                             
-                            <div className="flex flex-wrap justify-center gap-1.5 shrink-0 py-2">
+                            {/* Word Container - Reducido para caber 20 caracteres */}
+                            <div className="flex flex-wrap justify-center gap-1 p-2 w-full">
                                 {word.split('').map((l, i) => (
-                                    <div key={i} className="hangman_slot text-slate-900 dark:text-white border-indigo-600/40">
-                                        {used.includes(l) || lost ? l : l === ' ' ? ' ' : ''}
+                                    <div key={i} className={`flex-shrink-0 flex items-center justify-center font-black dark:text-white border-b-2 transition-all duration-300 ${
+                                        l === ' ' ? 'w-2 border-transparent' : 
+                                        'w-6 h-8 md:w-8 md:h-12 border-indigo-500 text-sm md:text-xl bg-white/50 dark:bg-slate-800/50 rounded-t-md'
+                                    }`}>
+                                        {usedLetters.includes(l) || status === 'LOST' ? l : ''}
                                     </div>
                                 ))}
                             </div>
 
-                            {(won || lost) && (
-                                <div className={`p-5 rounded-2xl text-white text-center shadow-xl animate-in zoom-in border-2 shrink-0 ${won ? 'bg-green-600' : 'bg-red-600'}`}>
-                                    <h3 className="text-base font-black mb-3 uppercase italic tracking-tight">{won ? '¡Identificado!' : `No logrado. Era: ${word}`}</h3>
-                                    <button onClick={() => { if (cur < items.length - 1) { setCur(cur + 1); setUsed([]); setFails(0); } else onBack(); }} className="bg-white text-slate-900 px-8 py-2 rounded-xl font-black text-xs hover:scale-105 transition-all">
-                                        {cur < items.length - 1 ? 'SIGUIENTE' : 'FINALIZAR'}
+                            {status !== 'PLAYING' && (
+                                <div className={`p-4 rounded-2xl text-center animate-bounce ${status === 'WON' ? 'bg-green-500 text-white' : 'bg-red-500 text-white'}`}>
+                                    <h3 className="text-lg font-black mb-1">{status === 'WON' ? '¡Palabra Completada!' : 'Fin de la Partida'}</h3>
+                                    {isSaving && <p className="text-xs opacity-80 mb-2 animate-pulse">Guardando resultados...</p>}
+                                    <button onClick={handleNextOrFinish} className="px-6 py-2 bg-white text-slate-900 rounded-lg font-bold shadow-lg hover:scale-105 transition-transform">
+                                        {itemIdx < gameItems.length - 1 ? "Siguiente Palabra" : "Finalizar y Guardar"}
                                     </button>
                                 </div>
                             )}
                         </div>
                     </div>
-
-                    <div className="grid grid-cols-7 sm:grid-cols-9 lg:grid-cols-10 gap-2 max-w-2xl mx-auto pb-6 shrink-0">
-                        {ALPHABET.map(l => (
+                    <div className="grid grid-cols-7 sm:grid-cols-9 gap-1 w-full max-w-2xl px-2">
+                        {"ABCDEFGHIJKLMNÑOPQRSTUVWXYZ".split('').map(l => (
                             <button 
                                 key={l} 
-                                disabled={used.includes(l) || won || lost} 
-                                onClick={() => guess(l)} 
-                                className={`p-2.5 rounded-xl font-black transition-all text-sm ${used.includes(l) ? 'opacity-10 grayscale' : 'glass bg-white dark:bg-slate-900 text-slate-900 dark:text-white border border-indigo-600/10 hover:bg-indigo-600 hover:text-white hover:scale-110'}`}
+                                disabled={usedLetters.includes(l) || status !== 'PLAYING'} 
+                                onClick={() => handleLetter(l)} 
+                                className={`p-2 rounded-md font-bold text-sm transition-all ${usedLetters.includes(l) ? 'opacity-20 grayscale scale-95' : 'bg-white dark:bg-slate-800 hover:bg-indigo-500 hover:text-white shadow text-slate-900 dark:text-white hover:-translate-y-1'}`}
                             >
                                 {l}
                             </button>
@@ -370,334 +1238,608 @@
                 </div>
             );
         };
+        
+        const TrueFalseGame = ({ data, onBack, user, subject, topic }) => {
+            const [currentIdx, setCurrentIdx] = useState(0); 
+            const [score, setScore] = useState(0); 
+            const [showResult, setShowResult] = useState(false); 
+            const [userAnswer, setUserAnswer] = useState(null); 
+            const [isConfirmed, setIsConfirmed] = useState(false); 
+            const [startTime] = useState(Date.now());
+            const [isSaving, setIsSaving] = useState(false);
+            
+            // Randomly select up to 10 questions if more are available
+            const gameItems = useMemo(() => {
+                if(!data || data.length === 0) return [];
+                const shuffled = [...data].sort(() => 0.5 - Math.random());
+                return shuffled.slice(0, 10);
+            }, [data]);
 
-        const Sopa = ({ items, onBack }) => {
-            const [cur, setCur] = useState(0);
-            const [grid, setGrid] = useState([]);
-            const [found, setFound] = useState([]);
-            const [sel, setSel] = useState([]);
-            const [solvedCells, setSolvedCells] = useState([]); 
-            const SIZE = 12;
+            const current = gameItems[currentIdx];
 
-            useEffect(() => {
-                const g = Array(SIZE).fill(null).map(() => Array(SIZE).fill(''));
-                items[cur].words.forEach(w => {
-                    let ok = false;
-                    while(!ok) {
-                        const h = Math.random() > 0.5;
-                        const r = Math.floor(Math.random() * (h ? SIZE : SIZE - w.length));
-                        const c = Math.floor(Math.random() * (h ? SIZE - w.length : SIZE));
-                        let can = true;
-                        for(let i=0; i<w.length; i++) {
-                            const char = g[h?r:r+i][h?c+i:c];
-                            if(char !== '' && char !== w[i]) can = false;
-                        }
-                        if(can) { for(let i=0; i<w.length; i++) g[h?r:r+i][h?c+i:c] = w[i]; ok = true; }
-                    }
-                });
-                for(let r=0; r<SIZE; r++) for(let c=0; c<SIZE; c++) if(g[r][c] === '') g[r][c] = ALPHABET[Math.floor(Math.random()*ALPHABET.length)];
-                setGrid(g); setFound([]); setSel([]); setSolvedCells([]);
-            }, [cur]);
-
-            const handleClick = (r, c) => {
-                if (solvedCells.some(cell => cell.r === r && cell.c === c)) return;
-                const s = sel.find(x => x.r === r && x.c === c);
-                let ns = s ? sel.filter(x => !(x.r === r && x.c === c)) : [...sel, {r, c}];
-                setSel(ns);
-                const str = ns.map(x => grid[x.r][x.c]).join('');
-                const rev = str.split('').reverse().join('');
-                const m = items[cur].words.find(w => (w === str || w === rev) && !found.includes(w));
-                if (m) { setFound([...found, m]); setSolvedCells([...solvedCells, ...ns]); setSel([]); }
+            const formatTime = (seconds) => {
+                const h = Math.floor(seconds / 3600);
+                const m = Math.floor((seconds % 3600) / 60);
+                const s = seconds % 60;
+                return `${h.toString().padStart(2, '0')}:${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
             };
 
-            return (
-                <div className="max-w-6xl mx-auto h-[calc(100vh-140px)] flex flex-col px-4 animate-in-up">
-                    <div className="flex justify-between items-center mb-6 px-2 shrink-0">
-                        <div className="text-left">
-                            <h2 className="text-xl md:text-2xl font-black tracking-tighter text-slate-900 dark:text-white uppercase italic leading-none">SOPA DE LETRAS</h2>
-                            <p className="opacity-50 font-black uppercase text-[8px] tracking-[0.2em] text-slate-600 dark:text-indigo-300 italic mt-1 leading-none">BÚSQUEDA • NIVEL {cur + 1} / {items.length}</p>
-                        </div>
-                    </div>
+            const saveReport = async (finalScore) => {
+                const timeSpent = Math.floor((Date.now() - startTime) / 1000);
+                const timeFormatted = formatTime(timeSpent);
+                setIsSaving(true);
+                try {
+                    await fetch(GOOGLE_SCRIPT_URL, {
+                        method: 'POST',
+                        body: JSON.stringify({
+                            type: 'report',
+                            report: {
+                                appId: getAppId(),
+                                user: user,
+                                subject: subject,
+                                topic: topic,
+                                game: 'verdadero',
+                                score: finalScore,
+                                time: `'${timeFormatted}`
+                            }
+                        })
+                    });
+                } catch (e) {
+                    console.error(e);
+                } finally {
+                    setIsSaving(false);
+                }
+            };
 
-                    <div className="flex-grow grid lg:grid-cols-3 gap-8 overflow-hidden pb-4">
-                        <div className="lg:col-span-2 glass p-4 rounded-[2.5rem] border-2 border-indigo-600/10 bg-white/50 dark:bg-slate-900/50 flex items-center justify-center overflow-hidden">
-                            <div className="grid grid-cols-12 gap-1 md:gap-2 aspect-square w-full max-w-[480px]">
-                                {grid.map((row, r) => row.map((char, c) => {
-                                    const isSelected = sel.some(x => x.r === r && x.c === c);
-                                    const isSolved = solvedCells.some(x => x.r === r && x.c === c);
-                                    return (
-                                        <button 
-                                            key={`${r}-${c}`} 
-                                            onClick={() => handleClick(r, c)} 
-                                            className={`aspect-square flex items-center justify-center text-[10px] md:text-sm font-bold rounded-md transition-all ${isSelected ? 'bg-indigo-600 text-white shadow-lg' : isSolved ? 'bg-green-500 text-white shadow-md' : 'text-slate-700 dark:text-white hover:bg-indigo-600/10'}`}
-                                        >
-                                            {char}
-                                        </button>
-                                    );
-                                }))}
+            const handleAnswer = (val) => { 
+                if(!isConfirmed) setUserAnswer(val); 
+            }; 
+            
+            const handleConfirm = () => { 
+                if(userAnswer === null) return; 
+                setIsConfirmed(true); 
+                if(userAnswer === current.isTrue) {
+                    setScore(s => s + 50);
+                } else {
+                    setScore(s => s - 10);
+                }
+            }; 
+            
+            const next = () => { 
+                if(currentIdx < gameItems.length - 1) { 
+                    setCurrentIdx(c => c+1); 
+                    setUserAnswer(null); 
+                    setIsConfirmed(false); 
+                } else { 
+                    setShowResult(true); 
+                } 
+            };
+
+            useEffect(() => {
+                if(showResult) {
+                    saveReport(score);
+                }
+            }, [showResult]);
+
+            if(!current && !showResult) return <div className="p-10 text-center text-slate-500 font-bold">Cargando preguntas...</div>;
+
+            if(showResult) return (
+                <div className="max-w-md mx-auto text-center p-12 bg-white dark:bg-slate-800 rounded-[3rem] shadow-2xl mt-10 animate-in zoom-in">
+                    <h2 className="text-3xl font-black mb-4 dark:text-white">Resultado Final</h2>
+                    <div className="mb-6">
+                        <p className="text-sm text-slate-500 uppercase tracking-wider font-bold">Puntuación Total</p>
+                        <p className="text-5xl font-black text-indigo-600 dark:text-indigo-400">{score}</p>
+                    </div>
+                    {isSaving && <div className="text-xs text-indigo-500 animate-pulse mb-6 font-bold">Guardando resultado...</div>}
+                    <button onClick={onBack} className="px-8 py-3 bg-indigo-600 text-white rounded-xl font-bold hover:bg-indigo-700 transition-colors shadow-lg">Volver</button>
+                </div>
+            );
+
+            return (
+                <div className="max-w-2xl mx-auto mt-10 animate-in slide-in-from-bottom-4">
+                    <div className="bg-white dark:bg-slate-800 p-10 rounded-[2rem] shadow-2xl space-y-8 relative">
+                        <div className="absolute top-6 right-8 font-mono font-bold text-indigo-600 dark:text-indigo-400">PTS: {score}</div>
+                        <span className="text-sm font-bold text-slate-400 uppercase tracking-widest">Pregunta {currentIdx + 1}/{gameItems.length}</span>
+                        <h3 className="text-2xl font-medium leading-relaxed dark:text-white min-h-[100px] flex items-center justify-center text-center">"{current.statement}"</h3>
+                        {!isConfirmed ? (
+                            <div className="grid grid-cols-2 gap-4">
+                                <button onClick={() => handleAnswer(true)} className={`py-6 rounded-xl font-black text-xl transition-all ${userAnswer === true ? 'bg-indigo-600 text-white ring-4 ring-indigo-200' : 'bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-200 hover:bg-slate-200'}`}>VERDADERO</button>
+                                <button onClick={() => handleAnswer(false)} className={`py-6 rounded-xl font-black text-xl transition-all ${userAnswer === false ? 'bg-indigo-600 text-white ring-4 ring-indigo-200' : 'bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-200 hover:bg-slate-200'}`}>FALSO</button>
                             </div>
-                        </div>
-                        <div className="flex flex-col gap-6 overflow-hidden">
-                            <div className="bg-indigo-600 p-6 rounded-[2.5rem] text-white shadow-2xl relative shrink-0">
-                                <h3 className="text-sm font-black mb-6 uppercase tracking-[0.2em] border-b border-white/10 pb-3 italic">CONCEPTOS</h3>
-                                <div className="space-y-3 overflow-y-auto max-h-[260px] pr-2 scrollbar-hide">
-                                    {items[cur].words.map(w => (
-                                        <div key={w} className={`flex items-center gap-3 font-bold text-sm transition-all duration-500 ${found.includes(w) ? 'opacity-30 line-through' : ''}`}>
-                                            <div className={`w-3.5 h-3.5 rounded-full border-2 ${found.includes(w) ? 'bg-white border-white' : 'border-white/30'}`} />
-                                            <span className="tracking-wide uppercase italic">{w}</span>
-                                        </div>
-                                    ))}
-                                </div>
+                        ) : (
+                            <div className={`p-6 rounded-xl text-center font-bold text-lg animate-in fade-in zoom-in ${userAnswer === current.isTrue ? 'bg-green-100 text-green-700 border border-green-200' : 'bg-red-100 text-red-700 border border-red-200'}`}>
+                                {userAnswer === current.isTrue ? '¡Correcto! (+50 pts)' : 'Incorrecto (-10 pts)'}
+                                {current.explanation && <p className="text-sm font-normal mt-2 opacity-80">{current.explanation}</p>}
                             </div>
-                            {found.length === items[cur].words.length && (
-                                <button onClick={() => cur < items.length - 1 ? setCur(cur + 1) : onBack()} className="w-full py-6 bg-green-500 text-white rounded-[2rem] font-black text-xl shadow-2xl hover:bg-green-400 uppercase italic">
-                                    {cur < items.length - 1 ? 'Siguiente Reto' : 'Finalizar Juego'}
-                                </button>
+                        )}
+                        <div className="flex justify-end">
+                            {!isConfirmed ? (
+                                <button disabled={userAnswer === null} onClick={handleConfirm} className="px-8 py-3 bg-indigo-600 disabled:opacity-50 text-white rounded-xl font-bold hover:bg-indigo-700 transition-colors">Confirmar</button>
+                            ) : (
+                                <button onClick={next} className="px-8 py-3 bg-indigo-600 text-white rounded-xl font-bold hover:bg-indigo-700 transition-colors">Siguiente</button>
                             )}
                         </div>
                     </div>
                 </div>
             );
         };
-
-        const ParejasReto = ({ levels, onBack }) => {
-            const [lv, setLv] = useState(0);
+        const MemoryGame = ({ data, onBack, user, subject, topic }) => {
             const [cards, setCards] = useState([]);
             const [flipped, setFlipped] = useState([]);
             const [matched, setMatched] = useState([]);
-            const [tries, setTries] = useState(0);
+            const [score, setScore] = useState(0);
+            const [startTime, setStartTime] = useState(Date.now());
+            const [isSaving, setIsSaving] = useState(false);
+            const [finished, setFinished] = useState(false);
 
             useEffect(() => {
-                const prepared = [];
-                levels[lv].elements.forEach((word, idx) => {
-                    prepared.push({ val: word, pairId: idx, id: `c-${idx}-a` });
-                    prepared.push({ val: word, pairId: idx, id: `c-${idx}-b` });
+                // Select only 6 pairs randomly
+                const subset = [...data].sort(() => 0.5 - Math.random()).slice(0, 6);
+                const d = [];
+                subset.forEach((item, i) => {
+                    d.push({ id: `t-${i}`, content: item.term, type: 'term', pairId: i });
+                    d.push({ id: `d-${i}`, content: item.definition, type: 'def', pairId: i });
                 });
-                setCards(prepared.sort(() => Math.random() - 0.5));
-                setFlipped([]); setMatched([]); setTries(0);
-            }, [lv]);
+                setCards(d.sort(() => Math.random() - 0.5));
+            }, [data]);
 
-            const onCardClick = (card) => {
-                if (flipped.length === 2 || matched.includes(card.id) || flipped.includes(card.id)) return;
-                const nf = [...flipped, card.id];
-                setFlipped(nf);
-                if (nf.length === 2) {
-                    setTries(t => t + 1);
-                    const c1 = cards.find(c => c.id === nf[0]);
-                    const c2 = cards.find(c => c.id === nf[1]);
-                    if (c1.pairId === c2.pairId) { setMatched(prev => [...prev, c1.id, c2.id]); setFlipped([]); }
-                    else { setTimeout(() => setFlipped([]), 1000); }
+            const formatTime = (seconds) => {
+                const h = Math.floor(seconds / 3600);
+                const m = Math.floor((seconds % 3600) / 60);
+                const s = seconds % 60;
+                return `${h.toString().padStart(2, '0')}:${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+            };
+
+            const saveReport = async (finalScore) => {
+                const timeSpent = Math.floor((Date.now() - startTime) / 1000);
+                const timeFormatted = formatTime(timeSpent);
+                setIsSaving(true);
+                try {
+                    await fetch(GOOGLE_SCRIPT_URL, {
+                        method: 'POST',
+                        body: JSON.stringify({
+                            type: 'report',
+                            report: {
+                                appId: getAppId(),
+                                user: user,
+                                subject: subject,
+                                topic: topic,
+                                game: 'pareja',
+                                score: finalScore,
+                                time: `'${timeFormatted}`
+                            }
+                        })
+                    });
+                } catch (e) {
+                    console.error("Error saving report", e);
+                } finally {
+                    setIsSaving(false);
                 }
             };
 
-            const win = matched.length === cards.length && cards.length > 0;
+            useEffect(() => {
+                if (finished) {
+                    saveReport(score);
+                }
+            }, [finished]);
+
+            const handleCardClick = (id) => {
+                if (flipped.length === 2 || matched.includes(id) || flipped.includes(id)) return;
+                
+                const newFlipped = [...flipped, id];
+                setFlipped(newFlipped);
+                
+                if (newFlipped.length === 2) {
+                    const c1 = cards.find(c => c.id === newFlipped[0]);
+                    const c2 = cards.find(c => c.id === newFlipped[1]);
+                    
+                    if (c1.pairId === c2.pairId && c1.type !== c2.type) {
+                        setMatched(prev => [...prev, c1.id, c2.id]);
+                        setFlipped([]);
+                        setScore(s => s + 50);
+                    } else {
+                        setScore(s => s - 10);
+                        setTimeout(() => setFlipped([]), 1000);
+                    }
+                }
+            };
+
+            useEffect(() => {
+                if (cards.length > 0 && matched.length === cards.length) {
+                    setFinished(true);
+                }
+            }, [matched, cards]);
+
+            if (finished) {
+                return (
+                    <div className="max-w-md mx-auto text-center p-12 bg-white dark:bg-slate-800 rounded-[3rem] shadow-2xl mt-10 animate-in zoom-in">
+                        <h2 className="text-3xl font-black mb-4 dark:text-white">¡Memoria Completada!</h2>
+                        <div className="mb-6">
+                            <p className="text-sm text-slate-500 uppercase tracking-wider font-bold">Puntuación Final</p>
+                            <p className="text-5xl font-black text-indigo-600 dark:text-indigo-400">{score}</p>
+                        </div>
+                        {isSaving && <div className="text-xs text-indigo-500 animate-pulse mb-6">Guardando resultado...</div>}
+                        <button onClick={onBack} className="px-8 py-3 bg-indigo-600 text-white rounded-xl font-bold hover:bg-indigo-700 transition-colors">Volver</button>
+                    </div>
+                );
+            }
 
             return (
-                <div className="w-screen h-[calc(100vh-140px)] flex flex-col px-6 space-y-4 animate-in-up overflow-hidden">
-                    <div className="flex justify-between items-center px-4 shrink-0">
-                        <div className="text-left">
-                            <h2 className="text-xl md:text-2xl font-black tracking-tighter text-slate-900 dark:text-white uppercase italic leading-none">{levels[lv].title}</h2>
-                            <p className="opacity-50 font-black uppercase text-[8px] tracking-[0.2em] text-slate-600 dark:text-indigo-300 italic mt-1 leading-none">MEMORIA VISUAL • NIVEL {lv + 1} / {levels.length}</p>
-                        </div>
-                        <div className="glass px-6 py-2 rounded-2xl border-b-2 border-indigo-600 flex gap-8 text-slate-900 dark:text-white shadow-lg bg-white/20 dark:bg-slate-900/40">
-                            <div className="flex flex-col items-center">
-                                <span className="text-lg font-black text-indigo-500 leading-none">{tries}</span> 
-                                <span className="text-[8px] uppercase font-black opacity-50 mt-1">Intentos</span>
-                            </div>
-                            <div className="flex flex-col items-center">
-                                <span className="text-lg font-black text-green-500 leading-none">{matched.length/2}</span> 
-                                <span className="text-[8px] uppercase font-black opacity-50 mt-1">Éxitos</span>
-                            </div>
-                        </div>
+                <div className="max-w-5xl mx-auto mt-8 animate-in fade-in">
+                    <div className="flex justify-between items-center mb-6 bg-white dark:bg-slate-800 p-4 rounded-2xl shadow-sm">
+                        <h3 className="font-bold text-slate-700 dark:text-slate-200">Encuentra las parejas</h3>
+                        <div className="font-mono text-xl font-black text-indigo-600 dark:text-indigo-400">PTS: {score}</div>
                     </div>
-                    
-                    <div className="flex-grow flex items-center justify-center relative overflow-hidden pb-10">
-                        <div className="h-full w-full grid grid-rows-3 grid-flow-col gap-4 auto-cols-[minmax(180px,1fr)] overflow-x-auto scrollbar-hide px-4" style={{ marginTop: '20px' }}>
-                            {cards.map(card => {
-                                const isF = flipped.includes(card.id) || matched.includes(card.id);
-                                const isM = matched.includes(card.id);
-                                return (
-                                    <div key={card.id} className="h-full min-w-[180px] perspective-1200" onClick={() => onCardClick(card)}>
-                                        <div className={`preserve-3d transition-transform duration-500 cursor-pointer`} 
-                                             style={{ 
-                                                transform: isF ? 'rotateY(180deg)' : 'rotateY(0deg)',
-                                                zIndex: isF ? 10 : 1 
-                                             }}>
-                                            {/* Cara frontal (PCB) */}
-                                            <div className="backface-hidden card-back-pcb rounded-[2rem] flex items-center justify-center border-2 border-white/10 shadow-xl">
-                                                <div className="w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center backdrop-blur-md">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 text-indigo-100/40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect></svg>
-                                                </div>
-                                            </div>
-                                            {/* Cara trasera (Contenido) - Aplicamos rotación y desplazamiento Z para Firefox */}
-                                            <div className={`backface-hidden rounded-[2rem] flex items-center justify-center text-center px-6 py-3 shadow-xl border-2 transition-all duration-500 ${isM ? 'bg-green-500/10 border-green-500 text-green-600 dark:text-green-400' : 'glass border-indigo-600 dark:border-indigo-600/20 bg-white dark:bg-slate-900 text-slate-900 dark:text-white'}`}
-                                                 style={{ transform: 'rotateY(180deg) translateZ(2px)' }}>
-                                                <span className={`font-black uppercase tracking-tighter leading-tight select-none relative z-20 ${card.val.length > 15 ? 'text-[10px]' : 'text-xs md:text-sm lg:text-base'}`}>
-                                                    {card.val}
-                                                </span>
-                                            </div>
+                    <div className="grid grid-cols-3 md:grid-cols-4 gap-4">
+                        {cards.map(card => {
+                            const isFlipped = flipped.includes(card.id) || matched.includes(card.id);
+                            return (
+                                <div key={card.id} onClick={() => handleCardClick(card.id)} className={`aspect-[4/3] cursor-pointer perspective-1000`}>
+                                    <div className={`relative w-full h-full duration-500 transform-style-preserve-3d transition-transform ${isFlipped ? 'rotate-y-180' : ''}`}>
+                                        <div className="absolute inset-0 backface-hidden bg-indigo-600 rounded-xl flex items-center justify-center text-white text-3xl font-bold shadow-lg border-2 border-indigo-400">
+                                            ?
+                                        </div>
+                                        <div className={`absolute inset-0 backface-hidden rotate-y-180 bg-white dark:bg-slate-800 rounded-xl flex items-center justify-center p-4 text-center text-sm font-bold shadow-lg border-2 ${matched.includes(card.id) ? 'border-green-500 text-green-600 dark:text-green-400' : 'border-indigo-100 dark:border-slate-600 text-slate-800 dark:text-white'}`}>
+                                            {card.content}
                                         </div>
                                     </div>
-                                );
-                            })}
-                        </div>
+                                </div>
+                            );
+                        })}
                     </div>
-
-                    {win && (
-                        <div className="absolute inset-0 z-50 flex items-center justify-center p-6 bg-slate-950/90 backdrop-blur-3xl">
-                            <div className="glass p-14 rounded-[4rem] text-center space-y-10 animate-in zoom-in border-4 border-indigo-500/20 shadow-3xl">
-                                <h3 className="text-6xl font-black tracking-tighter text-white uppercase italic leading-none">Superado</h3>
-                                <button onClick={() => { if (lv < levels.length - 1) setLv(lv + 1); else onBack(); }} className="bg-indigo-600 text-white px-24 py-6 rounded-3xl font-black text-2xl shadow-2xl hover:scale-105 transition-all uppercase italic">
-                                    {lv < levels.length - 1 ? 'SIGUIENTE NIVEL' : 'FINALIZAR'}
-                                </button>
-                            </div>
-                        </div>
-                    )}
                 </div>
             );
         };
 
-        // --- APP PRINCIPAL ---
+        const Login = ({ onLogin }) => {
+            const [name, setName] = useState('');
+            const [pass, setPass] = useState('');
+            const [selectedAvatar, setSelectedAvatar] = useState(null);
+            const [loading, setLoading] = useState(false);
+            const [error, setError] = useState(null);
 
-        const App = () => {
-            const [view, setView] = useState('HOME');
-            const [data, setData] = useState(null);
-            const [isAutoLoaded, setIsAutoLoaded] = useState(false);
-            const [theme, setTheme] = useState(() => localStorage.getItem('edupanel-theme') || 'dark');
-            const fileRef = useRef();
+            const isBedoya = name.trim() === 'Bedoya';
 
-            useEffect(() => {
-                fetch('datos.csv')
-                    .then(res => res.ok ? res.text() : Promise.reject())
-                    .then(text => { setData(parseRawData(text)); setIsAutoLoaded(true); })
-                    .catch(() => console.log("Cargue CSV."));
-            }, []);
+            const handleEnter = async () => {
+                if (!name.trim()) return;
+                
+                setError(null);
 
-            useEffect(() => { 
-                document.documentElement.className = theme; 
-                localStorage.setItem('edupanel-theme', theme); 
-            }, [theme]);
-            
-            const parseRawData = (text) => {
-                const lines = text.split(/\r?\n/);
-                const rosco = [], hangman = [], sopa = [], pareja = [];
-                for (let i = 1; i < lines.length; i++) {
-                    const line = lines[i].trim();
-                    if (!line || line.startsWith('#')) continue; 
-                    const cols = line.split(';').map(c => c.trim());
-                    const tipo = cols[0]?.toLowerCase();
+                // Admin Auth Flow
+                if (isBedoya) {
+                    if (!pass) {
+                        setError("⚠️ Introduce la contraseña.");
+                        return;
+                    }
 
-                    if (tipo === 'rosco' && cols.length >= 5) {
-                        rosco.push({ mode: cols[1], letter: cols[2], definition: cols[3], word: cols[4].toUpperCase() });
+                    setLoading(true);
+                    try {
+                        const response = await fetch(GOOGLE_SCRIPT_URL, {
+                            method: 'POST',
+                            body: JSON.stringify({ type: 'login', user: name, password: pass })
+                        });
+                        const json = await response.json();
+
+                        if (json.result === 'success') {
+                            onLogin(name, true, "👨‍🏫"); // Force Teacher Avatar for Admin
+                        } else {
+                            setError("🚫 Credenciales incorrectas.");
+                        }
+                    } catch (e) {
+                        console.error(e);
+                        setError("Error de conexión. Verifica la constante GOOGLE_SCRIPT_URL en el código.");
+                    } finally {
+                        setLoading(false);
                     }
-                    else if (tipo === 'ahorcado' && cols[1] && cols[2]) {
-                        hangman.push({ hint: cols[1], word: cols[2].toUpperCase() });
+                } else {
+                    // Regular Student Flow
+                    if (!selectedAvatar) {
+                        setError("⚠️ ¡Tienes que elegir un avatar para continuar!");
+                        return;
                     }
-                    else if (tipo === 'sopa' && cols[2]) {
-                        const ws = cols.slice(2).filter(w => w && w.length > 1).map(w => w.toUpperCase());
-                        if (ws.length) sopa.push({ title: cols[1] || "Conceptos", words: ws });
-                    }
-                    else if (tipo === 'pareja' && cols[2]) {
-                        const els = cols.slice(2).filter(e => e && e.length > 0);
-                        if (els.length > 0) pareja.push({ title: cols[1] || "Asociación", elements: els });
-                    }
+                    onLogin(name, false, selectedAvatar);
                 }
-                return { rosco, hangman, sopa, pareja };
             };
-
-            const downloadSampleCSV = () => {
-                const content = `rosco;empieza;A;Conjunto de instrucciones que sigue un ordenador;algoritmo
-rosco;empieza;B;Variable que solo puede tormar dos valores;booleana
-rosco;empieza;c;Lenguaje de programación muy extendido;c
-rosco;empieza;d;Palabra reservada que se utiliza para declarar una función en Python;def
-rosco;contiene;e;Elemento de memoria que guarda un valor;variable
-rosco;empieza;f;Plataforma de videos en línea;fuego
-rosco;empieza;g;Animal de compañia;gato
-rosco;empieza;h;Algo muy frio;hielo
-
-# JUEGO DEL AHORCADO
-ahorcado;Lenguaje de marcas para páginas web;HIPERTEXTO
-ahorcado;Editor de texto plano para desarrollo;NOTEPADPLUSPLUS
-
-# JUEGO DE LA SOPA DE LETRAS
-sopa;Formatos de archivo de audio;MP3;WAV;OGG;AAC;FLAC;M4A
-sopa;Formatos de archivo de video;MP4;AVI;MKV;MOV;WEBM;FLV
-
-# JUEGO DE LAS PAREJAS
-pareja;Lenguaje WEB;HTML;JAVASCRIPT;OL;UL;HEADER;FOOTER
-pareja;Hardware;TECLADO;RATON;PANTALLA;TORRE;PLACA;MICRO`;
-                const blob = new Blob([content], { type: 'text/csv;charset=utf-8;' });
-                const link = document.createElement("a");
-                link.href = URL.createObjectURL(blob);
-                link.setAttribute("download", "datos_ejemplo.csv");
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
-            };
-
-            const GameCard = ({ title, desc, icon, color, active, count, onClick }) => (
-                <button disabled={!active} onClick={onClick} className={`p-8 rounded-[3rem] text-left transition-all flex flex-col group h-full shadow-2xl relative overflow-hidden ${active ? 'glass bg-white dark:bg-slate-900 border-2 border-indigo-600/5 hover:border-indigo-600/40 hover:-translate-y-2' : 'opacity-10 grayscale border-dashed border-2 cursor-not-allowed'}`}>
-                    <div className={`w-16 h-16 ${color} rounded-[1.5rem] flex items-center justify-center text-4xl mb-6 shadow-2xl group-hover:scale-110 transition-all duration-500`}>{icon}</div>
-                    <h3 className="text-2xl font-black mb-2 tracking-tighter text-slate-900 dark:text-white uppercase italic">{title}</h3>
-                    <p className="text-[11px] opacity-60 mb-10 text-slate-600 dark:text-slate-400 font-medium leading-relaxed italic">{desc}</p>
-                    <div className="mt-auto pt-5 border-t border-slate-900/10 dark:border-white/10 flex justify-between items-center">
-                        <span className="text-[9px] font-black uppercase tracking-[0.2em] text-indigo-500">{active ? `${count} Entradas` : 'Repositorio Vacío'}</span>
-                        {active && <span className="text-2xl text-indigo-500 group-hover:translate-x-3 transition-all duration-500 font-bold">→</span>}
-                    </div>
-                </button>
-            );
 
             return (
-                <div className="min-h-screen flex flex-col font-sans transition-all duration-500 bg-slate-50 dark:bg-slate-950 overflow-hidden">
-                    <nav className="sticky top-0 z-50 glass border-b border-indigo-600/10 px-8 py-3.5 flex justify-between items-center shrink-0 bg-white/70 dark:bg-slate-950/70">
-                        <div onClick={() => setView('HOME')} className="flex items-center gap-4 cursor-pointer group">
-                            <div className="bg-indigo-600 p-3 rounded-2xl text-white shadow-xl group-hover:scale-110 transition-all">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
-                            </div>
-                            <div>
-                                <h1 className="text-xl font-black tracking-tighter text-slate-900 dark:text-white leading-none uppercase italic">EduPanel v8.2</h1>
-                                <span className="text-[9px] uppercase font-black tracking-[0.4em] text-indigo-500 leading-none tracking-widest">Módulo Académico</span>
-                            </div>
+                <div className="flex flex-col items-center justify-center min-h-[85vh] p-4 relative overflow-hidden">
+                    
+                    {/* Animated Background */}
+                    <div className="absolute inset-0 overflow-hidden -z-10 bg-slate-50 dark:bg-slate-950">
+                        <div className="absolute top-0 -left-4 w-72 h-72 bg-purple-400 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob dark:bg-purple-900/40"></div>
+                        <div className="absolute top-0 -right-4 w-72 h-72 bg-indigo-400 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob animation-delay-2000 dark:bg-indigo-900/40"></div>
+                        <div className="absolute -bottom-8 left-20 w-72 h-72 bg-pink-400 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob animation-delay-4000 dark:bg-pink-900/40"></div>
+                        <div className="absolute inset-0 bg-grid-pattern opacity-[0.03] dark:opacity-[0.05]"></div>
+                    </div>
+
+                    <div className="glass p-10 md:p-12 rounded-[2.5rem] max-w-2xl w-full text-center space-y-8 animate-in fade-in zoom-in shadow-2xl relative backdrop-blur-2xl border border-white/40 dark:border-white/10">
+                        <div className="space-y-2">
+                            <div className="text-6xl mb-4 animate-bounce-short">🎓</div>
+                            <h2 className="text-4xl font-black text-slate-900 dark:text-white tracking-tight">¡Bienvenido!</h2>
+                            <p className="text-lg text-slate-500 dark:text-slate-400 font-medium">Tu aula virtual de aprendizaje</p>
                         </div>
-                        <button onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')} className="p-3.5 glass rounded-2xl hover:scale-110 transition-all text-xl shadow-lg border-2 border-indigo-600/10">{theme === 'dark' ? '☀️' : '🌙'}</button>
-                    </nav>
 
-                    <main className="flex-grow flex items-center justify-center p-4 overflow-hidden">
-                        {view === 'HOME' ? (
-                            <div className="container mx-auto px-6 w-full max-w-7xl grid grid-cols-1 lg:grid-cols-12 gap-8 overflow-y-auto max-h-[85vh] scrollbar-hide py-4">
-                                {!isAutoLoaded && (
-                                    <div className="lg:col-span-4 glass p-10 rounded-[4rem] shadow-3xl space-y-8 border-indigo-600/5 border-2 h-fit bg-white/30 dark:bg-slate-900/30">
-                                        <h2 className="text-3xl font-black tracking-tighter text-slate-900 dark:text-white italic uppercase leading-none">Repositorio</h2>
-                                        <p className="text-[10px] opacity-60 text-slate-700 dark:text-indigo-100 font-bold uppercase tracking-widest leading-relaxed">Suba el archivo .CSV para activar los juegos.</p>
-                                        
-                                        <div className="space-y-4">
-                                            <button onClick={() => fileRef.current.click()} className="w-full py-5 bg-indigo-600 text-white rounded-[1.5rem] font-black text-lg shadow-2xl flex items-center justify-center gap-4 hover:scale-105 active:scale-95 transition-all group italic uppercase tracking-tighter">
-                                                Seleccionar CSV
-                                            </button>
-                                            <button onClick={downloadSampleCSV} className="w-full py-4 border-2 border-indigo-600/20 text-indigo-600 dark:text-indigo-400 rounded-[1.5rem] font-black text-xs shadow-xl flex items-center justify-center gap-3 hover:bg-indigo-600/5 transition-all uppercase italic">
-                                                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>
-                                                Descargar Ejemplo
-                                            </button>
-                                        </div>
+                        {/* Name Input */}
+                        <div className="space-y-4 max-w-sm mx-auto w-full">
+                            <input 
+                                type="text" 
+                                className="w-full p-4 rounded-2xl bg-white/60 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 focus:ring-4 focus:ring-indigo-500/20 focus:border-indigo-500 outline-none text-center text-xl font-bold placeholder:font-normal dark:text-white transition-all shadow-sm"
+                                placeholder="Escribe tu Nombre"
+                                value={name}
+                                onChange={e => { setName(e.target.value); setError(null); }}
+                                onKeyDown={e => e.key === 'Enter' && !loading && handleEnter()}
+                                autoFocus
+                            />
+                            
+                            {/* Conditional Password Field for Bedoya */}
+                            {isBedoya && (
+                                <div className="animate-in fade-in slide-in-from-top-2">
+                                    <input 
+                                        type="password" 
+                                        className="w-full p-4 rounded-2xl bg-white/60 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 focus:ring-4 focus:ring-indigo-500/20 focus:border-indigo-500 outline-none text-center text-xl font-bold placeholder:font-normal dark:text-white transition-all shadow-sm"
+                                        placeholder="Contraseña de Admin"
+                                        value={pass}
+                                        onChange={e => setPass(e.target.value)}
+                                        onKeyDown={e => e.key === 'Enter' && !loading && handleEnter()}
+                                    />
+                                </div>
+                            )}
+                        </div>
 
-                                        <input type="file" ref={fileRef} className="hidden" accept=".csv" onChange={e => { const file = e.target.files[0]; if (file) { const reader = new FileReader(); reader.onload = (ev) => setData(parseRawData(ev.target.result)); reader.readAsText(file); } }} />
-                                    </div>
-                                )}
-                                <div className={`${isAutoLoaded ? 'max-w-6xl mx-auto col-span-12' : 'lg:col-span-8'} grid sm:grid-cols-2 gap-6 w-full`}>
-                                    {(data?.rosco?.length > 0 || !data) && <GameCard title="Rosco" desc="Léxico de la A a la Z. Blindado a 5 vidas." icon="⭕" color="bg-rose-600" active={data?.rosco?.length > 0} count={data?.rosco?.length || 0} onClick={() => setView('ROSCO')} />}
-                                    {(data?.hangman?.length > 0 || !data) && <GameCard title="Ahorcado" desc="Identificación mediante pistas visuales." icon="☠️" color="bg-amber-600" active={data?.hangman?.length > 0} count={data?.hangman?.length || 0} onClick={() => setView('AHORCADO')} />}
-                                    {(data?.sopa?.length > 0 || !data) && <GameCard title="Sopa" desc="Búsqueda avanzada de conceptos clave." icon="🧩" color="bg-sky-600" active={data?.sopa?.length > 0} count={data?.sopa?.length || 0} onClick={() => setView('SOPA')} />}
-                                    {(data?.pareja?.length > 0 || !data) && <GameCard title="Parejas" desc="Memoria visual y asociación técnica." icon="🔗" color="bg-indigo-600" active={data?.pareja?.length > 0} count={data?.pareja?.length || 0} onClick={() => setView('PAREJAS')} />}
+                        {/* Avatar Grid - Hidden for Bedoya */}
+                        {!isBedoya && (
+                            <div className="space-y-3 animate-in fade-in slide-in-from-bottom-4">
+                                <p className="text-xs font-bold uppercase tracking-widest text-slate-400">Elige tu Avatar</p>
+                                <div className="grid grid-cols-6 sm:grid-cols-8 gap-2 p-3 bg-white/40 dark:bg-slate-900/40 rounded-3xl max-h-[220px] overflow-y-auto custom-scrollbar border border-white/20 dark:border-white/5 shadow-inner">
+                                    {AVATARS.map((emoji, idx) => (
+                                        <button
+                                            key={idx}
+                                            onClick={() => setSelectedAvatar(emoji)}
+                                            className={`aspect-square flex items-center justify-center text-2xl rounded-xl transition-all duration-200 ${selectedAvatar === emoji ? 'ring-4 ring-indigo-500 ring-offset-2 dark:ring-offset-slate-900 scale-110 bg-white dark:bg-slate-800' : 'bg-white/50 dark:bg-slate-800/50 hover:bg-white dark:hover:bg-slate-700 hover:scale-105'}`}
+                                        >
+                                            {emoji}
+                                        </button>
+                                    ))}
                                 </div>
                             </div>
-                        ) : view === 'ROSCO' ? <Rosco roscoItems={data.rosco} onBack={() => setView('HOME')} />
-                          : view === 'AHORCADO' ? <Ahorcado items={data.hangman} onBack={() => setView('HOME')} />
-                          : view === 'SOPA' ? <Sopa items={data.sopa} onBack={() => setView('HOME')} />
-                          : view === 'PAREJAS' ? <ParejasReto levels={data.pareja} onBack={() => setView('HOME')} />
-                          : null}
-                    </main>
+                        )}
 
-                    <footer className="py-4 text-center text-[10px] font-black uppercase tracking-[0.5em] opacity-20 italic text-slate-900 dark:text-white shrink-0">EduPanel v8.2 • Gestión Educativa Suite</footer>
+                        {error && <div className="text-red-500 font-bold text-sm bg-red-50 dark:bg-red-900/20 p-3 rounded-xl animate-pulse border border-red-100 dark:border-red-900/30">{error}</div>}
+
+                        <button 
+                            disabled={!name || loading}
+                            onClick={handleEnter}
+                            className="w-full max-w-sm mx-auto py-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-2xl font-bold text-lg hover:shadow-lg hover:shadow-indigo-500/30 hover:-translate-y-0.5 active:translate-y-0 transition-all disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:shadow-none flex justify-center items-center gap-2"
+                        >
+                            {loading && <svg className="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>}
+                            {loading ? "Verificando..." : (isBedoya ? "Entrar al Panel" : "Entrar a los juegos")}
+                        </button>
+                    </div>
+                </div>
+            )
+        }
+
+        const Home = ({ gameData, onUpload, onSelectGame, onDownloadSample, user }) => {
+            const fileInputRef = useRef(null);
+            const [error, setError] = useState(null);
+
+            const handleFileChange = (e) => {
+                const file = e.target.files?.[0];
+                if (!file) return;
+                const reader = new FileReader();
+                reader.onload = (event) => {
+                    try {
+                        const data = parseCSV(event.target?.result);
+                        onUpload(data);
+                        setError(null);
+                    } catch (err) { setError("Formato CSV inválido."); console.error(err); }
+                };
+                reader.readAsText(file);
+            };
+
+            return (
+                <div className="max-w-6xl mx-auto space-y-12 animate-in fade-in slide-in-from-bottom-4 duration-700">
+                    <section className="text-center space-y-4 pt-10">
+                        <h2 className="text-6xl md:text-7xl font-black tracking-tighter text-slate-900 dark:text-white">
+                            Aprendizaje <span className="text-indigo-500 italic">Interactivo</span>
+                        </h2>
+                        <p className="text-xl text-slate-500 dark:text-slate-400 max-w-2xl mx-auto">
+                            {user ? `¡Vamos a aprender, ${user}!` : "Sube tus contenidos y reta a tus alumnos."}
+                        </p>
+                    </section>
+
+                    <div className="grid lg:grid-cols-12 gap-8 items-start">
+                        {/* Panel lateral condicional */}
+                        {!gameData && (
+                            <div className="lg:col-span-4 bg-white dark:bg-slate-900 p-8 rounded-[2.5rem] border border-slate-200 dark:border-slate-800 shadow-2xl space-y-8">
+                                <div className="space-y-2">
+                                    <h3 className="text-2xl font-extrabold">Carga de Datos</h3>
+                                    <p className="text-sm text-slate-500">Sube tu CSV para generar los juegos automáticamente.</p>
+                                </div>
+                                <div className="space-y-4">
+                                    <button onClick={() => fileInputRef.current?.click()} className="w-full py-4 bg-indigo-600 hover:bg-indigo-700 text-white rounded-2xl font-bold shadow-xl shadow-indigo-600/30 transition-all flex items-center justify-center gap-3 active:scale-95">
+                                        📂 Subir CSV
+                                    </button>
+                                    <input type="file" ref={fileInputRef} className="hidden" accept=".csv" onChange={handleFileChange} />
+                                    <button onClick={onDownloadSample} className="w-full py-3.5 text-xs font-black uppercase tracking-widest text-indigo-500 border-2 border-indigo-500/10 rounded-2xl hover:bg-indigo-500/5 transition-all">
+                                        Descargar Plantilla
+                                    </button>
+                                </div>
+                                {error && <div className="text-red-500 text-sm font-bold bg-red-100 p-3 rounded-lg">{error}</div>}
+                            </div>
+                        )}
+
+                        <div className={gameData ? "lg:col-span-12 grid sm:grid-cols-2 md:grid-cols-3 gap-6" : "lg:col-span-8 grid sm:grid-cols-2 gap-6"}>
+                            {[
+                                { id: 'ROSCO', title: 'Rosco', icon: '⭕', color: 'bg-rose-500', count: gameData?.rosco?.length, subtitle: 'palabras disponibles' },
+                                { id: 'HANGMAN', title: 'Ahorcado', icon: '☠️', color: 'bg-amber-500', count: gameData?.hangman?.length, subtitle: 'palabras disponibles' },
+                                { id: 'TRUE_FALSE', title: 'Verdadero/Falso', icon: '✅', color: 'bg-purple-500', count: gameData?.trueFalse?.length, subtitle: 'preguntas' },
+                                { id: 'MEMORY', title: 'Memoria', icon: '🧠', color: 'bg-orange-500', count: gameData?.memory?.length, subtitle: 'parejas' }
+                            ].map(g => (
+                                <button 
+                                    key={g.id}
+                                    disabled={!g.count}
+                                    onClick={() => onSelectGame(g.id)}
+                                    className={`p-8 rounded-[2.5rem] text-left border transition-all flex flex-col h-full group relative overflow-hidden ${!g.count ? 'opacity-40 grayscale bg-slate-100 dark:bg-slate-900' : 'bg-white dark:bg-slate-900 hover:border-indigo-500/50 hover:shadow-2xl hover:-translate-y-1'}`}
+                                >
+                                    <div className={`w-14 h-14 ${g.color} rounded-2xl flex items-center justify-center text-2xl shadow-lg mb-6`}>{g.icon}</div>
+                                    <h4 className="text-2xl font-black mb-1 dark:text-white">{g.title}</h4>
+                                    <p className="text-sm text-slate-500">{g.count || 0} {g.subtitle}</p>
+                                </button>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            );
+        };
+
+        const App = () => {
+            const [view, setView] = useState('LOADING'); 
+            const [gameData, setGameData] = useState(null);
+            const [user, setUser] = useState(null);
+            const [userAvatar, setUserAvatar] = useState(null);
+            const [isAdmin, setIsAdmin] = useState(false);
+            const [theme, setTheme] = useState('dark');
+            const [appId, setAppId] = useState('default');
+            const [activeConfig, setActiveConfig] = useState({ disabledCats: [], disabledSits: [] });
+
+            useLayoutEffect(() => {
+                const isDark = theme === 'dark';
+                document.documentElement.classList.toggle('dark', isDark);
+            }, [theme]);
+
+            useEffect(() => {
+                const currentAppId = getAppId();
+                setAppId(currentAppId);
+
+                const localConfigStr = localStorage.getItem('edupanel_multitenant_config');
+                if (localConfigStr) {
+                    try {
+                        const localConfig = JSON.parse(localConfigStr);
+                        if (localConfig[currentAppId]) {
+                            setActiveConfig(localConfig[currentAppId]);
+                        }
+                    } catch(e) { console.error(e); }
+                }
+
+                fetch(`${GOOGLE_SCRIPT_URL}?type=config&_t=${Date.now()}`)
+                    .then(res => res.json())
+                    .then(data => {
+                        if (data && !data.error) {
+                            localStorage.setItem('edupanel_multitenant_config', JSON.stringify(data));
+                            if (data[currentAppId]) {
+                                setActiveConfig(data[currentAppId]);
+                            }
+                        }
+                    })
+                    .catch(err => console.log("Config load failed or offline", err));
+
+                const loadInitialData = async () => {
+                    try {
+                        const response = await fetch('./datos.csv');
+                        if (!response.ok) throw new Error('No data file');
+                        const text = await response.text();
+                        const data = parseCSV(text);
+                        setGameData(data);
+                        setView('LOGIN');
+                    } catch (err) {
+                        console.log("Auto-load failed, fallback to manual", err);
+                        setView('LOGIN'); 
+                    }
+                };
+                loadInitialData();
+            }, []);
+
+            const filteredGameData = useMemo(() => {
+                if (!gameData) return null;
+                
+                const currentSubject = gameData.subject;
+                const currentTopic = gameData.topic;
+
+                if (activeConfig.disabledCats?.includes(currentSubject)) return null;
+                if (activeConfig.disabledSits?.includes(currentTopic)) return null;
+
+                return gameData;
+            }, [gameData, activeConfig]);
+
+            const toggleTheme = () => setTheme(prev => prev === 'light' ? 'dark' : 'light');
+            
+            const handleUpload = (data) => {
+                setGameData(data);
+            };
+            
+            const handleLogin = (username, adminStatus, avatar) => {
+                setUser(username);
+                setIsAdmin(adminStatus);
+                setUserAvatar(avatar);
+                if (adminStatus) {
+                    setView('ADMIN');
+                } else {
+                    setView('HOME');
+                }
+            };
+
+            const handleLogout = () => {
+                setUser(null);
+                setUserAvatar(null);
+                setIsAdmin(false);
+                setView('LOGIN');
+            };
+            
+            const downloadSample = () => {
+                const blob = new Blob([SAMPLE_CSV], { type: 'text/csv;charset=utf-8;' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'plantilla_juegos.csv';
+                a.click();
+            };
+
+            const renderContent = () => {
+                const dataToUse = isAdmin ? gameData : filteredGameData;
+                
+                switch(view) {
+                    case 'LOADING': return <div className="flex h-screen items-center justify-center text-indigo-500 animate-pulse font-bold text-xl">Cargando recursos...</div>;
+                    case 'LOGIN': return <Login onLogin={handleLogin} />;
+                    case 'ADMIN': return <AdminDashboard data={gameData} appId={appId} onLogout={handleLogout} />;
+                    case 'ROSCO': return <RoscoGame data={dataToUse?.rosco || []} onBack={() => setView('HOME')} user={user} subject={gameData?.subject} topic={gameData?.topic} />;
+                    case 'HANGMAN': return <HangmanGame data={dataToUse?.hangman || []} onBack={() => setView('HOME')} user={user} subject={gameData?.subject} topic={gameData?.topic} />;
+                    case 'TRUE_FALSE': return <TrueFalseGame data={dataToUse?.trueFalse || []} onBack={() => setView('HOME')} user={user} subject={gameData?.subject} topic={gameData?.topic} />;
+                    case 'MEMORY': return <MemoryGame data={dataToUse?.memory || []} onBack={() => setView('HOME')} user={user} subject={gameData?.subject} topic={gameData?.topic} />;
+                    default: 
+                        if (!isAdmin && !dataToUse && gameData) {
+                            return (
+                                <div className="flex flex-col items-center justify-center min-h-[60vh] text-center space-y-4 animate-in fade-in zoom-in">
+                                    <div className="text-8xl mb-4">🔒</div>
+                                    <h2 className="text-3xl font-black text-slate-800 dark:text-white tracking-tight">Contenido no disponible</h2>
+                                    <p className="text-lg text-slate-500 max-w-md mx-auto">Tu profesor ha desactivado estas actividades temporalmente para el grupo actual ({appId}).</p>
+                                    <button onClick={handleLogout} className="mt-8 px-6 py-3 bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 rounded-xl font-bold transition-all">Volver</button>
+                                </div>
+                            );
+                        }
+                        return <Home gameData={dataToUse} onUpload={handleUpload} onSelectGame={setView} onDownloadSample={downloadSample} user={user} />;
+                }
+            };
+
+            return (
+                <div className="flex flex-col min-h-screen">
+                    {view !== 'ADMIN' && view !== 'LOADING' && view !== 'LOGIN' && (
+                        <Navbar 
+                            theme={theme} 
+                            onToggleTheme={toggleTheme} 
+                            currentView={view} 
+                            onGoHome={() => isAdmin ? setView('ADMIN') : setView('HOME')} 
+                            onLogin={() => isAdmin ? setView('ADMIN') : alert('Acceso restringido a Administrador')} 
+                            onLogout={handleLogout}
+                            user={user} 
+                            userAvatar={userAvatar}
+                            gameData={gameData}
+                            isAdmin={isAdmin}
+                        />
+                    )}
+                    <main className="flex-grow container mx-auto px-4 py-8">
+                        {renderContent()}
+                    </main>
                 </div>
             );
         };
@@ -705,5 +1847,6 @@ pareja;Hardware;TECLADO;RATON;PANTALLA;TORRE;PLACA;MICRO`;
         const root = ReactDOM.createRoot(document.getElementById('root'));
         root.render(<App />);
     </script>
+<script type="module" src="/index.tsx"></script>
 </body>
 </html>

@@ -13,7 +13,6 @@ export interface MemoryPair {
 export interface TrueFalseItem {
   statement: string;
   isTrue: boolean;
-  // Added optional explanation property to resolve type errors in TrueFalseGame.tsx
   explanation?: string;
 }
 
@@ -33,6 +32,15 @@ export interface SopaItem {
   title: string;
 }
 
+export interface ClasificadorItem {
+  title: string;
+  cat1: string;
+  cat2: string;
+  item: string;
+  target: string;
+  time: number;
+}
+
 export interface GameData {
   subject: string;
   topic: string;
@@ -42,9 +50,10 @@ export interface GameData {
   rosco: RoscoItem[];
   hangman: HangmanItem[];
   sopa: SopaItem[];
+  clasificador: ClasificadorItem[];
 }
 
-export type ViewState = 'HOME' | 'QUIZ' | 'MEMORY' | 'TRUE_FALSE' | 'ROSCO' | 'SOPA' | 'HANGMAN';
+export type ViewState = 'HOME' | 'QUIZ' | 'MEMORY' | 'TRUE_FALSE' | 'ROSCO' | 'SOPA' | 'HANGMAN' | 'CLASIFICADOR';
 
 export enum Theme {
   LIGHT = 'light',
