@@ -1,70 +1,312 @@
 # JUEGO DEL ROSCO
-Tecnología y Digitalización 2º;La Madera;rosco;empieza;A;Madera fabricada con virutas prensadas con cola;aglomerado
-Tecnología y Digitalización 2º;La Madera;rosco;empieza;B;Herramienta manual que taladra agujeros pequeños;barrena
-Tecnología y Digitalización 2º;La Madera;rosco;empieza;C;Madera fabricada con chapas finas pegadas;contrachapado
-Tecnología y Digitalización 2º;La Madera;rosco;empieza;D;Propiedad que relaciona la masa y el volumen;densidad
-Tecnología y Digitalización 2º;La Madera;rosco;empieza;E;Herramienta que elimina mucha madera rápidamente;escofina
-Tecnología y Digitalización 2º;La Madera;rosco;contiene;F;Tablero de fibra ideal para pintar;mdf
-Tecnología y Digitalización 2º;La Madera;rosco;empieza;G;Herramientas móviles para sujetar piezas;gatos
-Tecnología y Digitalización 2º;La Madera;rosco;empieza;H;Factor característico de los climas donde crecen maderas tropicales;humedad
-Tecnología y Digitalización 2º;La Madera;rosco;contiene;I;Uno de los compuestos principales de la madera junto a la celulosa;lignina
-Tecnología y Digitalización 2º;La Madera;rosco;contiene;J;Herramienta que se usa para el acabado final;lija
-Tecnología y Digitalización 2º;La Madera;rosco;empieza;L;Herramienta que da un acabado más suave que la escofina;lima
-Tecnología y Digitalización 2º;La Madera;rosco;empieza;M;Herramienta que se usa para medidas largas;metro
-Tecnología y Digitalización 2º;La Madera;rosco;empieza;N;Material que se encuentra directamente en la naturaleza;natural
-Tecnología y Digitalización 2º;La Madera;rosco;contiene;O;Nombre del ejemplo de madera dura;roble
-Tecnología y Digitalización 2º;La Madera;rosco;empieza;P;Ejemplo de madera blanda;pino
-Tecnología y Digitalización 2º;La Madera;rosco;empieza;Q;Tipo de unión permanente que proporciona la cola blanca;quimica
-Tecnología y Digitalización 2º;La Madera;rosco;empieza;R;Acción de plantar árboles para que la madera sea renovable;reforestacion
-Tecnología y Digitalización 2º;La Madera;rosco;empieza;S;Herramienta que hace cortes rectos en maderas gruesas;serrucho
-Tecnología y Digitalización 2º;La Madera;rosco;empieza;T;Parte del árbol de donde se obtiene la madera principalmente;tronco
-Tecnología y Digitalización 2º;La Madera;rosco;contiene;U;Compuesto principal de la madera;celulosa
-Tecnología y Digitalización 2º;La Madera;rosco;empieza;V;Dirección en la que la madera tiene mayor resistencia;veta
+Creación Digital y Pensamiento Computacional;Ciencia de datos y simulación;rosco;empieza;A;Fase donde se aplican algoritmos para encontrar tendencias;algoritmos
+Creación Digital y Pensamiento Computacional;Ciencia de datos y simulación;rosco;empieza;B;Fenómeno caracterizado por volúmenes masivos de datos;bigdata
+Creación Digital y Pensamiento Computacional;Ciencia de datos y simulación;rosco;empieza;C;Entorno en la nube para ejecutar código Python;colab
+Creación Digital y Pensamiento Computacional;Ciencia de datos y simulación;rosco;empieza;D;Tipo de datos públicos como los de empleo ofrecidos por la administración;demograficos
+Creación Digital y Pensamiento Computacional;Ciencia de datos y simulación;rosco;empieza;E;Medida de seguridad importante para proteger los datos;encriptacion
+Creación Digital y Pensamiento Computacional;Ciencia de datos y simulación;rosco;empieza;F;Formación que requiere el talento para gestionar Big Data;continua
+Creación Digital y Pensamiento Computacional;Ciencia de datos y simulación;rosco;empieza;G;Normativa que regula la protección de datos y privacidad;gdpr
+Creación Digital y Pensamiento Computacional;Ciencia de datos y simulación;rosco;empieza;H;Rastro de datos que deja una persona al navegar por internet;huella
+Creación Digital y Pensamiento Computacional;Ciencia de datos y simulación;rosco;empieza;I;Institución española ejemplo de proveedor de Open Data;ine
+Creación Digital y Pensamiento Computacional;Ciencia de datos y simulación;rosco;empieza;J;Formato de datos flexible y jerárquico;json
+Creación Digital y Pensamiento Computacional;Ciencia de datos y simulación;rosco;empieza;L;Fase del análisis donde se eliminan errores y duplicados;limpieza
+Creación Digital y Pensamiento Computacional;Ciencia de datos y simulación;rosco;empieza;M;Librería de Python para crear gráficos y visualizaciones;matplotlib
+Creación Digital y Pensamiento Computacional;Ciencia de datos y simulación;rosco;empieza;N;Librería que proporciona soporte para grandes matrices y cálculos;numpy
+Creación Digital y Pensamiento Computacional;Ciencia de datos y simulación;rosco;empieza;O;Concepto que permite acceder a datos públicos de la administración;opendata
+Creación Digital y Pensamiento Computacional;Ciencia de datos y simulación;rosco;empieza;P;Librería para manipulación y análisis de datos estructurados;pandas
+Creación Digital y Pensamiento Computacional;Ciencia de datos y simulación;rosco;empieza;R;Primer paso del proceso de análisis desde fuentes fiables;recoleccion
+Creación Digital y Pensamiento Computacional;Ciencia de datos y simulación;rosco;contiene;S;Objetivo de romperlos en colaboración para tener una visión unificada;silos
+Creación Digital y Pensamiento Computacional;Ciencia de datos y simulación;rosco;empieza;T;Herramienta de Google para concienciar sobre la privacidad;takeout
+Creación Digital y Pensamiento Computacional;Ciencia de datos y simulación;rosco;empieza;U;Visión que se obtiene al romper silos en proyectos de datos;unificada
+Creación Digital y Pensamiento Computacional;Ciencia de datos y simulación;rosco;empieza;V;Capacidad de transformar datos en beneficio en las 7 V;valor
+Creación Digital y Pensamiento Computacional;Ciencia de datos y simulación;rosco;contiene;X;Formato usado comúnmente para intercambio de información estructurada;xml
+Creación Digital y Pensamiento Computacional;Ciencia de datos y simulación;rosco;contiene;Y;Lenguaje líder en ciencia de datos por su simplicidad;python
+Creación Digital y Pensamiento Computacional;Ciencia de datos y simulación;rosco;contiene;Z;Acción de presentar datos de forma comprensible para encontrar patrones;visualizacion
 # JUEGO DEL AHORCADO
-Tecnología y Digitalización 2º;La Madera;ahorcado;Madera formada por chapas finas pegadas;CONTRACHAPADO
-Tecnología y Digitalización 2º;La Madera;ahorcado;Herramienta para eliminar mucha madera rapido;ESCOFINA
-Tecnología y Digitalización 2º;La Madera;ahorcado;Proceso que garantiza que la madera sea renovable;REFORESTACION
-# JUEGO DE LA SOPA DE LETRAS
-Tecnología y Digitalización 2º;La Madera;sopa;Tipos de madera;PINO;ROBLE;CAOBA;AGLOMERADO;CONTRACHAPADO;MDF
-Tecnología y Digitalización 2º;La Madera;sopa;Herramientas de corte y acabado;LIJA;LIMA;SERRUCHO;SEGUETA;ESCOFINA;BARRENA
-Tecnología y Digitalización 2º;La Madera;sopa;Conceptos tecnicos;VETA;TRONCO;CELULOSA;LIGNINA;DENSIDAD;REFORESTACION
+Creación Digital y Pensamiento Computacional;Ciencia de datos y simulación;ahorcado;Librería para manipulación de datos estructurados;PANDAS
+Creación Digital y Pensamiento Computacional;Ciencia de datos y simulación;ahorcado;Unidad de medida de volumen en Big Data;PETABYTES
+Creación Digital y Pensamiento Computacional;Ciencia de datos y simulación;ahorcado;Riesgo ético mencionado en el texto;PRIVACIDAD
 # JUEGO DE LAS PAREJAS
-Tecnología y Digitalización 2º;La Madera;pareja;Maderas y clasificacion;PINO;BLANDA;ROBLE;DURA;CAOBA;TROPICAL
-Tecnología y Digitalización 2º;La Madera;pareja;Herramientas de medida;METRO;LONGITUD;ESCUADRA;ANGULOS;COMPAS;CIRCULOS
-Tecnología y Digitalización 2º;La Madera;pareja;Tecnicas de union;CLAVOS;MARTILLO;TORNILLOS;DESTORNILLADOR;COLA;SECADO
-# JUEGO DE CLASIFICADOR (BUCKETS)
-Tecnología y Digitalización 2º;La Madera;clasificador;Natural vs Procesada;Natural;Procesada;Pino;Natural
-Tecnología y Digitalización 2º;La Madera;clasificador;Natural vs Procesada;Natural;Procesada;Roble;Natural
-Tecnología y Digitalización 2º;La Madera;clasificador;Natural vs Procesada;Natural;Procesada;Caoba;Natural
-Tecnología y Digitalización 2º;La Madera;clasificador;Natural vs Procesada;Natural;Procesada;Tronco;Natural
-Tecnología y Digitalización 2º;La Madera;clasificador;Natural vs Procesada;Natural;Procesada;Aglomerado;Procesada
-Tecnología y Digitalización 2º;La Madera;clasificador;Natural vs Procesada;Natural;Procesada;Contrachapado;Procesada
-Tecnología y Digitalización 2º;La Madera;clasificador;Natural vs Procesada;Natural;Procesada;MDF;Procesada
-Tecnología y Digitalización 2º;La Madera;clasificador;Natural vs Procesada;Natural;Procesada;Tablero de fibra;Procesada
-Tecnología y Digitalización 2º;La Madera;clasificador;Natural vs Procesada;Natural;Procesada;Virutas prensadas;Procesada
-Tecnología y Digitalización 2º;La Madera;clasificador;Natural vs Procesada;Natural;Procesada;Chapas pegadas;Procesada
-Tecnología y Digitalización 2º;La Madera;clasificador;Duras vs Blandas;Dura;Blanda;Roble;Dura
-Tecnología y Digitalización 2º;La Madera;clasificador;Duras vs Blandas;Dura;Blanda;Hoja caduca;Dura
-Tecnología y Digitalización 2º;La Madera;clasificador;Duras vs Blandas;Dura;Blanda;Crecimiento lento;Dura
-Tecnología y Digitalización 2º;La Madera;clasificador;Duras vs Blandas;Dura;Blanda;Mas densas;Dura
-Tecnología y Digitalización 2º;La Madera;clasificador;Duras vs Blandas;Dura;Blanda;Pino;Blanda
-Tecnología y Digitalización 2º;La Madera;clasificador;Duras vs Blandas;Dura;Blanda;Coniferas;Blanda
-Tecnología y Digitalización 2º;La Madera;clasificador;Duras vs Blandas;Dura;Blanda;Crecimiento rapido;Blanda
-Tecnología y Digitalización 2º;La Madera;clasificador;Duras vs Blandas;Dura;Blanda;Barata y sensible;Blanda
-Tecnología y Digitalización 2º;La Madera;clasificador;Herramientas;Corte;Acabado;Serrucho;Corte
-Tecnología y Digitalización 2º;La Madera;clasificador;Herramientas;Corte;Acabado;Segueta;Corte
-Tecnología y Digitalización 2º;La Madera;clasificador;Herramientas;Corte;Acabado;Serrucho de costilla;Corte
-Tecnología y Digitalización 2º;La Madera;clasificador;Herramientas;Corte;Acabado;Lija;Acabado
-Tecnología y Digitalización 2º;La Madera;clasificador;Herramientas;Corte;Acabado;Lima;Acabado
-Tecnología y Digitalización 2º;La Madera;clasificador;Herramientas;Corte;Acabado;Escofina;Acabado
+Creación Digital y Pensamiento Computacional;Ciencia de datos y simulación;pareja;Librerias Python;NUMPY;MATRICES;PANDAS;MANIPULACION;MATPLOTLIB;GRAFICOS
+Creación Digital y Pensamiento Computacional;Ciencia de datos y simulación;pareja;Formatos Datos;CSV;PLANOS;JSON;JERARQUICO;XML;ESTRUCTURADO
+Creación Digital y Pensamiento Computacional;Ciencia de datos y simulación;pareja;Las 7 V;VOLUMEN;CANTIDAD;VELOCIDAD;RAPIDEZ;VARIEDAD;DIVERSIDAD
 # JUEGO DE VERDADERO O FALSO
-Tecnología y Digitalización 2º;La Madera;verdadero;Maderas;El pino es un ejemplo de madera dura;FALSO;El pino es una madera blanda de crecimiento rapido
-Tecnología y Digitalización 2º;La Madera;verdadero;Herramientas;La escuadra se utiliza para trazar angulos de 90 grados;VERDADERO;La escuadra traza angulos de 90 grados
-Tecnología y Digitalización 2º;La Madera;verdadero;Materiales;El aglomerado se fabrica con chapas finas pegadas;FALSO;El aglomerado son virutas prensadas con cola
-Tecnología y Digitalización 2º;La Madera;verdadero;Propiedades;La resistencia de la madera es mayor en direccion de la veta;VERDADERO;La veta determina la mayor resistencia
-Tecnología y Digitalización 2º;La Madera;verdadero;Procesos;El primer paso para trabajar la madera es medir;FALSO;El primer paso es diseñar
-Tecnología y Digitalización 2º;La Madera;verdadero;Materiales;El MDF es un tablero de fibra ideal para pintar;VERDADERO;El MDF es ideal para acabados con pintura
-Tecnología y Digitalización 2º;La Madera;verdadero;Herramientas;El serrucho de costilla hace cortes precisos gracias a su refuerzo;VERDADERO;El refuerzo permite precision
-Tecnología y Digitalización 2º;La Madera;verdadero;Propiedades;La densidad relaciona la masa con el volumen;VERDADERO;La densidad es el cociente entre masa y volumen
-Tecnología y Digitalización 2º;La Madera;verdadero;Herramientas;La lija se utiliza para realizar cortes curvos;FALSO;La lija se utiliza para el acabado final
-Tecnología y Digitalización 2º;La Madera;verdadero;Uniones;La union con cola blanca es una union quimica permanente;VERDADERO;La cola blanca crea una union quimica que requiere secado
+Creación Digital y Pensamiento Computacional;Ciencia de datos y simulación;verdadero;Tecnología;La nube permite escalar recursos bajo demanda para el Big Data;VERDADERO;La nube permite escalar recursos bajo demanda
+Creación Digital y Pensamiento Computacional;Ciencia de datos y simulación;verdadero;Herramientas;Microsoft Excel es una librería de Python para ciencia de datos;FALSO;Microsoft Excel NO es una librería de Python, es una hoja de cálculo con límites de rendimiento
+Creación Digital y Pensamiento Computacional;Ciencia de datos y simulación;verdadero;Ética;El Big Data plantea la pregunta reflexiva de si somos usuarios o el producto;VERDADERO;Se plantea esa pregunta en el contexto ético
+Creación Digital y Pensamiento Computacional;Ciencia de datos y simulación;verdadero;Proceso;La fase de limpieza consiste en tomar decisiones basadas en resultados;FALSO;La limpieza sirve para eliminar errores y duplicados; la toma de decisiones es la interpretación
+Creación Digital y Pensamiento Computacional;Ciencia de datos y simulación;verdadero;Formatos;El formato CSV es ideal para tablas planas y simples;VERDADERO;El formato CSV es ideal para tablas planas y simples
+Creación Digital y Pensamiento Computacional;Ciencia de datos y simulación;verdadero;Fuentes;El Internet de las Cosas (IoT) es una fuente importante de Big Data;VERDADERO;El IoT genera grandes volúmenes de datos
+Creación Digital y Pensamiento Computacional;Ciencia de datos y simulación;verdadero;7 V;La Veracidad en Big Data se refiere a la rapidez de generación de datos;FALSO;La Veracidad se refiere a la fiabilidad y calidad; la rapidez es la Velocidad
+Creación Digital y Pensamiento Computacional;Ciencia de datos y simulación;verdadero;Aplicaciones;Las Smart Cities usan Big Data para optimizar el tráfico;VERDADERO;Optimizan el tráfico y el consumo energético
+Creación Digital y Pensamiento Computacional;Ciencia de datos y simulación;verdadero;Unidades;El volumen en Big Data hace referencia a Petabytes y Exabytes;VERDADERO;Son las unidades de medida masiva mencionadas
+Creación Digital y Pensamiento Computacional;Ciencia de datos y simulación;verdadero;Cultura;1984 y Un Mundo Feliz se mencionan como advertencia sobre el control;VERDADERO;Se citan como obras de advertencia sobre el control total
+# JUEGO DEL ROSCO
+Digitalización;Creación digital;rosco;empieza;A;Formato desarrollado por Microsoft;AVI
+Digitalización;Creación digital;rosco;empieza;B;Lo que se puede ajustar en un editor de imagen junto al contraste;brillo
+Digitalización;Creación digital;rosco;empieza;C;Se usan para comprimir y descomprimir video;codecs
+Digitalización;Creación digital;rosco;empieza;D;Forma en la que se organiza el contenido en una aplicación de presentaciones;diapositivas
+Digitalización;Creación digital;rosco;empieza;E;Audio que se caracteriza por tener 2 canales;estereo
+Digitalización;Creación digital;rosco;empieza;F;Se utilizan para automatizar cálculos en una hoja de cálculo;formulas
+Digitalización;Creación digital;rosco;empieza;G;Herramienta que es un editor de imagen libre;gimp
+Digitalización;Creación digital;rosco;empieza;H;Herramienta que se organiza en filas y columnas;hoja
+Digitalización;Creación digital;rosco;empieza;I;Lo que almacena cada píxel en una imagen RGB;intensidad
+Digitalización;Creación digital;rosco;empieza;J;Formato de imagen ideal para fotografías estándar;jpg
+Digitalización;Creación digital;rosco;contiene;K;Formato que es un contenedor flexible y abierto;mkv
+Digitalización;Creación digital;rosco;empieza;L;Licencias que permiten compartir con reconocimiento;licencias
+Digitalización;Creación digital;rosco;empieza;M;Empresa que desarrolló el formato AVI;microsoft
+Digitalización;Creación digital;rosco;empieza;N;Se utiliza junto a las viñetas para organizar listas en un procesador de textos;numeracion
+Digitalización;Creación digital;rosco;contiene;Ñ;Depende de la resolución, dimensiones y profundidad de color;tamaño
+Digitalización;Creación digital;rosco;empieza;O;Acción que se realiza con las diapositivas en una presentación;organizar
+Digitalización;Creación digital;rosco;empieza;P;Elemento que en una cuadrícula forma un mapa de bits;pixel
+Digitalización;Creación digital;rosco;contiene;Q;Tecnología asociada al formato MOV;quicktime
+Digitalización;Creación digital;rosco;empieza;R;Mide los píxeles por unidad de longitud;resolucion
+Digitalización;Creación digital;rosco;empieza;S;Elementos matemáticos que permite incluir un procesador de textos avanzado;simbolos
+Digitalización;Creación digital;rosco;empieza;T;Ventaja que ofrece el formato PNG junto a la compresión sin pérdida;transparencia
+Digitalización;Creación digital;rosco;empieza;U;La resolución mide los píxeles por cada una de estas de longitud;unidad
+Digitalización;Creación digital;rosco;empieza;V;Tipo de imagen que es escalable sin pérdida de calidad;vectorial
+Digitalización;Creación digital;rosco;contiene;W;Integra la creación digital avanzada con diversas herramientas;software
+Digitalización;Creación digital;rosco;contiene;X;Información que almacena cada píxel en este modelo de color;rgb
+Digitalización;Creación digital;rosco;contiene;Y;Formato de imagen que usa compresión con pérdida;jpg
+Digitalización;Creación digital;rosco;contiene;Z;Acción de estructurar las hojas de cálculo en filas y columnas;organiza
+# JUEGO DEL AHORCADO
+Digitalización;Creación digital;ahorcado;Tipo de imagen formada por una cuadrícula de píxeles;MAPADEBITS
+Digitalización;Creación digital;ahorcado;Otro nombre que recibe el códec H264;AVC
+Digitalización;Creación digital;ahorcado;Elemento multimedia que se puede integrar en una presentación;ANIMACION
+# JUEGO DE LAS PAREJAS
+Digitalización;Creación digital;pareja;FORMATOS DE IMAGEN;JPG;FOTOGRAFIAS;PNG;TRANSPARENCIA;GIF;ANIMACION
+Digitalización;Creación digital;pareja;VIDEO DIGITAL;CODEC;COMPRESION;AVI;MICROSOFT;H264;AVC
+Digitalización;Creación digital;pareja;OFIMATICA;CELDA;INTERSECCION;PRESENTACION;DIAPOSITIVA;FORMULA;AUTOMATIZAR
+# JUEGO DE VERDADERO O FALSO
+Digitalización;Creación digital;verdadero;Imagen;El formato JPG utiliza compresión sin pérdida;FALSO;El formato JPG utiliza compresión con pérdida
+Digitalización;Creación digital;verdadero;Audio;Un audio estéreo tiene 2 canales;VERDADERO;Un audio estéreo tiene 2 canales
+Digitalización;Creación digital;verdadero;Video;La edición no lineal de video se caracteriza por el uso de una línea de tiempo;VERDADERO;La edición no lineal de video se caracteriza por el uso de una línea de tiempo
+Digitalización;Creación digital;verdadero;Propiedad Intelectual;Las licencias Creative Commons permiten compartir contenido con reconocimiento;VERDADERO;Las licencias Creative Commons permiten compartir contenido con reconocimiento
+Digitalización;Creación digital;verdadero;Ofimática;Una celda es la unión de dos filas;FALSO;Una celda es la intersección de fila y columna
+Digitalización;Creación digital;verdadero;Imagen;Las imágenes vectoriales pierden calidad al escalarse;FALSO;Las imágenes vectoriales son escalables sin pérdida de calidad
+Digitalización;Creación digital;verdadero;Audio;El bitrate mide los datos procesados por segundo;VERDADERO;El bitrate mide los datos procesados por segundo
+Digitalización;Creación digital;verdadero;Imagen;GIMP es un editor de imagen libre;VERDADERO;GIMP es un editor de imagen libre
+Digitalización;Creación digital;verdadero;Video;El formato MKV es un contenedor flexible y abierto;VERDADERO;El formato MKV es un contenedor flexible y abierto
+Digitalización;Creación digital;verdadero;Digital;La desinformación se previene verificando la información antes de difundirla;VERDADERO;La desinformación se previene verificando la información antes de difundirla
+# JUEGO DEL ROSCO
+Programación y Computación;Base de datos;rosco;empieza;A;Representa una propiedad de una entidad en una base de datos;atributo
+Programación y Computación;Base de datos;rosco;empieza;B;Tipo de dato utilizado para estados como activo o inactivo;booleano
+Programación y Computación;Base de datos;rosco;empieza;C;Objeto utilizado para filtrar y seleccionar datos específicos;consulta
+Programación y Computación;Base de datos;rosco;empieza;D;Comando SQL cuyo propósito es eliminar registros;delete
+Programación y Computación;Base de datos;rosco;empieza;E;Objeto real o abstracto que se define en el diseño de bases de datos;entidad
+Programación y Computación;Base de datos;rosco;empieza;F;Objeto que proporciona una interfaz amigable para la entrada de datos;formulario
+Programación y Computación;Base de datos;rosco;contiene;G;Software que actúa como interfaz entre el usuario y la base de datos;sgbd
+Programación y Computación;Base de datos;rosco;contiene;H;Tipo de dato que se utiliza para almacenar fechas u horas;temporal
+Programación y Computación;Base de datos;rosco;empieza;I;Objeto de base de datos que presenta datos estáticos para imprimir;informe
+Programación y Computación;Base de datos;rosco;contiene;J;Clave que sirve como identificador único de registros;principal
+Programación y Computación;Base de datos;rosco;empieza;L;Fase de diseño donde se adapta el modelo al tipo de SGBD;logico
+Programación y Computación;Base de datos;rosco;empieza;M;Ejemplo de Sistema de Gestión de Bases de Datos de código libre;mysql
+Programación y Computación;Base de datos;rosco;empieza;N;Tipo de dato apropiado para almacenar cantidades o precios;numerico
+Programación y Computación;Base de datos;rosco;empieza;O;Ejemplo de Sistema de Gestión de Bases de Datos propietario;oracle
+Programación y Computación;Base de datos;rosco;empieza;P;Campo único identificador en el diseño de tablas;principal
+Programación y Computación;Base de datos;rosco;contiene;Q;Lenguaje estándar utilizado para comunicarse con bases de datos;sql
+Programación y Computación;Base de datos;rosco;empieza;R;Conjunto de datos que representa un elemento en una tabla;registro
+Programación y Computación;Base de datos;rosco;empieza;S;Comando SQL que se utiliza para recuperar datos;select
+Programación y Computación;Base de datos;rosco;empieza;T;Objeto de base de datos que almacena directamente los datos;tabla
+Programación y Computación;Base de datos;rosco;empieza;U;Comando SQL que realiza la modificación de datos existentes;update
+Programación y Computación;Base de datos;rosco;empieza;V;Herramienta que permite definir campos de una tabla manualmente;vista
+Programación y Computación;Base de datos;rosco;empieza;W;Cláusula SQL que se utiliza para filtrar los registros;where
+Programación y Computación;Base de datos;rosco;contiene;X;Fase caracterizada por el uso de consultas y formularios;explotacion
+Programación y Computación;Base de datos;rosco;contiene;Y;Cláusula SQL que se usa para ordenar los resultados;orderby
+Programación y Computación;Base de datos;rosco;contiene;Z;Propósito principal de los formularios para el usuario;interaccion
+# JUEGO DEL AHORCADO
+Programación y Computación;Base de datos;ahorcado;MODELO BASADO FUNDAMENTALMENTE EN TABLAS;RELACIONAL
+Programación y Computación;Base de datos;ahorcado;INTERFAZ AMIGABLE PARA LA ENTRADA DE DATOS;FORMULARIO
+Programación y Computación;Base de datos;ahorcado;PERSONA QUE GESTIONA PERMISOS Y SEGURIDAD;ADMINISTRADOR
+# JUEGO DE LAS PAREJAS
+Programación y Computación;Base de datos;pareja;COMANDOS SQL;SELECT;RECUPERAR;INSERT;AÑADIR;UPDATE;MODIFICAR
+Programación y Computación;Base de datos;pareja;OBJETOS BD;TABLA;ALMACENAR;FORMULARIO;INTERFAZ;INFORME;ESTATICO
+Programación y Computación;Base de datos;pareja;DISEÑO;CONCEPTUAL;DIAGRAMA;FISICO;DISCO;LOGICO;SGBD
+# JUEGO DE VERDADERO O FALSO
+Programación y Computación;Base de datos;verdadero;Componentes;Un informe muestra datos estáticos y se usa para imprimir;VERDADERO;Un informe muestra datos estáticos y se usa para imprimir
+Programación y Computación;Base de datos;verdadero;SQL;El comando SQL DELETE se utiliza para añadir nuevos registros;FALSO;El comando DELETE elimina registros e INSERT es el que los añade
+Programación y Computación;Base de datos;verdadero;Identificación;La clave principal es un campo único que identifica registros;VERDADERO;La clave principal es un campo único que identifica registros
+Programación y Computación;Base de datos;verdadero;Modelos;El modelo relacional se basa fundamentalmente en el uso de archivos de texto;FALSO;El modelo relacional se basa fundamentalmente en tablas
+Programación y Computación;Base de datos;verdadero;Software;MySQL es un ejemplo de sistema de gestión de bases de datos de código libre;VERDADERO;MySQL es un ejemplo de sistema de gestión de bases de datos de código libre
+Programación y Computación;Base de datos;verdadero;Estructura;Un campo o columna representa un registro completo de un elemento;FALSO;Un campo representa una categoría de dato y el registro representa el elemento
+Programación y Computación;Base de datos;verdadero;Relaciones;Una relación de muchos a muchos requiere el uso de una tabla intermedia;VERDADERO;Una relación de muchos a muchos requiere el uso de una tabla intermedia
+Programación y Computación;Base de datos;verdadero;Roles;El programador es el encargado principal de gestionar permisos y seguridad;FALSO;El administrador de bases de datos (DBA) gestiona los permisos y la seguridad
+Programación y Computación;Base de datos;verdadero;SQL;La cláusula ORDER BY se utiliza para ordenar los resultados de una consulta;VERDADERO;La cláusula ORDER BY se utiliza para ordenar los resultados de una consulta
+Programación y Computación;Base de datos;verdadero;Tipos de dato;El tipo de dato booleano es el más apropiado para almacenar fechas y horas;FALSO;El booleano es para estados activo/inactivo y el temporal para fechas y horas
+# JUEGO DEL ROSCO
+Tecnología de la Información y la Comunicación I;Procesador de textos;rosco;empieza;A;Para qué se utilizan los comentarios en un documento;anotaciones
+Tecnología de la Información y la Comunicación I;Procesador de textos;rosco;contiene;B;Donde se configuran los bordes decorativos para una página;formato
+Tecnología de la Información y la Comunicación I;Procesador de textos;rosco;empieza;C;Se pueden crear insertando una sección específica en el documento;columnas
+Tecnología de la Información y la Comunicación I;Procesador de textos;rosco;empieza;D;Función que revierte la última acción realizada;deshacer
+Tecnología de la Información y la Comunicación I;Procesador de textos;rosco;empieza;E;Se utilizan para aplicar formatos uniformes en todo el documento;estilos
+Tecnología de la Información y la Comunicación I;Procesador de textos;rosco;empieza;F;El pincel permite copiar este elemento de un texto a otro;formato
+Tecnología de la Información y la Comunicación I;Procesador de textos;rosco;empieza;G;Colección de recursos disponible en un procesador de textos;galeria
+Tecnología de la Información y la Comunicación I;Procesador de textos;rosco;empieza;H;Permite enlazar un texto a una dirección URL externa;hipervinculo
+Tecnología de la Información y la Comunicación I;Procesador de textos;rosco;empieza;I;Para crearlo de forma automática se deben usar estilos de título;indice
+Tecnología de la Información y la Comunicación I;Procesador de textos;rosco;contiene;J;Opción que permite controlar cómo se coloca una imagen respecto al texto;ajuste
+Tecnología de la Información y la Comunicación I;Procesador de textos;rosco;contiene;L;El interlineado controla el espacio que existe entre estas;lineas
+Tecnología de la Información y la Comunicación I;Procesador de textos;rosco;empieza;M;Contenedor utilizado para colocar objetos en un documento de texto;marco
+Tecnología de la Información y la Comunicación I;Procesador de textos;rosco;empieza;N;Se usa junto a las viñetas para organizar la información;numeracion
+Tecnología de la Información y la Comunicación I;Procesador de textos;rosco;contiene;O;Corrector que detecta errores de escritura en el texto;ortografico
+Tecnología de la Información y la Comunicación I;Procesador de textos;rosco;empieza;P;Modelo reutilizable que sirve como base para nuevos documentos;plantilla
+Tecnología de la Información y la Comunicación I;Procesador de textos;rosco;empieza;R;Herramienta de la interfaz que permite ajustar los márgenes;regla
+Tecnología de la Información y la Comunicación I;Procesador de textos;rosco;empieza;S;Espacio que separa un párrafo respecto al margen;sangria
+Tecnología de la Información y la Comunicación I;Procesador de textos;rosco;empieza;T;Estructura compuesta por filas y columnas donde se pueden unir celdas;tabla
+Tecnología de la Información y la Comunicación I;Procesador de textos;rosco;empieza;U;Acción que permite realizar la opción combinar celdas;unir
+Tecnología de la Información y la Comunicación I;Procesador de textos;rosco;contiene;V;Atajo de teclado Ctrl mas esta letra sirve para pegar texto;v
+Tecnología de la Información y la Comunicación I;Procesador de textos;rosco;contiene;X;Extensión de archivo propia de Microsoft Word que puede abrirse en software libre;docx
+Tecnología de la Información y la Comunicación I;Procesador de textos;rosco;contiene;Y;Acrónimo que significa que lo que ves es lo que obtienes;wysiwyg
+Tecnología de la Información y la Comunicación I;Procesador de textos;rosco;empieza;Z;Herramienta que permite acercar o alejar la visualización del documento;zoom
+# JUEGO DEL AHORCADO
+Tecnología de la Información y la Comunicación I;Procesador de textos;ahorcado;Tipo de programa que funciona en varios sistemas operativos;MULTIPLATAFORMA
+Tecnología de la Información y la Comunicación I;Procesador de textos;ahorcado;Herramienta que permite crear documentos personalizados masivos;CORRESPONDENCIA
+Tecnología de la Información y la Comunicación I;Procesador de textos;ahorcado;Formato de documento de texto estándar abierto;ODT
+# JUEGO DE LAS PAREJAS
+Tecnología de la Información y la Comunicación I;Procesador de textos;pareja;Atajos de Teclado;CTRL+G;GUARDAR;CTRL+V;PEGAR;CTRL+INTRO;SALTO PAGINA
+Tecnología de la Información y la Comunicación I;Procesador de textos;pareja;Formatos y Extensiones;.ODT;ODF;.DOCX;WORD;.PDF;EXPORTAR
+Tecnología de la Información y la Comunicación I;Procesador de textos;pareja;Elementos de Estructura;CELDA;TABLA;MARCO;OBJETO;SANGRIA;PARRAFO
+# JUEGO DE VERDADERO O FALSO
+Tecnología de la Información y la Comunicación I;Procesador de textos;verdadero;Atajos;El atajo de teclado para guardar un documento es Ctrl+G;VERDADERO;El atajo para guardar es Ctrl+G
+Tecnología de la Información y la Comunicación I;Procesador de textos;verdadero;Párrafos;La alineación superior es un tipo de alineación de párrafo;FALSO;La alineación superior no es un tipo de alineación de párrafo
+Tecnología de la Información y la Comunicación I;Procesador de textos;verdadero;Referencias;Las notas al pie aparecen siempre al final de la página;VERDADERO;Las notas al pie aparecen al pie de la página
+Tecnología de la Información y la Comunicación I;Procesador de textos;verdadero;Formatos;El interlineado es una opción de formato de carácter;FALSO;El interlineado es una opción de formato de párrafo
+Tecnología de la Información y la Comunicación I;Procesador de textos;verdadero;Visualización;WYSIWYG significa que lo que ves es lo que obtienes;VERDADERO;Lo que ves en pantalla es el resultado final
+Tecnología de la Información y la Comunicación I;Procesador de textos;verdadero;Índices;Para crear un índice automático no es necesario usar estilos;FALSO;Es imprescindible usar estilos de título para el índice automático
+Tecnología de la Información y la Comunicación I;Procesador de textos;verdadero;Edición;El pincel de formato sirve para copiar el estilo de un texto y aplicarlo a otro;VERDADERO;El pincel de formato copia y aplica formatos
+Tecnología de la Información y la Comunicación I;Procesador de textos;verdadero;Sistemas;Un procesador multiplataforma solo funciona en un sistema operativo;FALSO;Multiplataforma significa que funciona en varios sistemas operativos
+Tecnología de la Información y la Comunicación I;Procesador de textos;verdadero;Páginas;El salto de página manual se realiza con la combinación Ctrl+Intro;VERDADERO;Ctrl+Intro fuerza un salto de página
+Tecnología de la Información y la Comunicación I;Procesador de textos;verdadero;Plantillas;Las plantillas son modelos que solo pueden usarse una única vez;FALSO;Las plantillas son modelos diseñados para ser reutilizados múltiples veces
+# JUEGO DEL ROSCO
+Tecnología de la Información y la Comunicación II;La Web;rosco;empieza;A;Etiqueta para insertar archivos de sonido;audio
+Tecnología de la Información y la Comunicación II;La Web;rosco;empieza;B;Etiqueta que contiene la parte visible del documento;body
+Tecnología de la Información y la Comunicación II;La Web;rosco;empieza;C;Atributo para unir columnas en una tabla;colspan
+Tecnología de la Información y la Comunicación II;La Web;rosco;empieza;D;Contenedor genérico para agrupar elementos;div
+Tecnología de la Información y la Comunicación II;La Web;rosco;empieza;E;Tipo de programa para escribir código sin formato;editor
+Tecnología de la Información y la Comunicación II;La Web;rosco;empieza;F;Elemento para el pie de página de un sitio;footer
+Tecnología de la Información y la Comunicación II;La Web;rosco;contiene;G;Etiqueta para insertar imágenes;img
+Tecnología de la Información y la Comunicación II;La Web;rosco;empieza;H;Atributo que especifica la URL de un enlace;href
+Tecnología de la Información y la Comunicación II;La Web;rosco;empieza;I;Etiqueta para incrustar otra página web;iframe
+Tecnología de la Información y la Comunicación II;La Web;rosco;empieza;J;Lenguaje de programación del lado del cliente;javascript
+Tecnología de la Información y la Comunicación II;La Web;rosco;contiene;K;Valor del atributo target para abrir en nueva pestaña;blank
+Tecnología de la Información y la Comunicación II;La Web;rosco;empieza;L;Etiqueta para cada elemento de una lista;li
+Tecnología de la Información y la Comunicación II;La Web;rosco;empieza;M;Etiqueta para definir metadatos como la codificación;meta
+Tecnología de la Información y la Comunicación II;La Web;rosco;empieza;N;Elemento para contener los enlaces de navegación;nav
+Tecnología de la Información y la Comunicación II;La Web;rosco;empieza;O;Etiqueta para crear una lista numerada;ol
+Tecnología de la Información y la Comunicación II;La Web;rosco;empieza;P;Tipo de entrada de formulario que oculta caracteres;password
+Tecnología de la Información y la Comunicación II;La Web;rosco;contiene;Q;Tipo de elemento que ocupa todo el ancho disponible;bloque
+Tecnología de la Información y la Comunicación II;La Web;rosco;empieza;R;Web que se adapta a diferentes tamaños de pantalla;responsive
+Tecnología de la Información y la Comunicación II;La Web;rosco;empieza;S;Atributo que indica la fuente o ruta de un archivo;src
+Tecnología de la Información y la Comunicación II;La Web;rosco;empieza;T;Etiqueta para una celda de datos en una tabla;td
+Tecnología de la Información y la Comunicación II;La Web;rosco;empieza;U;Persona para la que se diseña la web accesible;usuario
+Tecnología de la Información y la Comunicación II;La Web;rosco;empieza;V;Etiqueta para reproducir clips de película;video
+Tecnología de la Información y la Comunicación II;La Web;rosco;empieza;W;Organización que dicta los estándares de la web;w3c
+Tecnología de la Información y la Comunicación II;La Web;rosco;contiene;X;Tipo de archivo que se recomienda usar para el código;texto
+Tecnología de la Información y la Comunicación II;La Web;rosco;contiene;Y;Sistema de edición visual para páginas web;wysiwyg
+Tecnología de la Información y la Comunicación II;La Web;rosco;contiene;Z;Dimensiones de pantalla a las que se adapta la web;tamaños
+# JUEGO DEL AHORCADO
+Tecnología de la Información y la Comunicación II;La Web;ahorcado;LENGUAJE PARA ESTRUCTURAR CONTENIDO;HTML
+Tecnología de la Información y la Comunicación II;La Web;ahorcado;ATRIBUTO PARA TEXTO ALTERNATIVO;ALT
+Tecnología de la Información y la Comunicación II;La Web;ahorcado;WEB DE APRENDIZAJE INTERACTIVO;W3SCHOOLS
+# JUEGO DE LAS PAREJAS
+Tecnología de la Información y la Comunicación II;La Web;pareja;ESTRUCTURA;HEADER;NAV;BODY;FOOTER;SECTION;DIV
+Tecnología de la Información y la Comunicación II;La Web;pareja;TABLAS;TABLE;TR;TH;TD;ROWSPAN;COLSPAN
+Tecnología de la Información y la Comunicación II;La Web;pareja;FORMULARIOS;INPUT;TEXTAREA;BUTTON;SUBMIT;PASSWORD;TARGET
+# JUEGO DE VERDADERO O FALSO
+Tecnología de la Información y la Comunicación II;La Web;verdadero;Arquitectura;JavaScript es un lenguaje que se ejecuta en el navegador;VERDADERO;JavaScript es un lenguaje del lado del cliente que se ejecuta en el navegador
+Tecnología de la Información y la Comunicación II;La Web;verdadero;Tablas;El atributo colspan sirve para unir filas de una tabla;FALSO;El atributo colspan sirve para unir columnas, rowspan es para filas
+Tecnología de la Información y la Comunicación II;La Web;verdadero;Multimedia;La etiqueta <video> se utiliza para insertar clips de película;VERDADERO;La etiqueta <video> es la estándar en HTML5 para contenido audiovisual
+Tecnología de la Información y la Comunicación II;La Web;verdadero;Estructura;La declaración <!DOCTYPE html> indica la versión de HTML;VERDADERO;<!DOCTYPE html> informa al navegador que el documento es HTML5
+Tecnología de la Información y la Comunicación II;La Web;verdadero;Semántica;El elemento <footer> se utiliza para la cabecera de la página;FALSO;<footer> es para el pie de página, <header> es para la cabecera
+Tecnología de la Información y la Comunicación II;La Web;verdadero;Atributos;El atributo alt en las imágenes es para el texto alternativo;VERDADERO;alt muestra un texto si la imagen no se puede cargar
+Tecnología de la Información y la Comunicación II;La Web;verdadero;Listas;La etiqueta <ul> crea una lista ordenada por números;FALSO;<ul> crea una lista no ordenada con viñetas, <ol> es para listas ordenadas
+Tecnología de la Información y la Comunicación II;La Web;verdadero;Formularios;El tipo de input submit crea un botón para enviar datos;VERDADERO;submit es el tipo de entrada encargado de enviar el formulario
+Tecnología de la Información y la Comunicación II;La Web;verdadero;Accesibilidad;WCAG es una iniciativa para promover el diseño web accesible;VERDADERO;WCAG son las pautas de accesibilidad para el contenido web
+Tecnología de la Información y la Comunicación II;La Web;verdadero;Estilos;La etiqueta <div> es un contenedor de nivel de línea;FALSO;<div> es un contenedor genérico de nivel de bloque que ocupa todo el ancho
+# JUEGO DEL ROSCO
+Tecnología y Digitalización 2º;Metales;rosco;empieza;A;Mezcla de elementos donde al menos uno es un metal;aleacion
+Tecnología y Digitalización 2º;Metales;rosco;empieza;B;Aleacion de cobre y estaño;bronce
+Tecnología y Digitalización 2º;Metales;rosco;empieza;C;Metal valorado por su buena conductividad y gran ductilidad;cobre
+Tecnología y Digitalización 2º;Metales;rosco;empieza;D;Resistencia de un material a ser rayado;dureza
+Tecnología y Digitalización 2º;Metales;rosco;empieza;E;Capacidad de un material para recuperar su forma;elasticidad
+Tecnología y Digitalización 2º;Metales;rosco;empieza;F;Metales que tienen como componente principal el hierro;ferricos
+Tecnología y Digitalización 2º;Metales;rosco;empieza;G;Herramienta para marcar un punto preciso antes de taladrar;granete
+Tecnología y Digitalización 2º;Metales;rosco;empieza;H;Acero con una capa de estaño usado para latas;hojalata
+Tecnología y Digitalización 2º;Metales;rosco;empieza;I;Tipo de acero que contiene cromo y resiste la corrosion;inoxidable
+Tecnología y Digitalización 2º;Metales;rosco;contiene;J;Se utiliza principalmente para forja artistica;hierro dulce
+Tecnología y Digitalización 2º;Metales;rosco;empieza;L;Aleacion de cobre y cinc de color dorado;laton
+Tecnología y Digitalización 2º;Metales;rosco;empieza;M;Capacidad de un material para extenderse en laminas;maleabilidad
+Tecnología y Digitalización 2º;Metales;rosco;empieza;N;Aleacion de niquel y titanio con memoria de forma;nitinol
+Tecnología y Digitalización 2º;Metales;rosco;empieza;O;Aleacion de oro con plata o paladio;oro blanco
+Tecnología y Digitalización 2º;Metales;rosco;empieza;P;Herramienta para medir espesores con precision;pie de rey
+Tecnología y Digitalización 2º;Metales;rosco;contiene;Q;Componente de la alpaca y el nicrom;niquel
+Tecnología y Digitalización 2º;Metales;rosco;empieza;R;Capacidad de un material para soportar fuerzas;resistencia mecanica
+Tecnología y Digitalización 2º;Metales;rosco;empieza;S;Herramienta usada para cortar barras y tubos metalicos;sierra de arco
+Tecnología y Digitalización 2º;Metales;rosco;empieza;T;Resistencia de un material a los golpes;tenacidad
+Tecnología y Digitalización 2º;Metales;rosco;contiene;U;Metal no ferrico que destaca por su bajo peso;aluminio
+Tecnología y Digitalización 2º;Metales;rosco;contiene;V;Uso principal de la hojalata para alimentos;conserva
+Tecnología y Digitalización 2º;Metales;rosco;contiene;X;Propiedad principal del acero con cromo;inoxidable
+Tecnología y Digitalización 2º;Metales;rosco;contiene;Y;Herramienta de medicion de gran precision;pie de rey
+Tecnología y Digitalización 2º;Metales;rosco;contiene;Z;Elemento que junto al cobre forma el laton;zinc
+# JUEGO DEL AHORCADO
+Tecnología y Digitalización 2º;Metales;ahorcado;Aleacion de niquel y titanio con memoria de forma;NITINOL
+Tecnología y Digitalización 2º;Metales;ahorcado;Capacidad de un material para estirarse en hilos;DUCTILIDAD
+Tecnología y Digitalización 2º;Metales;ahorcado;Herramienta que se fija a la mesa para sujetar piezas;TORNILLODEBANCO
+# JUEGO DE LAS PAREJAS
+Tecnología y Digitalización 2º;Metales;pareja;Aleaciones;BRONCE;COBREYESTAÑO;LATON;COBREYCINC;HOJALATA;ACEROYESTAÑO
+Tecnología y Digitalización 2º;Metales;pareja;Propiedades;DUREZA;RAYADO;TENACIDAD;GOLPES;DUCTILIDAD;HILOS
+Tecnología y Digitalización 2º;Metales;pareja;Herramientas;GRANETE;MARCAR;LIMAS;ALISAR;ALICATES;DOBLAR
+# JUEGO DE VERDADERO O FALSO
+Tecnología y Digitalización 2º;Metales;verdadero;Materiales;El acero es basicamente una aleacion de hierro y carbono;VERDADERO;El acero es basicamente una aleacion de hierro y carbono
+Tecnología y Digitalización 2º;Metales;verdadero;Materiales;La fundicion tiene un contenido de carbono de aproximadamente el 5%;VERDADERO;La fundicion tiene un contenido de carbono de aproximadamente el 5%
+Tecnología y Digitalización 2º;Metales;verdadero;Propiedades;La dureza es la capacidad de un material para recuperar su forma;FALSO;La dureza es la resistencia de un material a ser rayado
+Tecnología y Digitalización 2º;Metales;verdadero;Aleaciones;El bronce es una aleacion de cobre y cinc;FALSO;El bronce es una aleacion de cobre y estaño
+Tecnología y Digitalización 2º;Metales;verdadero;Herramientas;El granete se usa para marcar un punto preciso antes de taladrar;VERDADERO;El granete se usa para marcar un punto preciso antes de taladrar
+Tecnología y Digitalización 2º;Metales;verdadero;Materiales;El aluminio destaca por su bajo peso;VERDADERO;El aluminio destaca por su bajo peso
+Tecnología y Digitalización 2º;Metales;verdadero;Seguridad;Al cortar o taladrar metal no es necesario usar gafas de seguridad;FALSO;Al cortar o taladrar metal es obligatorio usar gafas de seguridad
+Tecnología y Digitalización 2º;Metales;verdadero;Aleaciones;El nitinol destaca por su memoria de forma;VERDADERO;El nitinol destaca por su memoria de forma
+Tecnología y Digitalización 2º;Metales;verdadero;Propiedades;La ductilidad es la capacidad de un material para extenderse en laminas;FALSO;La ductilidad es la capacidad de un material para estirarse en hilos
+Tecnología y Digitalización 2º;Metales;verdadero;Herramientas;La sierra de arco se utiliza para alisar cortes y eliminar rebabas;FALSO;La sierra de arco se usa para cortar barras y tubos metalicos
+# JUEGO DEL ROSCO
+Tecnología y Digitalización 3º;Mecanismos;rosco;empieza;A;Efecto que tiene sobre la presión el afilar el filo de una cuña;aumenta
+Tecnología y Digitalización 3º;Mecanismos;rosco;empieza;B;Mecanismo fundamental en un motor de combustión;bielamanivela
+Tecnología y Digitalización 3º;Mecanismos;rosco;empieza;C;Elemento que conecta los engranajes en la transmisión por cadena;cadena
+Tecnología y Digitalización 3º;Mecanismos;rosco;empieza;D;Sistema de los automóviles donde se usa comúnmente el piñón-cremallera;direccion
+Tecnología y Digitalización 3º;Mecanismos;rosco;empieza;E;Mecanismo de transmisión circular entre ejes paralelos;engranaje
+Tecnología y Digitalización 3º;Mecanismos;rosco;empieza;F;Punto de apoyo de una palanca;fulcro
+Tecnología y Digitalización 3º;Mecanismos;rosco;contiene;G;Cómo se relaciona el tamaño de las ruedas con su velocidad de...;giro
+Tecnología y Digitalización 3º;Mecanismos;rosco;empieza;H;Herramienta que es un ejemplo típico de cuña;hacha
+Tecnología y Digitalización 3º;Mecanismos;rosco;empieza;I;Característica del sistema tornillo sin fin-corona;irreversible
+Tecnología y Digitalización 3º;Mecanismos;rosco;contiene;J;Las ruedas de fricción transmiten movimiento entre ellos;ejes
+Tecnología y Digitalización 3º;Mecanismos;rosco;empieza;L;Transforma el movimiento de rotación en vaivén;leva
+Tecnología y Digitalización 3º;Mecanismos;rosco;empieza;M;Conjunto que transmite y transforma la energía;mecanismo
+Tecnología y Digitalización 3º;Mecanismos;rosco;contiene;N;Mecanismo que transforma el movimiento circular en lineal;pinon
+Tecnología y Digitalización 3º;Mecanismos;rosco;contiene;O;Rueda dentada que acompaña al tornillo sin fin;corona
+Tecnología y Digitalización 3º;Mecanismos;rosco;empieza;P;Máquina simple donde se aplica la ley de la potencia y resistencia;palanca
+Tecnología y Digitalización 3º;Mecanismos;rosco;contiene;Q;Rueda que gira más rápido en un par de engranajes;pequena
+Tecnología y Digitalización 3º;Mecanismos;rosco;empieza;R;Fuerza que se opone al movimiento en una palanca;resistencia
+Tecnología y Digitalización 3º;Mecanismos;rosco;empieza;S;Ventaja de la transmisión por correa frente a engranajes;silenciosa
+Tecnología y Digitalización 3º;Mecanismos;rosco;empieza;T;Mecanismo simple que deriva del plano inclinado;tornillo
+Tecnología y Digitalización 3º;Mecanismos;rosco;contiene;U;Realiza una transformación de fuerza vertical en dos horizontales;cuna
+Tecnología y Digitalización 3º;Mecanismos;rosco;empieza;V;Magnitud que se reduce drásticamente con el tornillo sin fin;velocidad
+Tecnología y Digitalización 3º;Mecanismos;rosco;contiene;X;Tipo de energía que diferencia a una máquina de un ser vivo;externa
+Tecnología y Digitalización 3º;Mecanismos;rosco;contiene;Y;Establece la relación de equilibrio en una palanca;ley
+Tecnología y Digitalización 3º;Mecanismos;rosco;contiene;Z;Propiedad por la cual las ruedas de fricción transmiten movimiento;rozamiento
+# JUEGO DEL AHORCADO
+Tecnología y Digitalización 3º;Mecanismos;ahorcado;Mecanismo de dirección en automóviles;PINONCREMALLERA
+Tecnología y Digitalización 3º;Mecanismos;ahorcado;Donde es fundamental el mecanismo biela-manivela;MOTORDECOMBUSTION
+Tecnología y Digitalización 3º;Mecanismos;ahorcado;Relación entre la resistencia y la fuerza en un plano inclinado;VENTAJAMECANICA
+# JUEGO DE LAS PAREJAS
+Tecnología y Digitalización 3º;Mecanismos;pareja;PALANCAS;TIJERAS;PRIMERGENERO;CARRETILLA;SEGUNDOGENERO;PINZAS;TERCERGENERO
+Tecnología y Digitalización 3º;Mecanismos;pareja;TRANSMISION;CORREA;SILENCIOSA;CADENA;ARTICULADA;FRICCION;OPUESTOS
+Tecnología y Digitalización 3º;Mecanismos;pareja;TRANSFORMACION;LEVA;VAIVEN;PINON;LINEAL;TORNILLO;AVANCE
+# JUEGO DE VERDADERO O FALSO
+Tecnología y Digitalización 3º;Mecanismos;verdadero;Mecanismos;La polea fija reduce la fuerza necesaria a la mitad;FALSO;La polea móvil es la que reduce la fuerza necesaria a la mitad
+Tecnología y Digitalización 3º;Mecanismos;verdadero;Mecanismos;El tornillo sin fin es un sistema irreversible;VERDADERO;El tornillo sin fin es un sistema irreversible usado por seguridad
+Tecnología y Digitalización 3º;Mecanismos;verdadero;Transmisión;La transmisión por correa es más ruidosa que los engranajes;FALSO;La transmisión por correa es conocida por ser silenciosa
+Tecnología y Digitalización 3º;Mecanismos;verdadero;Máquinas;Cuanto más largo es un plano inclinado menor es la fuerza necesaria;VERDADERO;A mayor longitud menor fuerza para elevar la carga
+Tecnología y Digitalización 3º;Mecanismos;verdadero;Palancas;En una palanca de segundo género la resistencia está en el centro;VERDADERO;La resistencia se sitúa entre el fulcro y la potencia
+Tecnología y Digitalización 3º;Mecanismos;verdadero;Transformación;El sistema piñón-cremallera transforma movimiento circular en lineal;VERDADERO;El sistema piñón-cremallera realiza esa transformación circular-lineal
+Tecnología y Digitalización 3º;Mecanismos;verdadero;Máquinas;Las máquinas necesitan una fuente de energía externa para funcionar;VERDADERO;Las máquinas se diferencian de los seres vivos por requerir energía externa
+Tecnología y Digitalización 3º;Mecanismos;verdadero;Engranajes;En un par de engranajes la rueda pequeña gira más lento;FALSO;La rueda pequeña siempre gira más rápido que la grande
+Tecnología y Digitalización 3º;Mecanismos;verdadero;Mecanismos;En un polipasto con 2 poleas móviles la fuerza necesaria es R dividido entre 4;VERDADERO;Siguiendo la fórmula F = R / (2*n) siendo n=2
+Tecnología y Digitalización 3º;Mecanismos;verdadero;Máquinas;Al afilar una cuña disminuye la presión de corte;FALSO;Al afilar una cuña o cuchillo aumenta la presión facilitando el corte
