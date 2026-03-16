@@ -89,6 +89,53 @@ Digitalización;Creación digital;verdadero;Imagen;GIMP es un editor de imagen l
 Digitalización;Creación digital;verdadero;Video;El formato MKV es un contenedor flexible y abierto;VERDADERO;El formato MKV es un contenedor flexible y abierto
 Digitalización;Creación digital;verdadero;Digital;La desinformación se previene verificando la información antes de difundirla;VERDADERO;La desinformación se previene verificando la información antes de difundirla
 # JUEGO DEL ROSCO
+Digitalización;Búsqueda de información y publicación en Internet;rosco;empieza;A;Conector lógico para encontrar resultados que contengan obligatoriamente dos términos;and
+Digitalización;Búsqueda de información y publicación en Internet;rosco;empieza;B;Sistema lógico utilizado para relacionar o excluir conceptos en una búsqueda;booleana
+Digitalización;Búsqueda de información y publicación en Internet;rosco;empieza;C;Proceso mediante el cual los bots de un buscador recorren las páginas web;crawling
+Digitalización;Búsqueda de información y publicación en Internet;rosco;empieza;D;Operador que permite buscar directamente la definición de una palabra;define
+Digitalización;Búsqueda de información y publicación en Internet;rosco;empieza;E;Técnica de insertar código para integrar un video en un sitio web;embeber
+Digitalización;Búsqueda de información y publicación en Internet;rosco;empieza;F;Operador para limitar los resultados a un formato de archivo específico;filetype
+Digitalización;Búsqueda de información y publicación en Internet;rosco;empieza;G;Tipo de licencia comúnmente utilizada para el software libre;gpl
+Digitalización;Búsqueda de información y publicación en Internet;rosco;empieza;H;Código que el navegador convierte en contenido visual y verbal comprensible;html
+Digitalización;Búsqueda de información y publicación en Internet;rosco;empieza;I;Innovación histórica del siglo XV comparada con la revolución digital;imprenta
+Digitalización;Búsqueda de información y publicación en Internet;rosco;contiene;J;Copiar en lo sustancial obras ajenas dándolas como propias;plagiar
+Digitalización;Búsqueda de información y publicación en Internet;rosco;contiene;K;Buscador que protege la privacidad no rastreando al usuario;duckduckgo
+Digitalización;Búsqueda de información y publicación en Internet;rosco;empieza;L;Normativa que protege los intereses de los autores en España;ley
+Digitalización;Búsqueda de información y publicación en Internet;rosco;empieza;M;Característica de la información en la red que indica que es revisada permanentemente;mutable
+Digitalización;Búsqueda de información y publicación en Internet;rosco;empieza;N;Programa necesario para realizar una búsqueda eficiente en internet;navegador
+Digitalización;Búsqueda de información y publicación en Internet;rosco;contiene;Ñ;País donde una obra pasa al dominio público a los 70 años de la muerte del autor;españa
+Digitalización;Búsqueda de información y publicación en Internet;rosco;empieza;O;Operador lógico para mostrar páginas donde aparezca al menos una de las palabras;or
+Digitalización;Búsqueda de información y publicación en Internet;rosco;empieza;P;Tipo de búsqueda que tiene como objetivo la adquisición de un servicio o bien;producto
+Digitalización;Búsqueda de información y publicación en Internet;rosco;contiene;Q;Sistema lógico utilizado para relacionar o excluir conceptos;busqueda
+Digitalización;Búsqueda de información y publicación en Internet;rosco;empieza;R;Herramienta para recibir actualizaciones automáticas de contenidos;rss
+Digitalización;Búsqueda de información y publicación en Internet;rosco;empieza;S;Siglas de Search Engine Results Page;serp
+Digitalización;Búsqueda de información y publicación en Internet;rosco;empieza;T;Herramienta útil para localizar la fuente original de una imagen;tineye
+Digitalización;Búsqueda de información y publicación en Internet;rosco;contiene;U;Extensión de dominio que suele indicar vocación educativa;edu
+Digitalización;Búsqueda de información y publicación en Internet;rosco;empieza;V;Función del navegador al convertir el código HTML;visual
+Digitalización;Búsqueda de información y publicación en Internet;rosco;empieza;W;Consorcio que certifica estándares de calidad y accesibilidad técnica;w3c
+Digitalización;Búsqueda de información y publicación en Internet;rosco;contiene;X;Pequeñas aplicaciones que añaden funciones personalizadas al navegador;extensiones
+Digitalización;Búsqueda de información y publicación en Internet;rosco;contiene;Y;Estándar de citación común en psicología y educación;apa
+Digitalización;Búsqueda de información y publicación en Internet;rosco;contiene;Z;Buscadores que garantizan calidad en un ámbito específico;especializados
+# JUEGO DEL AHORCADO
+Digitalización;Búsqueda de información y publicación en Internet;ahorcado;Innovación histórica del siglo XV comparada con la revolución digital;IMPRENTA
+Digitalización;Búsqueda de información y publicación en Internet;ahorcado;Siglas de la página de resultados de un buscador;SERP
+Digitalización;Búsqueda de información y publicación en Internet;ahorcado;Proceso de codificar y ordenar archivos encontrados por un buscador;INDEXACION
+# JUEGO DE LAS PAREJAS
+Digitalización;Búsqueda de información y publicación en Internet;pareja;OPERADORES;AND;OBLIGATORIO;OR;OPCIONAL;NOT;EXCLUIR
+Digitalización;Búsqueda de información y publicación en Internet;pareja;HERRAMIENTAS;IMDB;CINE;TINEYE;IMAGENES;COPERNIC;ESCRITORIO
+Digitalización;Búsqueda de información y publicación en Internet;pareja;NORMATIVA;PLAGIAR;COPIAR;APA;CITACION;GPL;SOFTWARE
+# JUEGO DE VERDADERO O FALSO
+Digitalización;Búsqueda de información y publicación en Internet;verdadero;Privacidad;DuckDuckGo destaca por rastrear la actividad del usuario para publicidad;FALSO;DuckDuckGo destaca por no rastrear la actividad del usuario para proteger su privacidad
+Digitalización;Búsqueda de información y publicación en Internet;verdadero;Operadores;El operador OR sirve para mostrar páginas donde aparezca al menos una de las palabras;VERDADERO;El operador OR sirve para mostrar páginas donde aparezca al menos una de las palabras
+Digitalización;Búsqueda de información y publicación en Internet;verdadero;Legislación;En España una obra pasa al dominio público a los 70 años de la muerte del autor;VERDADERO;En España una obra pasa al dominio público a los 70 años de la muerte del autor
+Digitalización;Búsqueda de información y publicación en Internet;verdadero;Fuentes;Wikipedia se considera una fuente de información primaria;FALSO;Wikipedia no es una fuente primaria porque recopila información de otras fuentes
+Digitalización;Búsqueda de información y publicación en Internet;verdadero;Búsqueda;El primer paso antes de buscar en internet es definir los objetivos de la búsqueda;VERDADERO;El primer paso antes de buscar en internet es definir los objetivos de la búsqueda
+Digitalización;Búsqueda de información y publicación en Internet;verdadero;Tecnología;El consorcio W3C regula la asignación de nombres de dominio en internet;FALSO;La entidad que regula los nombres de dominio es ICANN
+Digitalización;Búsqueda de información y publicación en Internet;verdadero;Operadores;Las comillas sirven para buscar una frase exacta o palabras seguidas;VERDADERO;Las comillas sirven para buscar una frase exacta o palabras seguidas
+Digitalización;Búsqueda de información y publicación en Internet;verdadero;Evaluación;La correcta ortografía y semántica son indicadores de calidad de un contenido web;VERDADERO;La correcta ortografía y semántica son indicadores de calidad de un contenido web
+Digitalización;Búsqueda de información y publicación en Internet;verdadero;Redes Sociales;El operador # se usa para dirigirse a un nombre de usuario específico;FALSO;El operador # se usa para etiquetas o hashtags y el @ para usuarios
+Digitalización;Búsqueda de información y publicación en Internet;verdadero;Herramientas;Google Scholar sirve para localizar literatura académica y científica;VERDADERO;Google Scholar sirve para localizar literatura académica y científica
+# JUEGO DEL ROSCO
 Programación y Computación;Base de datos;rosco;empieza;A;Representa una propiedad de una entidad en una base de datos;atributo
 Programación y Computación;Base de datos;rosco;empieza;B;Tipo de dato utilizado para estados como activo o inactivo;booleano
 Programación y Computación;Base de datos;rosco;empieza;C;Objeto utilizado para filtrar y seleccionar datos específicos;consulta
