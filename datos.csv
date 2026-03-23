@@ -224,6 +224,50 @@ Tecnología de la Información y la Comunicación I;Procesador de textos;verdade
 Tecnología de la Información y la Comunicación I;Procesador de textos;verdadero;Páginas;El salto de página manual se realiza con la combinación Ctrl+Intro;VERDADERO;Ctrl+Intro fuerza un salto de página
 Tecnología de la Información y la Comunicación I;Procesador de textos;verdadero;Plantillas;Las plantillas son modelos que solo pueden usarse una única vez;FALSO;Las plantillas son modelos diseñados para ser reutilizados múltiples veces
 # JUEGO DEL ROSCO
+Tecnologías de la Información y la Comunicación I;Hojas de Cálculo en Libreoffice;rosco;empieza;A;Símbolo que se pone antes de un número para que Calc lo trate como texto;apóstrofo
+Tecnologías de la Información y la Comunicación I;Hojas de Cálculo en Libreoffice;rosco;empieza;B;Elemento que muestra resultados de operaciones matemáticas;barra de estado
+Tecnologías de la Información y la Comunicación I;Hojas de Cálculo en Libreoffice;rosco;empieza;C;Herramienta de LibreOffice utilizada para trabajar con hojas de cálculo;calc
+Tecnologías de la Información y la Comunicación I;Hojas de Cálculo en Libreoffice;rosco;empieza;D;Uno de los menús específicos de Calc que no suele estar en otros componentes;datos
+Tecnologías de la Información y la Comunicación I;Hojas de Cálculo en Libreoffice;rosco;empieza;E;Herramienta que completa entradas basándose en los datos de la columna;entrada automática
+Tecnologías de la Información y la Comunicación I;Hojas de Cálculo en Libreoffice;rosco;empieza;F;Combinación de teclas que abre el Navegador;f5
+Tecnologías de la Información y la Comunicación I;Hojas de Cálculo en Libreoffice;rosco;contiene;G;Marca visual en forma de triángulo que indica un comentario en la celda;rojo
+Tecnologías de la Información y la Comunicación I;Hojas de Cálculo en Libreoffice;rosco;empieza;H;Menú que contiene opciones específicas como renombrar o insertar hojas;hoja
+Tecnologías de la Información y la Comunicación I;Hojas de Cálculo en Libreoffice;rosco;empieza;I;Función que mantiene fijas filas o columnas para que no desaparezcan al desplazarse;inmovilizar celdas
+Tecnologías de la Información y la Comunicación I;Hojas de Cálculo en Libreoffice;rosco;contiene;J;Uno de los formatos de imagen a los que se puede exportar el contenido;jpeg
+Tecnologías de la Información y la Comunicación I;Hojas de Cálculo en Libreoffice;rosco;contiene;L;Herramienta que asegura que los usuarios introduzcan datos permitidos;validez
+Tecnologías de la Información y la Comunicación I;Hojas de Cálculo en Libreoffice;rosco;contiene;M;Menú al que se debe acudir para aplicar un Tema del libro;formato
+Tecnologías de la Información y la Comunicación I;Hojas de Cálculo en Libreoffice;rosco;empieza;N;Cuadro que proporciona la referencia de la celda seleccionada;nombre
+Tecnologías de la Información y la Comunicación I;Hojas de Cálculo en Libreoffice;rosco;empieza;O;Extensión que utiliza Calc para sus archivos nativos;ods
+Tecnologías de la Información y la Comunicación I;Hojas de Cálculo en Libreoffice;rosco;empieza;P;Lenguaje de secuencias de comandos admitido para macros;python
+Tecnologías de la Información y la Comunicación I;Hojas de Cálculo en Libreoffice;rosco;contiene;Q;Signo de puntuación que está prohibido usar al renombrar una hoja;interrogación
+Tecnologías de la Información y la Comunicación I;Hojas de Cálculo en Libreoffice;rosco;empieza;R;Herramienta para copiar datos en un intervalo o crear series;rellenar celdas
+Tecnologías de la Información y la Comunicación I;Hojas de Cálculo en Libreoffice;rosco;empieza;S;Sección de la interfaz con cinco páginas que se abre con Ctrl+F5;sidebar
+Tecnologías de la Información y la Comunicación I;Hojas de Cálculo en Libreoffice;rosco;empieza;T;Herramienta que resume y reorganiza grandes cantidades de datos;tabla dinámica
+Tecnologías de la Información y la Comunicación I;Hojas de Cálculo en Libreoffice;rosco;contiene;U;Cantidad máxima de secciones en las que se puede dividir la ventana de Calc;cuatro
+Tecnologías de la Información y la Comunicación I;Hojas de Cálculo en Libreoffice;rosco;empieza;V;Menú que permite mostrar u ocultar la Barra de fórmulas;ver
+Tecnologías de la Información y la Comunicación I;Hojas de Cálculo en Libreoffice;rosco;contiene;X;Acción de guardar el archivo en formatos como PDF o PNG;exportar
+Tecnologías de la Información y la Comunicación I;Hojas de Cálculo en Libreoffice;rosco;contiene;Y;Combinación de teclas para seleccionar todas las celdas de la hoja;ctrl+mayús+espacio
+Tecnologías de la Información y la Comunicación I;Hojas de Cálculo en Libreoffice;rosco;empieza;Z;Herramienta para definir qué parte de la hoja se va a imprimir;zonas de impresión
+# JUEGO DEL AHORCADO
+Tecnologías de la Información y la Comunicación I;Hojas de Cálculo en Libreoffice;ahorcado;Estándar que sigue Calc para la mayoría de sus funciones;OPENFORMULA
+Tecnologías de la Información y la Comunicación I;Hojas de Cálculo en Libreoffice;ahorcado;Sintaxis de fórmulas utilizada por defecto;CALCA1
+Tecnologías de la Información y la Comunicación I;Hojas de Cálculo en Libreoffice;ahorcado;Elemento de la barra de fórmulas para buscar funciones;ASISTENTEDEFUNCIONES
+# JUEGO DE LAS PAREJAS
+Tecnologías de la Información y la Comunicación I;Hojas de Cálculo en Libreoffice;pareja;ATAJOS DE TECLADO;CTRL+F5;BARRA LATERAL;F5;NAVEGADOR;F2;MODO EDICION
+Tecnologías de la Información y la Comunicación I;Hojas de Cálculo en Libreoffice;pareja;FORMATOS Y ARCHIVOS;.ODS;NATIVO;.CSV;DELIMITADOR;JPEG;IMAGEN
+Tecnologías de la Información y la Comunicación I;Hojas de Cálculo en Libreoffice;pareja;LIMITES;HOJAS;10000;FILAS;1048576;COLUMNAS;16384
+# JUEGO DE VERDADERO O FALSO
+Tecnologías de la Información y la Comunicación I;Hojas de Cálculo en Libreoffice;verdadero;Interfaz;La Barra de Fórmulas está permanentemente acoplada;VERDADERO;La barra no se puede desacoplar de su posición
+Tecnologías de la Información y la Comunicación I;Hojas de Cálculo en Libreoffice;verdadero;Hojas;El número máximo de hojas en un documento es de 1.000;FALSO;El número máximo de hojas es de 10.000
+Tecnologías de la Información y la Comunicación I;Hojas de Cálculo en Libreoffice;verdadero;Datos;Si se escribe un número con un cero a la izquierda Calc lo elimina por defecto;VERDADERO;Calc elimina los ceros iniciales a menos que se formatee como texto
+Tecnologías de la Información y la Comunicación I;Hojas de Cálculo en Libreoffice;verdadero;Navegación;La combinación Ctrl+Inicio lleva al usuario a la celda A1;VERDADERO;Es el atajo para volver al principio de la hoja
+Tecnologías de la Información y la Comunicación I;Hojas de Cálculo en Libreoffice;verdadero;Edición;Al pulsar la tecla Supr se borran los datos y el formato de la celda;FALSO;Solo se borran los datos de la celda seleccionada
+Tecnologías de la Información y la Comunicación I;Hojas de Cálculo en Libreoffice;verdadero;Filtros;El Filtro estándar permite aplicar hasta ocho condiciones;VERDADERO;Ese es el límite de condiciones del filtro estándar
+Tecnologías de la Información y la Comunicación I;Hojas de Cálculo en Libreoffice;verdadero;Seguridad;Una hoja protegida se identifica con un candado en su pestaña;VERDADERO;El icono del candado indica que la protección está activa
+Tecnologías de la Información y la Comunicación I;Hojas de Cálculo en Libreoffice;verdadero;Estructura;Una hoja de Calc puede tener un máximo de 16.384 columnas;VERDADERO;Ese es el límite actual de columnas por hoja
+Tecnologías de la Información y la Comunicación I;Hojas de Cálculo en Libreoffice;verdadero;Navegación;La tecla Tabulador mueve el cursor hacia la celda de abajo;FALSO;La tecla Tabulador mueve el cursor hacia la celda de la derecha
+Tecnologías de la Información y la Comunicación I;Hojas de Cálculo en Libreoffice;verdadero;Visualización;Se puede dividir la ventana de Calc en hasta seis secciones;FALSO;La ventana solo se puede dividir en un máximo de cuatro secciones
+# JUEGO DEL ROSCO
 Tecnología de la Información y la Comunicación II;La Web;rosco;empieza;A;Etiqueta para insertar archivos de sonido;audio
 Tecnología de la Información y la Comunicación II;La Web;rosco;empieza;B;Etiqueta que contiene la parte visible del documento;body
 Tecnología de la Información y la Comunicación II;La Web;rosco;empieza;C;Atributo para unir columnas en una tabla;colspan
