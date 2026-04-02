@@ -42,6 +42,51 @@ Creación Digital y Pensamiento Computacional;Ciencia de datos y simulación;ver
 Creación Digital y Pensamiento Computacional;Ciencia de datos y simulación;verdadero;Unidades;El volumen en Big Data hace referencia a Petabytes y Exabytes;VERDADERO;Son las unidades de medida masiva mencionadas
 Creación Digital y Pensamiento Computacional;Ciencia de datos y simulación;verdadero;Cultura;1984 y Un Mundo Feliz se mencionan como advertencia sobre el control;VERDADERO;Se citan como obras de advertencia sobre el control total
 # JUEGO DEL ROSCO
+Creación Digital y Pensamiento Computacional;Inteligencia Artificial;rosco;empieza;A;Pionero de la inteligencia artificial y padre de la informática;Alan Turing
+Creación Digital y Pensamiento Computacional;Inteligencia Artificial;rosco;empieza;B;Término que se refiere a conjuntos de datos masivos y complejos;Big Data
+Creación Digital y Pensamiento Computacional;Inteligencia Artificial;rosco;empieza;C;Capacidad de la IA para recordar el hilo de una conversación larga;Contexto
+Creación Digital y Pensamiento Computacional;Inteligencia Artificial;rosco;empieza;D;Llamado a la función en Pandas para obtener un resumen estadístico;describe
+Creación Digital y Pensamiento Computacional;Inteligencia Artificial;rosco;empieza;E;Papel que sirven para definir las categorías que la máquina debe distinguir;Etiquetas
+Creación Digital y Pensamiento Computacional;Inteligencia Artificial;rosco;contiene;F;Representación gráfica de la lógica de un sistema;Diagrama de flujo
+Creación Digital y Pensamiento Computacional;Inteligencia Artificial;rosco;empieza;G;Capacidad de un modelo para funcionar con datos que nunca ha visto;Generalización
+Creación Digital y Pensamiento Computacional;Inteligencia Artificial;rosco;empieza;H;Herramienta indispensable en las fases iniciales del análisis de datos;Hojas de cálculo
+Creación Digital y Pensamiento Computacional;Inteligencia Artificial;rosco;empieza;I;Tipo de inteligencia capaz de redactar ensayos u organizar poemas nuevos;IA Generativa
+Creación Digital y Pensamiento Computacional;Inteligencia Artificial;rosco;empieza;J;Nombre alternativo del Test de Turing;Juego de Imitación
+Creación Digital y Pensamiento Computacional;Inteligencia Artificial;rosco;empieza;L;Serie de pasos finitos y no ambiguos para resolver un problema;Algoritmo
+Creación Digital y Pensamiento Computacional;Inteligencia Artificial;rosco;empieza;M;Rama de la IA centrada en mejorar el rendimiento a través de la experiencia;Machine Learning
+Creación Digital y Pensamiento Computacional;Inteligencia Artificial;rosco;empieza;N;Estructuras de IA inspiradas en la biología del cerebro humano;Redes Neuronales
+Creación Digital y Pensamiento Computacional;Inteligencia Artificial;rosco;contiene;Ñ;Fase de creación de la lógica del sistema antes de programar;Diseño
+Creación Digital y Pensamiento Computacional;Inteligencia Artificial;rosco;empieza;O;Símbolo en un diagrama de flujo para indicar el Inicio o Fin;Óvalo
+Creación Digital y Pensamiento Computacional;Inteligencia Artificial;rosco;empieza;P;Lenguaje de programación líder en Ciencia de Datos e IA;Python
+Creación Digital y Pensamiento Computacional;Inteligencia Artificial;rosco;contiene;Q;Uso de datos que ya contienen la respuesta correcta;Clasificación Supervisada
+Creación Digital y Pensamiento Computacional;Inteligencia Artificial;rosco;empieza;R;Símbolo que representa puntos de decisión o preguntas lógicas;Rombo
+Creación Digital y Pensamiento Computacional;Inteligencia Artificial;rosco;empieza;S;Prejuicios heredados de datos incompletos o desiguales;Sesgos
+Creación Digital y Pensamiento Computacional;Inteligencia Artificial;rosco;empieza;T;Evaluación para saber si una máquina engaña a un humano en una charla;Test de Turing
+Creación Digital y Pensamiento Computacional;Inteligencia Artificial;rosco;contiene;U;Proceso de manejar situaciones inesperadas sin colapsar;Algoritmo Robusto
+Creación Digital y Pensamiento Computacional;Inteligencia Artificial;rosco;empieza;V;Dimensión del Big Data que se refiere a la procedencia de datos en múltiples formatos;Variedad
+Creación Digital y Pensamiento Computacional;Inteligencia Artificial;rosco;contiene;X;Característica de la información fiable y exacta;Veracidad
+Creación Digital y Pensamiento Computacional;Inteligencia Artificial;rosco;contiene;Y;Capacidad de la IA Generativa para redactar textos largos;Ensayos
+Creación Digital y Pensamiento Computacional;Inteligencia Artificial;rosco;contiene;Z;Sistemas que no dependen de respuestas pregrabadas;Modelos Avanzados
+# JUEGO DEL AHORCADO
+Creación Digital y Pensamiento Computacional;Inteligencia Artificial;ahorcado;PIONERO DE LA INTELIGENCIA ARTIFICIAL;ALANTURING
+Creación Digital y Pensamiento Computacional;Inteligencia Artificial;ahorcado;LIBRERIA CLAVE PARA MANIPULACION DE DATOS;PANDAS
+Creación Digital y Pensamiento Computacional;Inteligencia Artificial;ahorcado;ESTRUCTURA DE DATOS BIDIMENSIONAL EN PANDAS;DATAFRAME
+# JUEGO DE LAS PAREJAS
+Creación Digital y Pensamiento Computacional;Inteligencia Artificial;pareja;DIAGRAMA DE FLUJO;OVALO;INICIO;RECTANGULO;PROCESO;ROMBO;DECISION
+Creación Digital y Pensamiento Computacional;Inteligencia Artificial;pareja;DIMENSIONES BIG DATA;VOLUMEN;CANTIDAD;VARIEDAD;FORMATOS;VERACIDAD;FIABILIDAD
+Creación Digital y Pensamiento Computacional;Inteligencia Artificial;pareja;CONCEPTOS IA;CONTEXTO;MEMORIA;ETIQUETAS;CATEGORIAS;SESGOS;PREJUICIOS
+# JUEGO DE VERDADERO O FALSO
+Creación Digital y Pensamiento Computacional;Inteligencia Artificial;verdadero;IA Básica;El Test de Turing evalúa si una máquina puede ser indistinguible de un humano;VERDADERO; El Test de Turing evalúa si la máquina engaña al humano en una charla textual
+Creación Digital y Pensamiento Computacional;Inteligencia Artificial;verdadero;Sistemas;Los sistemas basados en reglas comprenden perfectamente la ironía y el sarcasmo;FALSO; Los sistemas basados en reglas tienen la limitación de no comprender ironía o sarcasmo
+Creación Digital y Pensamiento Computacional;Inteligencia Artificial;verdadero;Big Data;La Variedad en Big Data se refiere a la cantidad masiva de registros generados;FALSO; La cantidad de registros es el Volumen, la Variedad son los múltiples formatos
+Creación Digital y Pensamiento Computacional;Inteligencia Artificial;verdadero;Machine Learning;El sobreajuste ocurre cuando la IA memoriza datos en lugar de aprender patrones;VERDADERO; El sobreajuste o overfitting es la memorización de datos específicos
+Creación Digital y Pensamiento Computacional;Inteligencia Artificial;verdadero;Programación;Python es el lenguaje líder en el ecosistema de la IA y Ciencia de Datos;VERDADERO; Python es el lenguaje más utilizado en estos ámbitos
+Creación Digital y Pensamiento Computacional;Inteligencia Artificial;verdadero;Diagramas;Un rectángulo en un diagrama de flujo representa un punto de decisión lógica;FALSO; El rectángulo representa acciones o procesos, el rombo representa decisiones
+Creación Digital y Pensamiento Computacional;Inteligencia Artificial;verdadero;Estadística;La media o promedio ayuda a entender el valor central de un conjunto de datos;VERDADERO; La media es el valor estadístico que indica el centro de los datos
+Creación Digital y Pensamiento Computacional;Inteligencia Artificial;verdadero;Ética;Los algoritmos pueden perpetuar prejuicios si se entrenan con datos discriminatorios;VERDADERO; Los sesgos algorítmicos heredan prejuicios de datos desiguales
+Creación Digital y Pensamiento Computacional;Inteligencia Artificial;verdadero;IA Avanzada;La IA Generativa se basa en reglas rígidas y respuestas pregrabadas;FALSO; La IA Generativa se basa en redes neuronales y creatividad en tiempo real
+Creación Digital y Pensamiento Computacional;Inteligencia Artificial;verdadero;Sostenibilidad;La IA puede ayudar a la sostenibilidad optimizando la gestión de residuos;VERDADERO; La optimización de residuos es una de las aplicaciones ambientales de la IA
+# JUEGO DEL ROSCO
 Digitalización;Creación digital;rosco;empieza;A;Formato desarrollado por Microsoft;AVI
 Digitalización;Creación digital;rosco;empieza;B;Lo que se puede ajustar en un editor de imagen junto al contraste;brillo
 Digitalización;Creación digital;rosco;empieza;C;Se usan para comprimir y descomprimir video;codecs
