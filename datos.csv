@@ -359,6 +359,53 @@ Tecnología de la Información y la Comunicación II;La Web;verdadero;Formulario
 Tecnología de la Información y la Comunicación II;La Web;verdadero;Accesibilidad;WCAG es una iniciativa para promover el diseño web accesible;VERDADERO;WCAG son las pautas de accesibilidad para el contenido web
 Tecnología de la Información y la Comunicación II;La Web;verdadero;Estilos;La etiqueta <div> es un contenedor de nivel de línea;FALSO;<div> es un contenedor genérico de nivel de bloque que ocupa todo el ancho
 # JUEGO DEL ROSCO
+Tecnología de la Información y la Comunicación II;Trabajo colaborativo;rosco;empieza;A;Variable que suele fijarse al principio en la gestión tradicional;alcance
+Tecnología de la Información y la Comunicación II;Trabajo colaborativo;rosco;empieza;B;Lista dinámica y ordenada de requisitos y entregables en Scrum;backlog
+Tecnología de la Información y la Comunicación II;Trabajo colaborativo;rosco;empieza;C;Elemento situado en el centro del Triángulo de Hierro;calidad
+Tecnología de la Información y la Comunicación II;Trabajo colaborativo;rosco;empieza;D;Reunión breve para sincronizar al equipo y detectar bloqueos;daily
+Tecnología de la Información y la Comunicación II;Trabajo colaborativo;rosco;empieza;E;Grupo autoorganizado que decide cómo realizar el trabajo en Scrum;equipo
+Tecnología de la Información y la Comunicación II;Trabajo colaborativo;rosco;empieza;F;Motor que impulsa la mejora y valida si el producto es correcto;feedback
+Tecnología de la Información y la Comunicación II;Trabajo colaborativo;rosco;empieza;G;Sistema de control de versiones utilizado en desarrollo;git
+Tecnología de la Información y la Comunicación II;Trabajo colaborativo;rosco;contiene;H;Lo que posee un equipo multidisciplinar para crear el producto;habilidades
+Tecnología de la Información y la Comunicación II;Trabajo colaborativo;rosco;empieza;I;Enfoque que divide el trabajo en partes que se completan al cien por cien;incremental
+Tecnología de la Información y la Comunicación II;Trabajo colaborativo;rosco;contiene;J;Lo que gestiona y optimiza el método Kanban;flujo
+Tecnología de la Información y la Comunicación II;Trabajo colaborativo;rosco;empieza;K;Método que tiene su origen en el sistema de producción de Toyota;kanban
+Tecnología de la Información y la Comunicación II;Trabajo colaborativo;rosco;empieza;L;Métrica que mide el tiempo total desde la solicitud hasta la entrega;lead
+Tecnología de la Información y la Comunicación II;Trabajo colaborativo;rosco;empieza;M;Componente que actúa como el cerebro de un dispositivo inteligente;microcontrolador
+Tecnología de la Información y la Comunicación II;Trabajo colaborativo;rosco;contiene;N;Constante que las metodologías ágiles asumen que existe;incertidumbre
+Tecnología de la Información y la Comunicación II;Trabajo colaborativo;rosco;contiene;Ñ;Propiedad del equipo Scrum que recomienda ser de diez personas o menos;tamaño
+Tecnología de la Información y la Comunicación II;Trabajo colaborativo;rosco;contiene;O;Responsable de gestionar el Product Backlog en Scrum;owner
+Tecnología de la Información y la Comunicación II;Trabajo colaborativo;rosco;empieza;P;Reunión donde se seleccionan tareas para el ciclo de trabajo;planning
+Tecnología de la Información y la Comunicación II;Trabajo colaborativo;rosco;contiene;Q;Lo que mantiene planes flexibles y actualizados en agilidad;requisitos
+Tecnología de la Información y la Comunicación II;Trabajo colaborativo;rosco;empieza;R;Evento para analizar cómo mejorar los procesos y la colaboración;retrospective
+Tecnología de la Información y la Comunicación II;Trabajo colaborativo;rosco;empieza;S;Marco ligero para generar soluciones a problemas complejos;scrum
+Tecnología de la Información y la Comunicación II;Trabajo colaborativo;rosco;empieza;T;Vértice del Triángulo de Hierro junto al Alcance y el Coste;tiempo
+Tecnología de la Información y la Comunicación II;Trabajo colaborativo;rosco;empieza;U;Pruebas para verificar que cada pequeña parte del código funciona;unitarias
+Tecnología de la Información y la Comunicación II;Trabajo colaborativo;rosco;empieza;V;Control que permite trabajar a varios desarrolladores sin sobrescribirse;versiones
+Tecnología de la Información y la Comunicación II;Trabajo colaborativo;rosco;empieza;W;Sigla que representa el trabajo en curso que debe limitarse;wip
+Tecnología de la Información y la Comunicación II;Trabajo colaborativo;rosco;contiene;X;Tipo de problemas para los que Scrum genera soluciones;complejos
+Tecnología de la Información y la Comunicación II;Trabajo colaborativo;rosco;contiene;Y;Sistema de producción donde nace el método Kanban;toyota
+Tecnología de la Información y la Comunicación II;Trabajo colaborativo;rosco;contiene;Z;Objetivo buscado al medir el flujo de trabajo con métricas;optimizar
+# JUEGO DEL AHORCADO
+Tecnología de la Información y la Comunicación II;Trabajo colaborativo;ahorcado;PRODUCTBACKLOG
+Tecnología de la Información y la Comunicación II;Trabajo colaborativo;ahorcado;MICROCONTROLADOR
+Tecnología de la Información y la Comunicación II;Trabajo colaborativo;ahorcado;TRIANGULODEHIERRO
+# JUEGO DE LAS PAREJAS
+Tecnología de la Información y la Comunicación II;Trabajo colaborativo;pareja;Roles Scrum;PRODUCT OWNER;VALOR;SCRUM MASTER;IMPEDIMENTOS;EQUIPO;AUTOORGANIZADO
+Tecnología de la Información y la Comunicación II;Trabajo colaborativo;pareja;Métricas Kanban;LEAD TIME;SOLICITUD;CYCLE TIME;COMIENZO;WIP;TRABAJO CURSO
+Tecnología de la Información y la Comunicación II;Trabajo colaborativo;pareja;Robótica;SENSOR;ENTORNO;ACTUADOR;ACCION;MICROCONTROLADOR;CEREBRO
+# JUEGO DE VERDADERO O FALSO
+Tecnología de la Información y la Comunicación II;Trabajo colaborativo;verdadero;Agilidad;Las metodologías ágiles asumen que la incertidumbre es una constante;VERDADERO;Las ágiles asumen que la incertidumbre es una constante.
+Tecnología de la Información y la Comunicación II;Trabajo colaborativo;verdadero;Triángulo de Hierro;Fijar los tres vértices simultáneamente mejora la calidad del producto;FALSO;Si se fijan los tres vértices la calidad se ve afectada negativamente.
+Tecnología de la Información y la Comunicación II;Trabajo colaborativo;verdadero;Scrum;Un equipo de Scrum debe tener preferiblemente más de 50 personas;FALSO;El tamaño máximo recomendado es de 10 personas o menos.
+Tecnología de la Información y la Comunicación II;Trabajo colaborativo;verdadero;Scrum;El Product Owner es responsable de maximizar el valor del producto;VERDADERO;Es el responsable de maximizar el valor y gestionar el Product Backlog.
+Tecnología de la Información y la Comunicación II;Trabajo colaborativo;verdadero;Kanban;El primer paso en Kanban es hacer visible el trabajo mediante un tablero;VERDADERO;Es fundamental para implementar Kanban correctamente.
+Tecnología de la Información y la Comunicación II;Trabajo colaborativo;verdadero;Kanban;Limitar el WIP ayuda a evitar la multitarea y exponer cuellos de botella;VERDADERO;Es vital para mantener un flujo de trabajo saludable.
+Tecnología de la Información y la Comunicación II;Trabajo colaborativo;verdadero;Programación;Las estructuras iterativas sirven para tomar decisiones de verdadero o falso;FALSO;Las iterativas sirven para repetir instrucciones, las condicionales toman decisiones.
+Tecnología de la Información y la Comunicación II;Trabajo colaborativo;verdadero;Robótica;Un actuador se encarga de recoger información del entorno físico;FALSO;El sensor recoge información, el actuador ejecuta una acción física.
+Tecnología de la Información y la Comunicación II;Trabajo colaborativo;verdadero;Scrum;La Sprint Review sirve para demostrar el producto funcionando a los interesados;VERDADERO;Esa es su finalidad principal.
+Tecnología de la Información y la Comunicación II;Trabajo colaborativo;verdadero;Software;El IDE es un entorno que facilita la programación de aplicaciones;VERDADERO;Es un Entorno de Desarrollo Integrado.
+# JUEGO DEL ROSCO
 Tecnología y Digitalización 2º;Metales;rosco;empieza;A;Mezcla de elementos donde al menos uno es un metal;aleacion
 Tecnología y Digitalización 2º;Metales;rosco;empieza;B;Aleacion de cobre y estaño;bronce
 Tecnología y Digitalización 2º;Metales;rosco;empieza;C;Metal valorado por su buena conductividad y gran ductilidad;cobre
