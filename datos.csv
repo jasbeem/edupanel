@@ -312,6 +312,93 @@ Tecnologías de la Información y la Comunicación I;Hojas de Cálculo en Libreo
 Tecnologías de la Información y la Comunicación I;Hojas de Cálculo en Libreoffice;verdadero;Navegación;La tecla Tabulador mueve el cursor hacia la celda de abajo;FALSO;La tecla Tabulador mueve el cursor hacia la celda de la derecha
 Tecnologías de la Información y la Comunicación I;Hojas de Cálculo en Libreoffice;verdadero;Visualización;Se puede dividir la ventana de Calc en hasta seis secciones;FALSO;La ventana solo se puede dividir en un máximo de cuatro secciones
 # JUEGO DEL ROSCO
+Tecnologías de la Información y la Comunicación I;Internet y redes de ordenadores;rosco;empieza;A;Capa del modelo OSI más cercana al usuario final;aplicacion
+Tecnologías de la Información y la Comunicación I;Internet y redes de ordenadores;rosco;empieza;B;Medio de transmisión inalámbrico de corto alcance;bluetooth
+Tecnologías de la Información y la Comunicación I;Internet y redes de ordenadores;rosco;empieza;C;Paradigma que permite gestionar servicios y almacenamiento de forma remota;computacionenlanube
+Tecnologías de la Información y la Comunicación I;Internet y redes de ordenadores;rosco;empieza;D;Sistema que traduce nombres de dominio en direcciones IP;dns
+Tecnologías de la Información y la Comunicación I;Internet y redes de ordenadores;rosco;empieza;E;Estándar que rige las características de las redes cableadas de tipo par trenzado;ethernet
+Tecnologías de la Información y la Comunicación I;Internet y redes de ordenadores;rosco;empieza;F;Medio de transmisión que utiliza la reflexión interna total de la luz;fibraoptica
+Tecnologías de la Información y la Comunicación I;Internet y redes de ordenadores;rosco;contiene;G;Tipo de red limitada a un área geográfica pequeña;geografica
+Tecnologías de la Información y la Comunicación I;Internet y redes de ordenadores;rosco;empieza;H;Dispositivo que reenvía la señal recibida a todos sus puertos mediante broadcast;hub
+Tecnologías de la Información y la Comunicación I;Internet y redes de ordenadores;rosco;empieza;I;Ejemplo más claro y extenso de una red de tipo WAN;internet
+Tecnologías de la Información y la Comunicación I;Internet y redes de ordenadores;rosco;contiene;J;Conector estándar utilizado en los cables de par trenzado UTP;rj45
+Tecnologías de la Información y la Comunicación I;Internet y redes de ordenadores;rosco;contiene;K;Sistema utilizado en la topología en anillo para evitar colisiones;tokenpassing
+Tecnologías de la Información y la Comunicación I;Internet y redes de ordenadores;rosco;empieza;L;Red que se limita a un área pequeña como una casa o una oficina;lan
+Tecnologías de la Información y la Comunicación I;Internet y redes de ordenadores;rosco;empieza;M;Dirección física de 48 bits grabada de fábrica en el hardware;mac
+Tecnologías de la Información y la Comunicación I;Internet y redes de ordenadores;rosco;empieza;N;Proceso que permite usar una única IP pública para varios dispositivos con IP privadas;nat
+Tecnologías de la Información y la Comunicación I;Internet y redes de ordenadores;rosco;empieza;O;Modelo de referencia para la interoperabilidad compuesto por 7 capas;osi
+Tecnologías de la Información y la Comunicación I;Internet y redes de ordenadores;rosco;empieza;P;Elementos que actúan como idioma común para que la información sea comprendida;protocolos
+Tecnologías de la Información y la Comunicación I;Internet y redes de ordenadores;rosco;contiene;Q;Red de área metropolitana que interconecta múltiples LAN;man
+Tecnologías de la Información y la Comunicación I;Internet y redes de ordenadores;rosco;empieza;R;Dispositivo encargado de conectar redes diferentes y realizar el enrutamiento;router
+Tecnologías de la Información y la Comunicación I;Internet y redes de ordenadores;rosco;empieza;S;Evolución inteligente del Hub que registra direcciones MAC;switch
+Tecnologías de la Información y la Comunicación I;Internet y redes de ordenadores;rosco;empieza;T;Estructuras lógicas de la Capa 2 o Enlace de Datos;tramas
+Tecnologías de la Información y la Comunicación I;Internet y redes de ordenadores;rosco;empieza;U;Protocolo de transporte rápido ideal para streaming y juegos online;udp
+Tecnologías de la Información y la Comunicación I;Internet y redes de ordenadores;rosco;contiene;V;Atributo de la IP que no es visible desde Internet;privada
+Tecnologías de la Información y la Comunicación I;Internet y redes de ordenadores;rosco;empieza;W;Red de área extensa que cubre grandes distancias geográficas;wan
+Tecnologías de la Información y la Comunicación I;Internet y redes de ordenadores;rosco;contiene;X;Flexibilidad y facilidad de despliegue son ventajas de este tipo de redes;inalambricas
+Tecnologías de la Información y la Comunicación I;Internet y redes de ordenadores;rosco;contiene;Y;Capa del modelo OSI encargada de la transmisión de bits;fisica
+Tecnologías de la Información y la Comunicación I;Internet y redes de ordenadores;rosco;contiene;Z;Sistemas que mejoran la robustez al repartir tareas entre componentes;distribuidos
+# JUEGO DEL AHORCADO
+Tecnologías de la Información y la Comunicación I;Internet y redes de ordenadores;ahorcado;Fenómeno físico para transmitir señal en fibra óptica;REFLEXIONINTERNATOTAL
+Tecnologías de la Información y la Comunicación I;Internet y redes de ordenadores;ahorcado;Acceso Múltiple con Escucha de Portadora y Detección de Colisiones;CSMACD
+Tecnologías de la Información y la Comunicación I;Internet y redes de ordenadores;ahorcado;Topología que permite rutas alternativas si falla un camino;MALLA
+# JUEGO DE LAS PAREJAS
+Tecnologías de la Información y la Comunicación I;Internet y redes de ordenadores;pareja;CAPAS OSI;FISICA;BITS;ENLACE;TRAMAS;RED;ENRUTAMIENTO
+Tecnologías de la Información y la Comunicación I;Internet y redes de ordenadores;pareja;TOPOLOGIAS;ESTRELLA;DISPOSITIVOCENTRAL;BUS;CABLEPRINCIPAL;ANILLO;TOKENPASSING
+Tecnologías de la Información y la Comunicación I;Internet y redes de ordenadores;pareja;DISPOSITIVOS;SWITCH;DIRECCIONMAC;ROUTER;LANWAN;HUB;BROADCAST
+# JUEGO DE VERDADERO O FALSO
+Tecnologías de la Información y la Comunicación I;Internet y redes de ordenadores;verdadero;Modelos;El modelo OSI se compone de siete capas de red;VERDADERO; El modelo OSI se compone de 7 capas
+Tecnologías de la Información y la Comunicación I;Internet y redes de ordenadores;verdadero;Medios;La fibra óptica es inmune a las interferencias electromagnéticas;VERDADERO; La fibra óptica es inmune a las interferencias electromagnéticas
+Tecnologías de la Información y la Comunicación I;Internet y redes de ordenadores;verdadero;Protocolos;UDP es un protocolo que garantiza que los datos lleguen completos y en orden;FALSO; Es el protocolo TCP el que garantiza la entrega completa y ordenada
+Tecnologías de la Información y la Comunicación I;Internet y redes de ordenadores;verdadero;Hardware;Un Switch opera en la Capa 2 del modelo OSI;VERDADERO; El Switch es la evolución del Hub y opera en la Capa 2
+Tecnologías de la Información y la Comunicación I;Internet y redes de ordenadores;verdadero;Topologías;En una topología en bus si el cable principal se corta la red sigue funcionando;FALSO; Si el cable principal se corta toda la red colapsa y deja de funcionar
+Tecnologías de la Información y la Comunicación I;Internet y redes de ordenadores;verdadero;Direccionamiento;La dirección MAC es un identificador lógico asignado por software;FALSO; La dirección MAC es una dirección física grabada en el hardware
+Tecnologías de la Información y la Comunicación I;Internet y redes de ordenadores;verdadero;Protocolos;DNS se encarga de traducir nombres de dominio en direcciones IP;VERDADERO; El DNS traduce nombres como google.com en direcciones IP
+Tecnologías de la Información y la Comunicación I;Internet y redes de ordenadores;verdadero;Conceptos;Un sistema distribuido es menos robusto que uno centralizado;FALSO; Los sistemas distribuidos mejoran la robustez al repartir tareas
+Tecnologías de la Información y la Comunicación I;Internet y redes de ordenadores;verdadero;Hardware;El conector estándar para el cable de par trenzado es el RJ45;VERDADERO; El RJ45 es el conector estándar de los cables UTP
+Tecnologías de la Información y la Comunicación I;Internet y redes de ordenadores;verdadero;Seguridad;Las redes inalámbricas ofrecen mayor seguridad que las cableadas;FALSO; Las redes cableadas ofrecen mayor seguridad porque requieren acceso físico al cable
+# JUEGO DEL ROSCO
+Tecnologías de la Información y la Comunicación I;Lenguajes de programación;rosco;empieza;A;Secuencia ordenada y finita de instrucciones;algoritmo
+Tecnologías de la Información y la Comunicación I;Lenguajes de programación;rosco;empieza;B;Tipo de dato para valores lógicos como verdadero o falso;booleano
+Tecnologías de la Información y la Comunicación I;Lenguajes de programación;rosco;empieza;C;Fase donde los programadores escriben el código fuente real;codificación
+Tecnologías de la Información y la Comunicación I;Lenguajes de programación;rosco;empieza;D;Característica que garantiza el mismo resultado ante los mismos datos;determinismo
+Tecnologías de la Información y la Comunicación I;Lenguajes de programación;rosco;empieza;E;Factor de calidad que indica el tiempo que tarda un programa en procesar;eficiencia
+Tecnologías de la Información y la Comunicación I;Lenguajes de programación;rosco;empieza;F;Característica que indica que un algoritmo debe terminar;finitud
+Tecnologías de la Información y la Comunicación I;Lenguajes de programación;rosco;contiene;G;Fase de análisis para comprender el problema a resolver y evitar errores de este tipo;logicos
+Tecnologías de la Información y la Comunicación I;Lenguajes de programación;rosco;empieza;H;Programa para verificar que el entorno de desarrollo funciona;holamundo
+Tecnologías de la Información y la Comunicación I;Lenguajes de programación;rosco;empieza;I;Lee y ejecuta el código línea por línea en tiempo real;intérprete
+Tecnologías de la Información y la Comunicación I;Lenguajes de programación;rosco;empieza;J;Lenguaje esencial para interactividad Web y Frontend;javascript
+Tecnologías de la Información y la Comunicación I;Lenguajes de programación;rosco;empieza;L;Apellido de la mujer que escribió el primer algoritmo;lovelace
+Tecnologías de la Información y la Comunicación I;Lenguajes de programación;rosco;empieza;M;Fase para actualizar funcionalidades y corregir errores tras la entrega;mantenimiento
+Tecnologías de la Información y la Comunicación I;Lenguajes de programación;rosco;contiene;N;Código de primera generación basado en ceros y unos;binario
+Tecnologías de la Información y la Comunicación I;Lenguajes de programación;rosco;empieza;O;Símbolo que representa el Inicio y el Fin en un diagrama de flujo;ovalo
+Tecnologías de la Información y la Comunicación I;Lenguajes de programación;rosco;empieza;P;Uso de lenguaje natural con estructura lógica de programación;pseudocodigo
+Tecnologías de la Información y la Comunicación I;Lenguajes de programación;rosco;contiene;Q;Símbolo para representar procesos como cálculos o asignaciones;rectangulo
+Tecnologías de la Información y la Comunicación I;Lenguajes de programación;rosco;empieza;R;Símbolo que representa una toma de decisión con dos caminos;rombo
+Tecnologías de la Información y la Comunicación I;Lenguajes de programación;rosco;empieza;S;Lenguaje orientado a la manipulación de bases de datos;sql
+Tecnologías de la Información y la Comunicación I;Lenguajes de programación;rosco;empieza;T;Fase cuyo objetivo es encontrar bugs y vulnerabilidades;testing
+Tecnologías de la Información y la Comunicación I;Lenguajes de programación;rosco;contiene;U;Estructura que repite un bloque de código mientras se cumple una condición;bucles
+Tecnologías de la Información y la Comunicación I;Lenguajes de programación;rosco;empieza;V;Caja etiquetada en la memoria RAM para guardar un dato;variable
+# JUEGO DEL AHORCADO
+Tecnologías de la Información y la Comunicación I;Lenguajes de programación;ahorcado;Secuencia ordenada y finita de instrucciones;ALGORITMO
+Tecnologías de la Información y la Comunicación I;Lenguajes de programación;ahorcado;Herramienta que traduce el código fuente a un archivo ejecutable;COMPILADOR
+Tecnologías de la Información y la Comunicación I;Lenguajes de programación;ahorcado;Lenguaje líder actual para Inteligencia Artificial;PYTHON
+# JUEGO DE LAS PAREJAS
+Tecnologías de la Información y la Comunicación I;Lenguajes de programación;pareja;DIAGRAMAS;ROMBO;DECISION;RECTANGULO;PROCESO;OVALO;INICIO
+Tecnologías de la Información y la Comunicación I;Lenguajes de programación;pareja;LENGUAJES;PYTHON;IA;SQL;DATABASES;FORTRAN;CIENCIA
+Tecnologías de la Información y la Comunicación I;Lenguajes de programación;pareja;MODELO IPO;INPUT;ENTRADA;PROCESS;NUCLEO;OUTPUT;SALIDA
+# JUEGO DE VERDADERO O FALSO
+Tecnologías de la Información y la Comunicación I;Lenguajes de programación;verdadero;Historia;Ada Lovelace escribió el primer algoritmo para la Máquina Analítica;VERDADERO;Ada Lovelace escribió el primer algoritmo para la Máquina Analítica
+Tecnologías de la Información y la Comunicación I;Lenguajes de programación;verdadero;Hardware;La Máquina Analítica utilizaba conexión Bluetooth para ser programada;FALSO;La Máquina Analítica utilizaba tarjetas perforadas
+Tecnologías de la Información y la Comunicación I;Lenguajes de programación;verdadero;Generaciones;Los lenguajes de primera generación utilizaban código binario;VERDADERO;Los lenguajes de primera generación utilizaban código binario
+Tecnologías de la Información y la Comunicación I;Lenguajes de programación;verdadero;Calidad;Un algoritmo es finito si entra en un ciclo infinito y nunca termina;FALSO;Un algoritmo debe terminar para cumplir la característica de finitud
+Tecnologías de la Información y la Comunicación I;Lenguajes de programación;verdadero;Simbología;En un diagrama de flujo el paralelogramo representa entrada o salida de datos;VERDADERO;En un diagrama de flujo el paralelogramo representa entrada o salida de datos
+Tecnologías de la Información y la Comunicación I;Lenguajes de programación;verdadero;Herramientas;PSeInt es una herramienta para escribir y ejecutar pseudocódigo;VERDADERO;PSeInt es una herramienta para escribir y ejecutar pseudocódigo
+Tecnologías de la Información y la Comunicación I;Lenguajes de programación;verdadero;Tipos de Datos;El tipo de dato Entero se utiliza para almacenar números con decimales;FALSO;El tipo de dato Entero es para números sin decimales
+Tecnologías de la Información y la Comunicación I;Lenguajes de programación;verdadero;Estructuras;Un Array es una colección de elementos que pueden ser de distinto tipo;FALSO;Un Array es una colección ordenada de elementos del mismo tipo
+Tecnologías de la Información y la Comunicación I;Lenguajes de programación;verdadero;Ciclo de Vida;La fase de Diseño consiste en planificar la arquitectura y los algoritmos;VERDADERO;La fase de Diseño consiste en planificar la arquitectura y los algoritmos
+Tecnologías de la Información y la Comunicación I;Lenguajes de programación;verdadero;Lenguajes;C++ es una extensión de C muy utilizada en el desarrollo de videojuegos;VERDADERO;C++ es una extensión de C muy utilizada en el desarrollo de videojuegos
+# JUEGO DEL ROSCO
 Tecnología de la Información y la Comunicación II;La Web;rosco;empieza;A;Etiqueta para insertar archivos de sonido;audio
 Tecnología de la Información y la Comunicación II;La Web;rosco;empieza;B;Etiqueta que contiene la parte visible del documento;body
 Tecnología de la Información y la Comunicación II;La Web;rosco;empieza;C;Atributo para unir columnas en una tabla;colspan
