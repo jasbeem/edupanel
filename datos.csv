@@ -87,6 +87,52 @@ Creación Digital y Pensamiento Computacional;Inteligencia Artificial;verdadero;
 Creación Digital y Pensamiento Computacional;Inteligencia Artificial;verdadero;IA Avanzada;La IA Generativa se basa en reglas rígidas y respuestas pregrabadas;FALSO; La IA Generativa se basa en redes neuronales y creatividad en tiempo real
 Creación Digital y Pensamiento Computacional;Inteligencia Artificial;verdadero;Sostenibilidad;La IA puede ayudar a la sostenibilidad optimizando la gestión de residuos;VERDADERO; La optimización de residuos es una de las aplicaciones ambientales de la IA
 # JUEGO DEL ROSCO
+Creación Digital y Pensamiento Computacional;Ciberseguridad;rosco;empieza;A;Garantía de que el mensaje es del emisor y no ha sido alterado;autenticidad
+Creación Digital y Pensamiento Computacional;Ciberseguridad;rosco;empieza;B;Error de programación que permite eludir medidas de seguridad;bug
+Creación Digital y Pensamiento Computacional;Ciberseguridad;rosco;empieza;C;Pilar que garantiza que la información solo sea accesible para autorizados;confidencialidad
+Creación Digital y Pensamiento Computacional;Ciberseguridad;rosco;empieza;D;Garantía de que sistemas y datos están accesibles cuando se necesitan;disponibilidad
+Creación Digital y Pensamiento Computacional;Ciberseguridad;rosco;empieza;E;Técnica que transforma información legible en formato incomprensible;encriptacion
+Creación Digital y Pensamiento Computacional;Ciberseguridad;rosco;empieza;F;Herramienta matemática para generar una huella digital única de un archivo;funcioneshash
+Creación Digital y Pensamiento Computacional;Ciberseguridad;rosco;empieza;G;Malware que se replica automáticamente por la red sin intervención humana;gusano
+Creación Digital y Pensamiento Computacional;Ciberseguridad;rosco;empieza;H;Persona que realiza pruebas de seguridad autorizadas para reportar fallos;hacker
+Creación Digital y Pensamiento Computacional;Ciberseguridad;rosco;empieza;I;Principio que se compromete si un atacante modifica registros sin permiso;integridad
+Creación Digital y Pensamiento Computacional;Ciberseguridad;rosco;contiene;J;Inserción de comandos maliciosos en campos de formularios web;inyeccion
+Creación Digital y Pensamiento Computacional;Ciberseguridad;rosco;empieza;K;Núcleo del sistema que un Rootkit intenta modificar y ocultar;kernel
+Creación Digital y Pensamiento Computacional;Ciberseguridad;rosco;empieza;L;Normativa española que protege los datos de carácter personal;lopd
+Creación Digital y Pensamiento Computacional;Ciberseguridad;rosco;empieza;M;Término que define la dirección física de un dispositivo de red;mac
+Creación Digital y Pensamiento Computacional;Ciberseguridad;rosco;empieza;N;Capacidad de asegurar que un emisor no pueda negar el envío de un mensaje;norepudio
+Creación Digital y Pensamiento Computacional;Ciberseguridad;rosco;contiene;O;Suplantación de identidad para engañar al usuario y obtener claves;phishing
+Creación Digital y Pensamiento Computacional;Ciberseguridad;rosco;empieza;P;Manipulación de los sistemas DNS para redirigir al usuario;pharming
+Creación Digital y Pensamiento Computacional;Ciberseguridad;rosco;empieza;Q;Zona segura donde se aísla un archivo para que no dañe el sistema;cuarentena
+Creación Digital y Pensamiento Computacional;Ciberseguridad;rosco;empieza;R;Malware que cifra archivos y exige un pago para recuperarlos;ransomware
+Creación Digital y Pensamiento Computacional;Ciberseguridad;rosco;empieza;S;Técnica de escucha de red para capturar tráfico de datos;sniffing
+Creación Digital y Pensamiento Computacional;Ciberseguridad;rosco;empieza;T;Software malicioso que se oculta en un programa aparentemente legítimo;troyano
+Creación Digital y Pensamiento Computacional;Ciberseguridad;rosco;contiene;U;Fallo de un disco duro por vida útil limitada;amenazafisica
+Creación Digital y Pensamiento Computacional;Ciberseguridad;rosco;empieza;V;Término que define un error que permite eludir medidas de seguridad;vulnerabilidad
+Creación Digital y Pensamiento Computacional;Ciberseguridad;rosco;empieza;W;Estándar de cifrado inalámbrico más reciente y seguro;wpa3
+Creación Digital y Pensamiento Computacional;Ciberseguridad;rosco;contiene;X;Análisis de evidencias digitales para procesos legales;forense
+Creación Digital y Pensamiento Computacional;Ciberseguridad;rosco;contiene;Y;Software que recopila información del usuario de forma sigilosa;spyware
+Creación Digital y Pensamiento Computacional;Ciberseguridad;rosco;contiene;Z;Sustitución de cada letra por otra un número fijo de posiciones adelante;cesar
+# JUEGO DEL AHORCADO
+Creación Digital y Pensamiento Computacional;Ciberseguridad;ahorcado;TECNICADEOOCULTARINFORMACIONDENTRODEOTROARCHIVO;ESTEGANOGRAFIA
+Creación Digital y Pensamiento Computacional;Ciberseguridad;ahorcado;ACCESOREMOTOELUDIENDOLAAUTENTICACION;BACKDOOR
+Creación Digital y Pensamiento Computacional;Ciberseguridad;ahorcado;SISTEMADEDISCOSPARACOPIASEXACTASENESPEJO;RAID
+# JUEGO DE LAS PAREJAS
+Creación Digital y Pensamiento Computacional;Ciberseguridad;pareja;TRIADA CIA;CONFIDENCIALIDAD;AUTORIZADO;INTEGRIDAD;MODIFICACION;DISPONIBILIDAD;ACCESO
+Creación Digital y Pensamiento Computacional;Ciberseguridad;pareja;TIPOS DE MALWARE;RANSOMWARE;RESCATE;TROYANO;LEGITIMO;SPYWARE;SIGILOSO
+Creación Digital y Pensamiento Computacional;Ciberseguridad;pareja;MEDIDAS SEGURIDAD;FIREWALL;FILTRADO;BACKUP;RECUPERACION;SAI;ELECTRICO
+# JUEGO DE VERDADERO O FALSO
+Creación Digital y Pensamiento Computacional;Ciberseguridad;verdadero;Ataques;Un ataque pasivo implica una intención directa de dañar o alterar datos;FALSO;El ataque activo es el que implica la intención de dañar o alterar datos
+Creación Digital y Pensamiento Computacional;Ciberseguridad;verdadero;Malware;El gusano se caracteriza por replicarse automáticamente sin intervención humana;VERDADERO;El gusano se replica solo por la red
+Creación Digital y Pensamiento Computacional;Ciberseguridad;verdadero;Redes;El protocolo HTTPS garantiza comunicaciones seguras mediante certificados digitales;VERDADERO;HTTPS utiliza SSL/TLS para seguridad web
+Creación Digital y Pensamiento Computacional;Ciberseguridad;verdadero;Criptografía;La criptografía asimétrica utiliza la misma clave para cifrar y descifrar;FALSO;La criptografía simétrica es la que utiliza la misma clave
+Creación Digital y Pensamiento Computacional;Ciberseguridad;verdadero;Identidad;El Spoofing es una técnica para falsificar la dirección IP de origen;VERDADERO;El spoofing busca ocultar la identidad real
+Creación Digital y Pensamiento Computacional;Ciberseguridad;verdadero;Seguridad;Realizar copias de seguridad se considera una medida de seguridad activa;FALSO;Las copias de seguridad son una medida de seguridad pasiva
+Creación Digital y Pensamiento Computacional;Ciberseguridad;verdadero;Ingeniería;En la ingeniería social inversa el atacante convence a la víctima para que esta le pida ayuda;VERDADERO;Es una técnica donde se invierte el rol de contacto
+Creación Digital y Pensamiento Computacional;Ciberseguridad;verdadero;Malware;Un Rootkit se diseña para ocultar procesos y modificar el núcleo del sistema;VERDADERO;Su objetivo es el kernel y el sigilo profundo
+Creación Digital y Pensamiento Computacional;Ciberseguridad;verdadero;Sistemas;El filtrado MAC permite la conexión solo a dispositivos en una lista blanca;VERDADERO;Utiliza el identificador físico del dispositivo
+Creación Digital y Pensamiento Computacional;Ciberseguridad;verdadero;Conceptos;Un Hacker es alguien que usa sus conocimientos con fines maliciosos o ilegales;FALSO;El cracker es quien tiene fines maliciosos, el hacker puede ser ético
+# JUEGO DEL ROSCO
 Digitalización;Creación digital;rosco;empieza;A;Formato desarrollado por Microsoft;AVI
 Digitalización;Creación digital;rosco;empieza;B;Lo que se puede ajustar en un editor de imagen junto al contraste;brillo
 Digitalización;Creación digital;rosco;empieza;C;Se usan para comprimir y descomprimir video;codecs
