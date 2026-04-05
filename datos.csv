@@ -362,6 +362,97 @@ Programación y Computación;Base de datos;verdadero;Roles;El programador es el 
 Programación y Computación;Base de datos;verdadero;SQL;La cláusula ORDER BY se utiliza para ordenar los resultados de una consulta;VERDADERO;La cláusula ORDER BY se utiliza para ordenar los resultados de una consulta
 Programación y Computación;Base de datos;verdadero;Tipos de dato;El tipo de dato booleano es el más apropiado para almacenar fechas y horas;FALSO;El booleano es para estados activo/inactivo y el temporal para fechas y horas
 # JUEGO DEL ROSCO
+Programación y Computación;Robótica;rosco;empieza;A;Componente que transforma la energía en movimiento mecánico;actuador
+Programación y Computación;Robótica;rosco;empieza;B;Tipo de batería preferida en robótica por su ligereza y densidad;litioion
+Programación y Computación;Robótica;rosco;empieza;C;Robot diseñado para trabajar en colaboración con humanos;cobot
+Programación y Computación;Robótica;rosco;empieza;D;Sistema robótico que permite realizar cirugías mínimamente invasivas;davinci
+Programación y Computación;Robótica;rosco;empieza;E;Sensor que mide la posición exacta de las articulaciones;encoder
+Programación y Computación;Robótica;rosco;contiene;F;Significado literal de la palabra checa robota;forzado
+Programación y Computación;Robótica;rosco;empieza;G;Nombre del inventor que patentó el primer robot industrial en 1954;george
+Programación y Computación;Robótica;rosco;empieza;H;Tipo de actuadores utilizados para mover maquinaria pesada;hidraulicos
+Programación y Computación;Robótica;rosco;empieza;I;Robot diseñado para realizar tareas repetitivas con alta precisión;industrial
+Programación y Computación;Robótica;rosco;contiene;J;Dificultad para determinar este tipo de responsabilidad en robots con IA;juridica
+Programación y Computación;Robótica;rosco;empieza;K;Autor de la obra R.U.R. que popularizó el término robot;karel
+Programación y Computación;Robótica;rosco;empieza;L;Sistema láser que crea mapas tridimensionales de precisión;lidar
+Programación y Computación;Robótica;rosco;empieza;M;Término que indica que la robótica requiere varias disciplinas;multidisciplinar
+Programación y Computación;Robótica;rosco;empieza;N;Actuadores que utilizan aire comprimido para generar movimiento;neumaticos
+Programación y Computación;Robótica;rosco;contiene;O;Relato corto de Asimov donde apareció el término robótica;liar
+Programación y Computación;Robótica;rosco;empieza;P;Sensores que miden el estado interno del propio robot;propioceptivos
+Programación y Computación;Robótica;rosco;contiene;Q;Filósofo al que se le atribuye una paloma mecánica de madera;arquitas
+Programación y Computación;Robótica;rosco;empieza;R;Nombre de la ciencia que estudia a los robots acuñado por Asimov;robotica
+Programación y Computación;Robótica;rosco;empieza;S;Dispositivos que permiten al robot captar información del entorno;sensores
+Programación y Computación;Robótica;rosco;empieza;T;Lugar de origen del filósofo y matemático Arquitas;tarento
+Programación y Computación;Robótica;rosco;empieza;U;Nombre del primer robot industrial instalado en General Motors;unimate
+Programación y Computación;Robótica;rosco;empieza;V;Fuente de energía de la paloma mecánica de la antigüedad;vapor
+Programación y Computación;Robótica;rosco;contiene;X;Estructura portátil que ayuda a recuperar la movilidad;exoesqueleto
+Programación y Computación;Robótica;rosco;contiene;Y;Directriz suprema de la robótica según Isaac Asimov;primeraley
+Programación y Computación;Robótica;rosco;contiene;Z;Generación de robots caracterizada por el control sensorial;tercera
+# JUEGO DEL AHORCADO
+Programación y Computación;Robótica;ahorcado;PRIMERROBOTINDUSTRIALINSTALADOENMILNOVECIENTOSSESENTAYUNO;UNIMATE
+Programación y Computación;Robótica;ahorcado;CIENCIAQUEESTUDIAELMOVIMIENTOENSIMISMO;CINEMATICA
+Programación y Computación;Robótica;ahorcado;TERMINOCHECOQUESIGNIFICATRABAJOFORZADO;ROBOTA
+# JUEGO DE LAS PAREJAS
+Programación y Computación;Robótica;pareja;Actuadores;ELECTRICOS;PRECISION;HIDRAULICOS;CARGA;NEUMATICOS;AIRE
+Programación y Computación;Robótica;pareja;Arquitectura;CONTROL;CEREBRO;SENSORES;ENTORNO;ACTUADORES;MOVIMIENTO
+Programación y Computación;Robótica;pareja;Generaciones;PRIMERA;MANIPULADORES;TERCERA;SENSORIAL;CUARTA;INTELIGENTES
+# JUEGO DE VERDADERO O FALSO
+Programación y Computación;Robótica;verdadero;Historia;El término robot proviene del checo robota que significa trabajo forzado;VERDADERO; El término proviene de la palabra checa robota
+Programación y Computación;Robótica;verdadero;Historia;Karel Capek acuñó el término Robótica en un relato de 1941;FALSO; Isaac Asimov acuñó el término Robótica en el relato Liar
+Programación y Computación;Robótica;verdadero;Sensores;Los sensores propioceptivos sirven para captar información del entorno;FALSO; Los sensores propioceptivos miden el estado interno del robot
+Programación y Computación;Robótica;verdadero;Leyes;La Primera Ley de Asimov es la directriz suprema en caso de conflicto;VERDADERO; La Primera Ley es la prioridad más alta
+Programación y Computación;Robótica;verdadero;Actuadores;Los actuadores neumáticos utilizan aire comprimido para generar movimientos rápidos;VERDADERO; Utilizan aire comprimido para rapidez
+Programación y Computación;Robótica;verdadero;Tipos;Un Cobot es un robot industrial que debe estar aislado de los humanos;FALSO; Un Cobot es un robot diseñado para colaborar con humanos
+Programación y Computación;Robótica;verdadero;Componentes;El sistema de control de un robot es equivalente a su cerebro digital;VERDADERO; El control procesa información y envía órdenes
+Programación y Computación;Robótica;verdadero;Generaciones;La cuarta generación de robots posee capacidad de razonamiento y planificación;VERDADERO; La 4a generación se define como inteligente
+Programación y Computación;Robótica;verdadero;Etica;El dilema de la caja negra se refiere a la dificultad de entender cómo decide la IA;VERDADERO; Se refiere a la opacidad en la toma de decisiones
+Programación y Computación;Robótica;verdadero;Programación;Una estructura condicional IF permite al robot tomar decisiones según un sensor;VERDADERO; La estructura IF evalúa una condición sensorial
+# JUEGO DEL ROSCO
+Programación y Computación;Internet de las cosas;rosco;empieza;A;Componente que ejecuta una acción física tras procesar datos;actuador
+Programación y Computación;Internet de las cosas;rosco;empieza;B;Estructura iterativa que ejecuta una tarea mientras se cumple una condición;bucle
+Programación y Computación;Internet de las cosas;rosco;empieza;C;Medio por el cual los datos se transmiten a un sistema central;conectividad
+Programación y Computación;Internet de las cosas;rosco;empieza;D;Tecnología que permite monitorizar la salud del suelo desde el aire;drones
+Programación y Computación;Internet de las cosas;rosco;empieza;E;Técnica que procesa los datos localmente en el propio dispositivo;edgecomputing
+Programación y Computación;Internet de las cosas;rosco;empieza;F;Tipo de objetos que se conectan a la red en la definición de IoT;fisicos
+Programación y Computación;Internet de las cosas;rosco;empieza;G;Puente de comunicación entre dispositivos locales e Internet;gateway
+Programación y Computación;Internet de las cosas;rosco;empieza;H;Tipo de sensor utilizado para automatizar el riego;humedad
+Programación y Computación;Internet de las cosas;rosco;empieza;I;Dificultad de comunicación entre dispositivos de diferentes fabricantes;interoperabilidad
+Programación y Computación;Internet de las cosas;rosco;contiene;J;Concepto que define conectar elementos a una red global;objetos
+Programación y Computación;Internet de las cosas;rosco;empieza;K;Apellido del experto que acuñó el término Internet of Things en 1999;kevinashton
+Programación y Computación;Internet de las cosas;rosco;empieza;L;Tiempo de respuesta que se reduce drásticamente con Edge Computing;latencia
+Programación y Computación;Internet de las cosas;rosco;empieza;M;Componente que procesa la información de los sensores para tomar decisiones;microcontrolador
+Programación y Computación;Internet de las cosas;rosco;empieza;N;Punto cercano al dispositivo donde se procesan datos en Edge Computing;nodo
+Programación y Computación;Internet de las cosas;rosco;empieza;O;Tipo de eficiencia que mejora al basar operaciones en métricas exactas;operativa
+Programación y Computación;Internet de las cosas;rosco;empieza;P;Protección de información personal contra accesos no autorizados;privacidad
+Programación y Computación;Internet de las cosas;rosco;contiene;Q;Estructura de cuatro pilares fundamentales de un sistema IoT;arquitectura
+Programación y Computación;Internet de las cosas;rosco;empieza;R;Tecnología clave en la visión original para rastrear objetos;rfid
+Programación y Computación;Internet de las cosas;rosco;empieza;S;Dispositivos que capturan cambios físicos y los digitalizan;sensores
+Programación y Computación;Internet de las cosas;rosco;empieza;T;Primeros experimentos de medición a distancia realizados en ARPANET;telemetria
+Programación y Computación;Internet de las cosas;rosco;empieza;U;Punto de interacción entre el sistema tecnológico y el ser humano;interfazdeusuario
+Programación y Computación;Internet de las cosas;rosco;empieza;V;Lo que detecta un acelerómetro para predecir fallos en motores;vibracion
+Programación y Computación;Internet de las cosas;rosco;empieza;W;Dispositivos que monitorizan métricas vitales como frecuencia cardíaca;wearables
+Programación y Computación;Internet de las cosas;rosco;contiene;X;Ámbito donde las siglas IoT representan Internet de las Cosas;contexto
+Programación y Computación;Internet de las cosas;rosco;contiene;Y;Disciplina donde el usuario es el principal elemento de prevención;ciberseguridad
+Programación y Computación;Internet de las cosas;rosco;empieza;Z;Protocolo de comunicación inalámbrico común en domótica;zigbee
+# JUEGO DEL AHORCADO
+Programación y Computación;Internet de las cosas;ahorcado;CONCEPTO QUE REPRESENTA LAS SIGLAS IOT;INTERNETOFTHINGS
+Programación y Computación;Internet de las cosas;ahorcado;UNION ENTRE EL INTERNET DE LAS COSAS Y LA INTELIGENCIA ARTIFICIAL;AIOT
+Programación y Computación;Internet de las cosas;ahorcado;SISTEMA QUE PERMITE GARANTIZAR UN NUMERO ILIMITADO DE DIRECCIONES IP;IPV6
+# JUEGO DE LAS PAREJAS
+Programación y Computación;Internet de las cosas;pareja;ARQUITECTURA IOT;SENSORES;CAPTURA;CONECTIVIDAD;TRANSMISION;INTERFAZ;USUARIO
+Programación y Computación;Internet de las cosas;pareja;SECTORES IOT;IOMT;SALUD;SMARTCITY;TRAFICO;AGRICULTURA;DRONES
+Programación y Computación;Internet de las cosas;pareja;PROGRAMACION;IF;CONDICION;WHILE;BUCLE;GIT;VERSIONES
+# JUEGO DE VERDADERO O FALSO
+Programación y Computación;Internet de las cosas;verdadero;Historia;Kevin Ashton acuñó el término Internet of Things en el año 1999;VERDADERO;Kevin Ashton acuñó el término formalmente en 1999
+Programación y Computación;Internet de las cosas;verdadero;Seguridad;Se estima que el 70% de los dispositivos IoT presentan vulnerabilidades;VERDADERO;El 70% de los dispositivos IoT presentan vulnerabilidades de seguridad
+Programación y Computación;Internet de las cosas;verdadero;Arquitectura;El Edge Computing procesa los datos exclusivamente en la nube;FALSO;El Edge Computing procesa los datos localmente en el dispositivo o nodo cercano
+Programación y Computación;Internet de las cosas;verdadero;Componentes;Un actuador es el componente encargado de capturar datos digitales;FALSO;Los sensores capturan datos y los actuadores ejecutan acciones físicas
+Programación y Computación;Internet de las cosas;verdadero;Salud;IoMT es el acrónimo de Internet of Medical Things;VERDADERO;IoMT representa el Internet de las Cosas en el sector salud
+Programación y Computación;Internet de las cosas;verdadero;Industria;El IoT permite pasar de un mantenimiento reactivo a uno predictivo;VERDADERO;Los sensores permiten predecir fallos antes de que ocurran en la maquinaria
+Programación y Computación;Internet de las cosas;verdadero;Protocolos;IPv6 permite un número muy limitado de direcciones para dispositivos;FALSO;IPv6 permite un número prácticamente ilimitado de direcciones IP
+Programación y Computación;Internet de las cosas;verdadero;Ciberseguridad;El primer paso ante un incidente es desconectar los equipos de la red;VERDADERO;Desconectar los equipos es el primer paso recomendado ante un incidente
+Programación y Computación;Internet de las cosas;verdadero;Componentes;El sensor LDR es el más adecuado para medir la iluminación;VERDADERO;El LDR es una resistencia que depende de la luz para medir luminosidad
+Programación y Computación;Internet de las cosas;verdadero;Programación;La sentencia IF se utiliza para ejecutar una tarea repetidamente;FALSO;La sentencia IF es condicional, para tareas repetidas se usan bucles como WHILE o FOR
+# JUEGO DEL ROSCO
 Tecnología de la Información y la Comunicación I;Procesador de textos;rosco;empieza;A;Para qué se utilizan los comentarios en un documento;anotaciones
 Tecnología de la Información y la Comunicación I;Procesador de textos;rosco;contiene;B;Donde se configuran los bordes decorativos para una página;formato
 Tecnología de la Información y la Comunicación I;Procesador de textos;rosco;empieza;C;Se pueden crear insertando una sección específica en el documento;columnas
