@@ -226,6 +226,97 @@ Digitalización;Búsqueda de información en Internet;verdadero;Privacidad;DuckD
 Digitalización;Búsqueda de información en Internet;verdadero;Derechos;En España la obra pasa al dominio público habitualmente 70 años después de la muerte del autor;VERDADERO;En España la obra pasa al dominio público habitualmente 70 años después de la muerte del autor
 Digitalización;Búsqueda de información en Internet;verdadero;Estrategia;Definir claramente los objetivos es el primer paso recomendado antes de una búsqueda;VERDADERO;Definir claramente los objetivos es el primer paso recomendado antes de una búsqueda
 # JUEGO DEL ROSCO
+Digitalización;Programación, código y web;rosco;empieza;A;Secuencia ordenada y finita de pasos para resolver un problema;algoritmo
+Digitalización;Programación, código y web;rosco;empieza;B;Lógica en la que se basa el funcionamiento de la estructura IF / ELSE;booleana
+Digitalización;Programación, código y web;rosco;empieza;C;Tecnología responsable de la estética y el diseño visual de una web;css
+Digitalización;Programación, código y web;rosco;empieza;D;Palabra clave en Python para crear bloques de código reutilizables;def
+Digitalización;Programación, código y web;rosco;contiene;E;Símbolo de diagrama de flujo que representa una decisión;rombo
+Digitalización;Programación, código y web;rosco;empieza;F;Bucle usado cuando se conoce de antemano el número de repeticiones;for
+Digitalización;Programación, código y web;rosco;contiene;G;Proceso de encontrar aislar y eliminar errores en el código;debugging
+Digitalización;Programación, código y web;rosco;empieza;H;Lenguaje que define la estructura y el contenido semántico;html
+Digitalización;Programación, código y web;rosco;empieza;I;Instrucción en Python para traer funcionalidades externas;import
+Digitalización;Programación, código y web;rosco;contiene;J;Conjunto de normas de comportamiento respetuoso en la red;netiquette
+Digitalización;Programación, código y web;rosco;contiene;L;Símbolo en un diagrama de flujo para marcar el Inicio y el Fin;ovalo
+Digitalización;Programación, código y web;rosco;contiene;M;Principio de programación que busca evitar la repetición de código;dry
+Digitalización;Programación, código y web;rosco;contiene;N;Espacios al margen izquierdo obligatorios en Python;indentacion
+Digitalización;Programación, código y web;rosco;empieza;O;Símbolo de diagrama de flujo para marcar el Inicio y el Fin;ovalo
+Digitalización;Programación, código y web;rosco;empieza;P;Lenguaje líder en Ciencia de Datos e Inteligencia Artificial;python
+Digitalización;Programación, código y web;rosco;contiene;Q;Estructura de control que ejecuta instrucciones de forma lineal;secuencial
+Digitalización;Programación, código y web;rosco;empieza;R;Dispositivo que suele centralizar la conexión doméstica a internet;router
+Digitalización;Programación, código y web;rosco;empieza;S;Lenguaje fundamental para el manejo de información en bases de datos;sql
+Digitalización;Programación, código y web;rosco;contiene;T;Tipo de dato de una variable que puede cambiar durante la ejecución;dinamico
+Digitalización;Programación, código y web;rosco;empieza;U;Etiqueta HTML utilizada para agrupar una lista desordenada;ul
+Digitalización;Programación, código y web;rosco;empieza;V;Contenedores de memoria para almacenar datos;variables
+Digitalización;Programación, código y web;rosco;empieza;W;Bucle que se detiene en el momento en que la condición no es verdadera;while
+Digitalización;Programación, código y web;rosco;contiene;X;Tipo de error que ocurre al intentar una operación ilegal;runtime
+Digitalización;Programación, código y web;rosco;contiene;Y;Lenguaje creado como extensión de C para manipular objetos;cplusplus
+Digitalización;Programación, código y web;rosco;contiene;Z;Propiedad de un algoritmo que indica que tiene un punto de finalización;finito
+# JUEGO DEL AHORCADO
+Digitalización;Programación, código y web;ahorcado;Secuencia ordenada y finita de pasos;ALGORITMO
+Digitalización;Programación, código y web;ahorcado;Proceso de encontrar y eliminar errores;DEBUGGING
+Digitalización;Programación, código y web;ahorcado;Espacios obligatorios al margen en Python;INDENTACION
+# JUEGO DE LAS PAREJAS
+Digitalización;Programación, código y web;pareja;Lenguajes;PYTHON;CSHARP;ASSEMBLY;ALTO NIVEL;NET;BAJO NIVEL
+Digitalización;Programación, código y web;pareja;Diagramas;OVALO;ROMBO;RECTANGULO;INICIO;DECISION;PROCESO
+Digitalización;Programación, código y web;pareja;Web;HTML;CSS;SELECTOR;ESTRUCTURA;ESTETICA;INDICACION ESTILO
+# JUEGO DE VERDADERO O FALSO
+Digitalización;Programación, código y web;verdadero;Programación;Un compilador traduce el código línea por línea en tiempo real;FALSO;El compilador traduce todo el código de una sola vez antes de la ejecución
+Digitalización;Programación, código y web;verdadero;Programación;El principio DRY busca evitar la repetición innecesaria de código;VERDADERO;El principio DRY busca evitar la repetición innecesaria de código
+Digitalización;Programación, código y web;verdadero;Python;La indentación es estrictamente obligatoria en Python para definir bloques;VERDADERO;La indentación es estrictamente obligatoria en Python para definir bloques
+Digitalización;Programación, código y web;verdadero;Web;HTML es considerado un lenguaje de programación porque tiene condicionales;FALSO;HTML no es un lenguaje de programación porque no tiene lógica ni condicionales
+Digitalización;Programación, código y web;verdadero;Diagramas;El rombo representa un proceso o cálculo en un diagrama de flujo;FALSO;El rombo representa una decisión basada en una condición
+Digitalización;Programación, código y web;verdadero;Bases de Datos;SQL es el lenguaje fundamental para el manejo de bases de datos;VERDADERO;SQL es el lenguaje fundamental para el manejo de bases de datos
+Digitalización;Programación, código y web;verdadero;Seguridad;Configurar actualizaciones garantiza la seguridad y corrige fallos;VERDADERO;Configurar actualizaciones garantiza la seguridad y corrige fallos
+Digitalización;Programación, código y web;verdadero;Scratch;La programación por bloques elimina la frustración por errores de sintaxis;VERDADERO;La programación por bloques elimina la frustración por errores de sintaxis
+Digitalización;Programación, código y web;verdadero;Hardware;Los lenguajes de bajo nivel son lentos y poco eficientes con el hardware;FALSO;Los lenguajes de bajo nivel son increíblemente rápidos y eficientes con el hardware
+Digitalización;Programación, código y web;verdadero;Ética;La netiquette es el conjunto de normas de comportamiento respetuoso en la red;VERDADERO;La netiquette es el conjunto de normas de comportamiento respetuoso en la red
+# JUEGO DEL ROSCO
+Digitalización;Gestiones online y comercio electrónico;rosco;empieza;A;Número de personas que vieron el contenido;alcance
+Digitalización;Gestiones online y comercio electrónico;rosco;empieza;B;Definición del público objetivo al que nos dirigimos;buyerpersona
+Digitalización;Gestiones online y comercio electrónico;rosco;empieza;C;Acciones realizadas como clics o registros;conversión
+Digitalización;Gestiones online y comercio electrónico;rosco;empieza;D;Derecho a devolver el producto sin justificación en un plazo determinado;desistimiento
+Digitalización;Gestiones online y comercio electrónico;rosco;empieza;E;Métrica que mide los likes, comentarios y compartidos obtenidos;engagement
+Digitalización;Gestiones online y comercio electrónico;rosco;empieza;F;Característica de las imágenes en una campaña digital junto a las infografías;fotos
+Digitalización;Gestiones online y comercio electrónico;rosco;empieza;G;Reglamento o derecho que regula el uso de la información personal en la red;gdpr
+Digitalización;Gestiones online y comercio electrónico;rosco;empieza;H;Elementos que ayudan a la difusión viral y a concienciar en iniciativas sociales;hashtags
+Digitalización;Gestiones online y comercio electrónico;rosco;empieza;I;Métrica de engagement que suma likes, comentarios y compartidos;interacción
+Digitalización;Gestiones online y comercio electrónico;rosco;contiene;J;Lo que se busca transmitir de forma clara al conectar con la audiencia;mensaje
+Digitalización;Gestiones online y comercio electrónico;rosco;empieza;K;Métricas clave para medir el rendimiento de una campaña;kpis
+Digitalización;Gestiones online y comercio electrónico;rosco;empieza;L;Tipo de apoyo digital básico que debe pasar a la acción;like
+Digitalización;Gestiones online y comercio electrónico;rosco;empieza;M;Forma de escribir que en la red equivale a gritar;mayúsculas
+Digitalización;Gestiones online y comercio electrónico;rosco;empieza;N;Conjunto de normas de comportamiento en Internet;netiqueta
+Digitalización;Gestiones online y comercio electrónico;rosco;empieza;O;Acceso a datos públicos para su reutilización;opendata
+Digitalización;Gestiones online y comercio electrónico;rosco;empieza;P;Elemento fundamental para que una campaña en redes sociales sea exitosa;planificación
+Digitalización;Gestiones online y comercio electrónico;rosco;contiene;Q;Técnica de escritura persuasiva para crear textos efectivos;copywriting
+Digitalización;Gestiones online y comercio electrónico;rosco;empieza;R;Formato de vídeo corto con gran alcance actual en redes;reels
+Digitalización;Gestiones online y comercio electrónico;rosco;empieza;S;Técnica basada en contar historias para crear textos efectivos;storytelling
+Digitalización;Gestiones online y comercio electrónico;rosco;empieza;T;Portales donde los ciudadanos acceden a la información pública;transparencia
+Digitalización;Gestiones online y comercio electrónico;rosco;empieza;U;Persona que tiene la responsabilidad de usar las herramientas con seguridad;usuario
+Digitalización;Gestiones online y comercio electrónico;rosco;empieza;V;Formato de contenido que tiene actualmente el mayor alcance;vídeo
+Digitalización;Gestiones online y comercio electrónico;rosco;empieza;W;Sitio que debe identificar claramente a su responsable legal;web
+Digitalización;Gestiones online y comercio electrónico;rosco;contiene;X;Punto en el que se encuentra un trámite administrativo online;expediente
+Digitalización;Gestiones online y comercio electrónico;rosco;contiene;Y;Plataforma para recaudar fondos para proyectos sociales;kickstarter
+Digitalización;Gestiones online y comercio electrónico;rosco;contiene;Z;El Open Data permite el acceso a datos públicos para su este fin;reutilización
+# JUEGO DEL AHORCADO
+Digitalización;Gestiones online y comercio electrónico;ahorcado;CONJUNTO DE NORMAS DE COMPORTAMIENTO EN INTERNET;NETIQUETA
+Digitalización;Gestiones online y comercio electrónico;ahorcado;SISTEMA DE RECAUDACION DE FONDOS PARA PROYECTOS;CROWDFUNDING
+Digitalización;Gestiones online y comercio electrónico;ahorcado;GESTION DE SERVICIOS PUBLICOS POR MEDIOS ELECTRONICOS;EGOVERNMENT
+# JUEGO DE LAS PAREJAS
+Digitalización;Gestiones online y comercio electrónico;pareja;REDES SOCIALES;REELS;VIDEO;STORYTELLING;TEXTOS;KPI;METRICAS
+Digitalización;Gestiones online y comercio electrónico;pareja;IDENTIDAD DIGITAL;CERTIFICADO;ARCHIVO;CLAVE;CODIGOS;DNIE;LECTOR
+Digitalización;Gestiones online y comercio electrónico;pareja;COMPRAS SEGURAS;HTTPS;CANDADO;PAYPAL;INTERMEDIARIO;PASARELA;BANCO
+# JUEGO DE VERDADERO O FALSO
+Digitalización;Gestiones online y comercio electrónico;verdadero;Compras;El derecho de desistimiento permite devolver un producto sin justificación en un plazo de 14 días;VERDADERO;El derecho de desistimiento permite devolver un producto sin justificación en un plazo de 14 días
+Digitalización;Gestiones online y comercio electrónico;verdadero;Netiqueta;Escribir en mayúsculas en la red es una forma de demostrar respeto y jerarquía;FALSO;Escribir en mayúsculas significa que se está gritando al interlocutor
+Digitalización;Gestiones online y comercio electrónico;verdadero;Identidad;El Certificado Digital es un archivo que se instala en el navegador para verificar la identidad;VERDADERO;El Certificado Digital es un archivo que se instala en el navegador para verificar la identidad
+Digitalización;Gestiones online y comercio electrónico;verdadero;Métricas;La métrica de Alcance mide exclusivamente el número de likes y comentarios;FALSO;El alcance es el número de personas que vieron el contenido
+Digitalización;Gestiones online y comercio electrónico;verdadero;Netiqueta;Ante un Troll en internet lo más recomendable es ignorarlo y no alimentarlo con respuestas;VERDADERO;Ante un Troll en internet lo más recomendable es ignorarlo y no alimentarlo con respuestas
+Digitalización;Gestiones online y comercio electrónico;verdadero;Compras;Las compras online ofrecen menores años de garantía que las compras en tiendas físicas;FALSO;Las garantías online son las mismas que en las tiendas físicas (3 años)
+Digitalización;Gestiones online y comercio electrónico;verdadero;Marketing;Los KPIs son métricas clave que sirven para medir el rendimiento de una campaña;VERDADERO;Los KPIs son métricas clave que sirven para medir el rendimiento de una campaña
+Digitalización;Gestiones online y comercio electrónico;verdadero;Netiqueta;La Netiqueta es un protocolo oficial y de obligado cumplimiento por ley;FALSO;No es un protocolo oficial ni obligatorio por ley, pero es esencial para la convivencia
+Digitalización;Gestiones online y comercio electrónico;verdadero;Social;El Crowdfunding consiste en la recaudación de fondos para financiar proyectos o causas;VERDADERO;El Crowdfunding consiste en la recaudación de fondos para financiar proyectos o causas
+Digitalización;Gestiones online y comercio electrónico;verdadero;Seguridad;El candado en la barra del navegador indica que la conexión está cifrada mediante protocolo HTTPS;VERDADERO;El candado en la barra del navegador indica que la conexión está cifrada mediante protocolo HTTPS
+# JUEGO DEL ROSCO
 Programación y Computación;Base de datos;rosco;empieza;A;Representa una propiedad de una entidad en una base de datos;atributo
 Programación y Computación;Base de datos;rosco;empieza;B;Tipo de dato utilizado para estados como activo o inactivo;booleano
 Programación y Computación;Base de datos;rosco;empieza;C;Objeto utilizado para filtrar y seleccionar datos específicos;consulta
