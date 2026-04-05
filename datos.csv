@@ -453,48 +453,48 @@ Programación y Computación;Internet de las cosas;verdadero;Ciberseguridad;El p
 Programación y Computación;Internet de las cosas;verdadero;Componentes;El sensor LDR es el más adecuado para medir la iluminación;VERDADERO;El LDR es una resistencia que depende de la luz para medir luminosidad
 Programación y Computación;Internet de las cosas;verdadero;Programación;La sentencia IF se utiliza para ejecutar una tarea repetidamente;FALSO;La sentencia IF es condicional, para tareas repetidas se usan bucles como WHILE o FOR
 # JUEGO DEL ROSCO
-Tecnología de la Información y la Comunicación I;Procesador de textos;rosco;empieza;A;Para qué se utilizan los comentarios en un documento;anotaciones
-Tecnología de la Información y la Comunicación I;Procesador de textos;rosco;contiene;B;Donde se configuran los bordes decorativos para una página;formato
-Tecnología de la Información y la Comunicación I;Procesador de textos;rosco;empieza;C;Se pueden crear insertando una sección específica en el documento;columnas
-Tecnología de la Información y la Comunicación I;Procesador de textos;rosco;empieza;D;Función que revierte la última acción realizada;deshacer
-Tecnología de la Información y la Comunicación I;Procesador de textos;rosco;empieza;E;Se utilizan para aplicar formatos uniformes en todo el documento;estilos
-Tecnología de la Información y la Comunicación I;Procesador de textos;rosco;empieza;F;El pincel permite copiar este elemento de un texto a otro;formato
-Tecnología de la Información y la Comunicación I;Procesador de textos;rosco;empieza;G;Colección de recursos disponible en un procesador de textos;galeria
-Tecnología de la Información y la Comunicación I;Procesador de textos;rosco;empieza;H;Permite enlazar un texto a una dirección URL externa;hipervinculo
-Tecnología de la Información y la Comunicación I;Procesador de textos;rosco;empieza;I;Para crearlo de forma automática se deben usar estilos de título;indice
-Tecnología de la Información y la Comunicación I;Procesador de textos;rosco;contiene;J;Opción que permite controlar cómo se coloca una imagen respecto al texto;ajuste
-Tecnología de la Información y la Comunicación I;Procesador de textos;rosco;contiene;L;El interlineado controla el espacio que existe entre estas;lineas
-Tecnología de la Información y la Comunicación I;Procesador de textos;rosco;empieza;M;Contenedor utilizado para colocar objetos en un documento de texto;marco
-Tecnología de la Información y la Comunicación I;Procesador de textos;rosco;empieza;N;Se usa junto a las viñetas para organizar la información;numeracion
-Tecnología de la Información y la Comunicación I;Procesador de textos;rosco;contiene;O;Corrector que detecta errores de escritura en el texto;ortografico
-Tecnología de la Información y la Comunicación I;Procesador de textos;rosco;empieza;P;Modelo reutilizable que sirve como base para nuevos documentos;plantilla
-Tecnología de la Información y la Comunicación I;Procesador de textos;rosco;empieza;R;Herramienta de la interfaz que permite ajustar los márgenes;regla
-Tecnología de la Información y la Comunicación I;Procesador de textos;rosco;empieza;S;Espacio que separa un párrafo respecto al margen;sangria
-Tecnología de la Información y la Comunicación I;Procesador de textos;rosco;empieza;T;Estructura compuesta por filas y columnas donde se pueden unir celdas;tabla
-Tecnología de la Información y la Comunicación I;Procesador de textos;rosco;empieza;U;Acción que permite realizar la opción combinar celdas;unir
-Tecnología de la Información y la Comunicación I;Procesador de textos;rosco;contiene;V;Atajo de teclado Ctrl mas esta letra sirve para pegar texto;v
-Tecnología de la Información y la Comunicación I;Procesador de textos;rosco;contiene;X;Extensión de archivo propia de Microsoft Word que puede abrirse en software libre;docx
-Tecnología de la Información y la Comunicación I;Procesador de textos;rosco;contiene;Y;Acrónimo que significa que lo que ves es lo que obtienes;wysiwyg
-Tecnología de la Información y la Comunicación I;Procesador de textos;rosco;empieza;Z;Herramienta que permite acercar o alejar la visualización del documento;zoom
+Tecnologías de la Información y la Comunicación I;Procesador de textos;rosco;empieza;A;Para qué se utilizan los comentarios en un documento;anotaciones
+Tecnologías de la Información y la Comunicación I;Procesador de textos;rosco;contiene;B;Donde se configuran los bordes decorativos para una página;formato
+Tecnologías de la Información y la Comunicación I;Procesador de textos;rosco;empieza;C;Se pueden crear insertando una sección específica en el documento;columnas
+Tecnologías de la Información y la Comunicación I;Procesador de textos;rosco;empieza;D;Función que revierte la última acción realizada;deshacer
+Tecnologías de la Información y la Comunicación I;Procesador de textos;rosco;empieza;E;Se utilizan para aplicar formatos uniformes en todo el documento;estilos
+Tecnologías de la Información y la Comunicación I;Procesador de textos;rosco;empieza;F;El pincel permite copiar este elemento de un texto a otro;formato
+Tecnologías de la Información y la Comunicación I;Procesador de textos;rosco;empieza;G;Colección de recursos disponible en un procesador de textos;galeria
+Tecnologías de la Información y la Comunicación I;Procesador de textos;rosco;empieza;H;Permite enlazar un texto a una dirección URL externa;hipervinculo
+Tecnologías de la Información y la Comunicación I;Procesador de textos;rosco;empieza;I;Para crearlo de forma automática se deben usar estilos de título;indice
+Tecnologías de la Información y la Comunicación I;Procesador de textos;rosco;contiene;J;Opción que permite controlar cómo se coloca una imagen respecto al texto;ajuste
+Tecnologías de la Información y la Comunicación I;Procesador de textos;rosco;contiene;L;El interlineado controla el espacio que existe entre estas;lineas
+Tecnologías de la Información y la Comunicación I;Procesador de textos;rosco;empieza;M;Contenedor utilizado para colocar objetos en un documento de texto;marco
+Tecnologías de la Información y la Comunicación I;Procesador de textos;rosco;empieza;N;Se usa junto a las viñetas para organizar la información;numeracion
+Tecnologías de la Información y la Comunicación I;Procesador de textos;rosco;contiene;O;Corrector que detecta errores de escritura en el texto;ortografico
+Tecnologías de la Información y la Comunicación I;Procesador de textos;rosco;empieza;P;Modelo reutilizable que sirve como base para nuevos documentos;plantilla
+Tecnologías de la Información y la Comunicación I;Procesador de textos;rosco;empieza;R;Herramienta de la interfaz que permite ajustar los márgenes;regla
+Tecnologías de la Información y la Comunicación I;Procesador de textos;rosco;empieza;S;Espacio que separa un párrafo respecto al margen;sangria
+Tecnologías de la Información y la Comunicación I;Procesador de textos;rosco;empieza;T;Estructura compuesta por filas y columnas donde se pueden unir celdas;tabla
+Tecnologías de la Información y la Comunicación I;Procesador de textos;rosco;empieza;U;Acción que permite realizar la opción combinar celdas;unir
+Tecnologías de la Información y la Comunicación I;Procesador de textos;rosco;contiene;V;Atajo de teclado Ctrl mas esta letra sirve para pegar texto;v
+Tecnologías de la Información y la Comunicación I;Procesador de textos;rosco;contiene;X;Extensión de archivo propia de Microsoft Word que puede abrirse en software libre;docx
+Tecnologías de la Información y la Comunicación I;Procesador de textos;rosco;contiene;Y;Acrónimo que significa que lo que ves es lo que obtienes;wysiwyg
+Tecnologías de la Información y la Comunicación I;Procesador de textos;rosco;empieza;Z;Herramienta que permite acercar o alejar la visualización del documento;zoom
 # JUEGO DEL AHORCADO
-Tecnología de la Información y la Comunicación I;Procesador de textos;ahorcado;Tipo de programa que funciona en varios sistemas operativos;MULTIPLATAFORMA
-Tecnología de la Información y la Comunicación I;Procesador de textos;ahorcado;Herramienta que permite crear documentos personalizados masivos;CORRESPONDENCIA
-Tecnología de la Información y la Comunicación I;Procesador de textos;ahorcado;Formato de documento de texto estándar abierto;ODT
+Tecnologías de la Información y la Comunicación I;Procesador de textos;ahorcado;Tipo de programa que funciona en varios sistemas operativos;MULTIPLATAFORMA
+Tecnologías de la Información y la Comunicación I;Procesador de textos;ahorcado;Herramienta que permite crear documentos personalizados masivos;CORRESPONDENCIA
+Tecnologías de la Información y la Comunicación I;Procesador de textos;ahorcado;Formato de documento de texto estándar abierto;ODT
 # JUEGO DE LAS PAREJAS
-Tecnología de la Información y la Comunicación I;Procesador de textos;pareja;Atajos de Teclado;CTRL+G;GUARDAR;CTRL+V;PEGAR;CTRL+INTRO;SALTO PAGINA
-Tecnología de la Información y la Comunicación I;Procesador de textos;pareja;Formatos y Extensiones;.ODT;ODF;.DOCX;WORD;.PDF;EXPORTAR
-Tecnología de la Información y la Comunicación I;Procesador de textos;pareja;Elementos de Estructura;CELDA;TABLA;MARCO;OBJETO;SANGRIA;PARRAFO
+Tecnologías de la Información y la Comunicación I;Procesador de textos;pareja;Atajos de Teclado;CTRL+G;GUARDAR;CTRL+V;PEGAR;CTRL+INTRO;SALTO PAGINA
+Tecnologías de la Información y la Comunicación I;Procesador de textos;pareja;Formatos y Extensiones;.ODT;ODF;.DOCX;WORD;.PDF;EXPORTAR
+Tecnologías de la Información y la Comunicación I;Procesador de textos;pareja;Elementos de Estructura;CELDA;TABLA;MARCO;OBJETO;SANGRIA;PARRAFO
 # JUEGO DE VERDADERO O FALSO
-Tecnología de la Información y la Comunicación I;Procesador de textos;verdadero;Atajos;El atajo de teclado para guardar un documento es Ctrl+G;VERDADERO;El atajo para guardar es Ctrl+G
-Tecnología de la Información y la Comunicación I;Procesador de textos;verdadero;Párrafos;La alineación superior es un tipo de alineación de párrafo;FALSO;La alineación superior no es un tipo de alineación de párrafo
-Tecnología de la Información y la Comunicación I;Procesador de textos;verdadero;Referencias;Las notas al pie aparecen siempre al final de la página;VERDADERO;Las notas al pie aparecen al pie de la página
-Tecnología de la Información y la Comunicación I;Procesador de textos;verdadero;Formatos;El interlineado es una opción de formato de carácter;FALSO;El interlineado es una opción de formato de párrafo
-Tecnología de la Información y la Comunicación I;Procesador de textos;verdadero;Visualización;WYSIWYG significa que lo que ves es lo que obtienes;VERDADERO;Lo que ves en pantalla es el resultado final
-Tecnología de la Información y la Comunicación I;Procesador de textos;verdadero;Índices;Para crear un índice automático no es necesario usar estilos;FALSO;Es imprescindible usar estilos de título para el índice automático
-Tecnología de la Información y la Comunicación I;Procesador de textos;verdadero;Edición;El pincel de formato sirve para copiar el estilo de un texto y aplicarlo a otro;VERDADERO;El pincel de formato copia y aplica formatos
-Tecnología de la Información y la Comunicación I;Procesador de textos;verdadero;Sistemas;Un procesador multiplataforma solo funciona en un sistema operativo;FALSO;Multiplataforma significa que funciona en varios sistemas operativos
-Tecnología de la Información y la Comunicación I;Procesador de textos;verdadero;Páginas;El salto de página manual se realiza con la combinación Ctrl+Intro;VERDADERO;Ctrl+Intro fuerza un salto de página
-Tecnología de la Información y la Comunicación I;Procesador de textos;verdadero;Plantillas;Las plantillas son modelos que solo pueden usarse una única vez;FALSO;Las plantillas son modelos diseñados para ser reutilizados múltiples veces
+Tecnologías de la Información y la Comunicación I;Procesador de textos;verdadero;Atajos;El atajo de teclado para guardar un documento es Ctrl+G;VERDADERO;El atajo para guardar es Ctrl+G
+Tecnologías de la Información y la Comunicación I;Procesador de textos;verdadero;Párrafos;La alineación superior es un tipo de alineación de párrafo;FALSO;La alineación superior no es un tipo de alineación de párrafo
+Tecnologías de la Información y la Comunicación I;Procesador de textos;verdadero;Referencias;Las notas al pie aparecen siempre al final de la página;VERDADERO;Las notas al pie aparecen al pie de la página
+Tecnologías de la Información y la Comunicación I;Procesador de textos;verdadero;Formatos;El interlineado es una opción de formato de carácter;FALSO;El interlineado es una opción de formato de párrafo
+Tecnologías de la Información y la Comunicación I;Procesador de textos;verdadero;Visualización;WYSIWYG significa que lo que ves es lo que obtienes;VERDADERO;Lo que ves en pantalla es el resultado final
+Tecnologías de la Información y la Comunicación I;Procesador de textos;verdadero;Índices;Para crear un índice automático no es necesario usar estilos;FALSO;Es imprescindible usar estilos de título para el índice automático
+Tecnologías de la Información y la Comunicación I;Procesador de textos;verdadero;Edición;El pincel de formato sirve para copiar el estilo de un texto y aplicarlo a otro;VERDADERO;El pincel de formato copia y aplica formatos
+Tecnologías de la Información y la Comunicación I;Procesador de textos;verdadero;Sistemas;Un procesador multiplataforma solo funciona en un sistema operativo;FALSO;Multiplataforma significa que funciona en varios sistemas operativos
+Tecnologías de la Información y la Comunicación I;Procesador de textos;verdadero;Páginas;El salto de página manual se realiza con la combinación Ctrl+Intro;VERDADERO;Ctrl+Intro fuerza un salto de página
+Tecnologías de la Información y la Comunicación I;Procesador de textos;verdadero;Plantillas;Las plantillas son modelos que solo pueden usarse una única vez;FALSO;Las plantillas son modelos diseñados para ser reutilizados múltiples veces
 # JUEGO DEL ROSCO
 Tecnologías de la Información y la Comunicación I;Hojas de Cálculo en Libreoffice;rosco;empieza;A;Símbolo que se pone antes de un número para que Calc lo trate como texto;apóstrofo
 Tecnologías de la Información y la Comunicación I;Hojas de Cálculo en Libreoffice;rosco;empieza;B;Elemento que muestra resultados de operaciones matemáticas;barra de estado
