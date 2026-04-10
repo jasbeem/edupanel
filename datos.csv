@@ -853,6 +853,49 @@ Tecnología y Digitalización 2º;Metales;verdadero;Aleaciones;El nitinol destac
 Tecnología y Digitalización 2º;Metales;verdadero;Propiedades;La ductilidad es la capacidad de un material para extenderse en laminas;FALSO;La ductilidad es la capacidad de un material para estirarse en hilos
 Tecnología y Digitalización 2º;Metales;verdadero;Herramientas;La sierra de arco se utiliza para alisar cortes y eliminar rebabas;FALSO;La sierra de arco se usa para cortar barras y tubos metalicos
 # JUEGO DEL ROSCO
+Tecnología y Digitalización 2º;La electricidad;rosco;empieza;a;Dispositivo clave para producir electricidad en la mayoría de centrales;alternador
+Tecnología y Digitalización 2º;La electricidad;rosco;contiene;b;Receptor que transforma la energía eléctrica en luz;bombilla
+Tecnología y Digitalización 2º;La electricidad;rosco;empieza;c;Material que permite el paso de la corriente eléctrica;conductor
+Tecnología y Digitalización 2º;La electricidad;rosco;empieza;d;Componente que transforma la energía eléctrica en luz mediante LEDs;diodo
+Tecnología y Digitalización 2º;La electricidad;rosco;empieza;e;Partícula subatómica con carga eléctrica negativa que gira en la corteza;electron
+Tecnología y Digitalización 2º;La electricidad;rosco;empieza;f;Componente que se funde y abre el circuito ante una sobreintensidad;fusible
+Tecnología y Digitalización 2º;La electricidad;rosco;empieza;g;Elemento de un circuito que suministra la energía para mover los electrones;generador
+Tecnología y Digitalización 2º;La electricidad;rosco;empieza;h;Unidad en la que se mide la resistencia eléctrica;ohmios
+Tecnología y Digitalización 2º;La electricidad;rosco;empieza;i;Magnitud que indica la cantidad de electrones que pasan por un punto en un segundo;intensidad
+Tecnología y Digitalización 2º;La electricidad;rosco;empieza;j;Nombre del efecto que transforma la electricidad en calor;joule
+Tecnología y Digitalización 2º;La electricidad;rosco;contiene;l;Proceso para transformar la electricidad en energía química en las baterías;electrólisis
+Tecnología y Digitalización 2º;La electricidad;rosco;empieza;m;Dispositivo que transforma la energía eléctrica en energía mecánica;motor
+Tecnología y Digitalización 2º;La electricidad;rosco;empieza;n;Parte del átomo donde se sitúan los protones y los neutrones;nucleo
+Tecnología y Digitalización 2º;La electricidad;rosco;contiene;o;Magnitud que representa la energía que impulsa a los electrones;voltaje
+Tecnología y Digitalización 2º;La electricidad;rosco;empieza;p;Partícula subatómica que tiene carga eléctrica positiva;proton
+Tecnología y Digitalización 2º;La electricidad;rosco;contiene;q;Tipo de energía en la que se transforma la electricidad en las baterías;quimica
+Tecnología y Digitalización 2º;La electricidad;rosco;empieza;r;Magnitud que define la oposición al paso de la corriente;resistencia
+Tecnología y Digitalización 2º;La electricidad;rosco;empieza;s;Tipo de conexión donde los componentes se colocan uno tras otro;serie
+Tecnología y Digitalización 2º;La electricidad;rosco;empieza;t;Magnitud eléctrica que se mide en voltios;tension
+Tecnología y Digitalización 2º;La electricidad;rosco;empieza;u;Elemento de medida como el amperio o el voltio;unidad
+Tecnología y Digitalización 2º;La electricidad;rosco;empieza;v;Aparato de medida que se conecta en paralelo;voltimetro
+Tecnología y Digitalización 2º;La electricidad;rosco;contiene;x;Circuito que combina conexiones en serie y paralelo;mixto
+Tecnología y Digitalización 2º;La electricidad;rosco;empieza;z;Receptor que transforma la electricidad en energía sonora;zumbador
+# JUEGO DEL AHORCADO
+Tecnología y Digitalización 2º;La electricidad;ahorcado;Efecto basado en el funcionamiento de los motores;ELECTROMAGNETISMO
+Tecnología y Digitalización 2º;La electricidad;ahorcado;Instrumento que agrupa voltímetro amperímetro y óhmetro;MULTIMETRO
+Tecnología y Digitalización 2º;La electricidad;ahorcado;Material del filamento de las bombillas incandescentes;TUNGSTENO
+# JUEGO DE LAS PAREJAS
+Tecnología y Digitalización 2º;La electricidad;pareja;MAGNITUDES;VOLTAJE;VOLTIOS;INTENSIDAD;AMPERIOS;RESISTENCIA;OHMIOS
+Tecnología y Digitalización 2º;La electricidad;pareja;COMPONENTES;PILA;GENERADOR;MOTOR;RECEPTOR;INTERRUPTOR;CONTROL
+Tecnología y Digitalización 2º;La electricidad;pareja;EL ATOMO;PROTON;POSITIVA;ELECTRON;CORTEZA;NUCLEO;NEUTRON
+# JUEGO DE VERDADERO O FALSO
+Tecnología y Digitalización 2º;La electricidad;verdadero;Atomo;Los protones tienen carga eléctrica negativa;FALSO;Los protones tienen carga eléctrica positiva
+Tecnología y Digitalización 2º;La electricidad;verdadero;Materiales;El cobre es el material más utilizado para fabricar conductores;VERDADERO;El cobre es el material conductor por excelencia
+Tecnología y Digitalización 2º;La electricidad;verdadero;Corriente;En la corriente continua los electrones cambian de sentido 50 veces por segundo;FALSO;En la corriente continua circulan siempre en el mismo sentido
+Tecnología y Digitalización 2º;La electricidad;verdadero;Circuitos;En un circuito en serie si un componente se funde los demás dejan de funcionar;VERDADERO;Al ser un único camino la interrupción afecta a todo el circuito
+Tecnología y Digitalización 2º;La electricidad;verdadero;Componentes;El alternador es el elemento clave para producir electricidad en las centrales;VERDADERO;El alternador es fundamental en la generación eléctrica
+Tecnología y Digitalización 2º;La electricidad;verdadero;Seguridad;Un fusible debe colocarse siempre en paralelo con el circuito;FALSO;El fusible debe colocarse siempre en serie para proteger el circuito
+Tecnología y Digitalización 2º;La electricidad;verdadero;Medición;El voltímetro se conecta en paralelo para medir la tensión;VERDADERO;El voltímetro mide la diferencia de potencial entre dos puntos
+Tecnología y Digitalización 2º;La electricidad;verdadero;Ley de Ohm;Si la resistencia aumenta manteniendo el voltaje la intensidad disminuye;VERDADERO;La intensidad es inversamente proporcional a la resistencia
+Tecnología y Digitalización 2º;La electricidad;verdadero;Receptores;Un motor eléctrico transforma la electricidad en energía química;FALSO;Un motor eléctrico transforma la electricidad en energía mecánica
+Tecnología y Digitalización 2º;La electricidad;verdadero;Seguridad;Es seguro manipular aparatos eléctricos con las manos mojadas;FALSO;No se deben manipular aparatos mojados por riesgo de descarga
+# JUEGO DEL ROSCO
 Tecnología y Digitalización 3º;Mecanismos;rosco;empieza;A;Efecto que tiene sobre la presión el afilar el filo de una cuña;aumenta
 Tecnología y Digitalización 3º;Mecanismos;rosco;empieza;B;Mecanismo fundamental en un motor de combustión;bielamanivela
 Tecnología y Digitalización 3º;Mecanismos;rosco;empieza;C;Elemento que conecta los engranajes en la transmisión por cadena;cadena
