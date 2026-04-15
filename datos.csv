@@ -627,98 +627,98 @@ Tecnologías de la Información y la Comunicación I;Lenguajes de programación;
 Tecnologías de la Información y la Comunicación I;Lenguajes de programación;verdadero;Ciclo de Vida;La fase de Diseño consiste en planificar la arquitectura y los algoritmos;VERDADERO;La fase de Diseño consiste en planificar la arquitectura y los algoritmos
 Tecnologías de la Información y la Comunicación I;Lenguajes de programación;verdadero;Lenguajes;C++ es una extensión de C muy utilizada en el desarrollo de videojuegos;VERDADERO;C++ es una extensión de C muy utilizada en el desarrollo de videojuegos
 # JUEGO DEL ROSCO
-Tecnología de la Información y la Comunicación II;La Web;rosco;empieza;A;Etiqueta para insertar archivos de sonido;audio
-Tecnología de la Información y la Comunicación II;La Web;rosco;empieza;B;Etiqueta que contiene la parte visible del documento;body
-Tecnología de la Información y la Comunicación II;La Web;rosco;empieza;C;Atributo para unir columnas en una tabla;colspan
-Tecnología de la Información y la Comunicación II;La Web;rosco;empieza;D;Contenedor genérico para agrupar elementos;div
-Tecnología de la Información y la Comunicación II;La Web;rosco;empieza;E;Tipo de programa para escribir código sin formato;editor
-Tecnología de la Información y la Comunicación II;La Web;rosco;empieza;F;Elemento para el pie de página de un sitio;footer
-Tecnología de la Información y la Comunicación II;La Web;rosco;contiene;G;Etiqueta para insertar imágenes;img
-Tecnología de la Información y la Comunicación II;La Web;rosco;empieza;H;Atributo que especifica la URL de un enlace;href
-Tecnología de la Información y la Comunicación II;La Web;rosco;empieza;I;Etiqueta para incrustar otra página web;iframe
-Tecnología de la Información y la Comunicación II;La Web;rosco;empieza;J;Lenguaje de programación del lado del cliente;javascript
-Tecnología de la Información y la Comunicación II;La Web;rosco;contiene;K;Valor del atributo target para abrir en nueva pestaña;blank
-Tecnología de la Información y la Comunicación II;La Web;rosco;empieza;L;Etiqueta para cada elemento de una lista;li
-Tecnología de la Información y la Comunicación II;La Web;rosco;empieza;M;Etiqueta para definir metadatos como la codificación;meta
-Tecnología de la Información y la Comunicación II;La Web;rosco;empieza;N;Elemento para contener los enlaces de navegación;nav
-Tecnología de la Información y la Comunicación II;La Web;rosco;empieza;O;Etiqueta para crear una lista numerada;ol
-Tecnología de la Información y la Comunicación II;La Web;rosco;empieza;P;Tipo de entrada de formulario que oculta caracteres;password
-Tecnología de la Información y la Comunicación II;La Web;rosco;contiene;Q;Tipo de elemento que ocupa todo el ancho disponible;bloque
-Tecnología de la Información y la Comunicación II;La Web;rosco;empieza;R;Web que se adapta a diferentes tamaños de pantalla;responsive
-Tecnología de la Información y la Comunicación II;La Web;rosco;empieza;S;Atributo que indica la fuente o ruta de un archivo;src
-Tecnología de la Información y la Comunicación II;La Web;rosco;empieza;T;Etiqueta para una celda de datos en una tabla;td
-Tecnología de la Información y la Comunicación II;La Web;rosco;empieza;U;Persona para la que se diseña la web accesible;usuario
-Tecnología de la Información y la Comunicación II;La Web;rosco;empieza;V;Etiqueta para reproducir clips de película;video
-Tecnología de la Información y la Comunicación II;La Web;rosco;empieza;W;Organización que dicta los estándares de la web;w3c
-Tecnología de la Información y la Comunicación II;La Web;rosco;contiene;X;Tipo de archivo que se recomienda usar para el código;texto
-Tecnología de la Información y la Comunicación II;La Web;rosco;contiene;Y;Sistema de edición visual para páginas web;wysiwyg
-Tecnología de la Información y la Comunicación II;La Web;rosco;contiene;Z;Dimensiones de pantalla a las que se adapta la web;tamaños
+Tecnologías de la Información y la Comunicación II;La Web;rosco;empieza;A;Etiqueta para insertar archivos de sonido;audio
+Tecnologías de la Información y la Comunicación II;La Web;rosco;empieza;B;Etiqueta que contiene la parte visible del documento;body
+Tecnologías de la Información y la Comunicación II;La Web;rosco;empieza;C;Atributo para unir columnas en una tabla;colspan
+Tecnologías de la Información y la Comunicación II;La Web;rosco;empieza;D;Contenedor genérico para agrupar elementos;div
+Tecnologías de la Información y la Comunicación II;La Web;rosco;empieza;E;Tipo de programa para escribir código sin formato;editor
+Tecnologías de la Información y la Comunicación II;La Web;rosco;empieza;F;Elemento para el pie de página de un sitio;footer
+Tecnologías de la Información y la Comunicación II;La Web;rosco;contiene;G;Etiqueta para insertar imágenes;img
+Tecnologías de la Información y la Comunicación II;La Web;rosco;empieza;H;Atributo que especifica la URL de un enlace;href
+Tecnologías de la Información y la Comunicación II;La Web;rosco;empieza;I;Etiqueta para incrustar otra página web;iframe
+Tecnologías de la Información y la Comunicación II;La Web;rosco;empieza;J;Lenguaje de programación del lado del cliente;javascript
+Tecnologías de la Información y la Comunicación II;La Web;rosco;contiene;K;Valor del atributo target para abrir en nueva pestaña;blank
+Tecnologías de la Información y la Comunicación II;La Web;rosco;empieza;L;Etiqueta para cada elemento de una lista;li
+Tecnologías de la Información y la Comunicación II;La Web;rosco;empieza;M;Etiqueta para definir metadatos como la codificación;meta
+Tecnologías de la Información y la Comunicación II;La Web;rosco;empieza;N;Elemento para contener los enlaces de navegación;nav
+Tecnologías de la Información y la Comunicación II;La Web;rosco;empieza;O;Etiqueta para crear una lista numerada;ol
+Tecnologías de la Información y la Comunicación II;La Web;rosco;empieza;P;Tipo de entrada de formulario que oculta caracteres;password
+Tecnologías de la Información y la Comunicación II;La Web;rosco;contiene;Q;Tipo de elemento que ocupa todo el ancho disponible;bloque
+Tecnologías de la Información y la Comunicación II;La Web;rosco;empieza;R;Web que se adapta a diferentes tamaños de pantalla;responsive
+Tecnologías de la Información y la Comunicación II;La Web;rosco;empieza;S;Atributo que indica la fuente o ruta de un archivo;src
+Tecnologías de la Información y la Comunicación II;La Web;rosco;empieza;T;Etiqueta para una celda de datos en una tabla;td
+Tecnologías de la Información y la Comunicación II;La Web;rosco;empieza;U;Persona para la que se diseña la web accesible;usuario
+Tecnologías de la Información y la Comunicación II;La Web;rosco;empieza;V;Etiqueta para reproducir clips de película;video
+Tecnologías de la Información y la Comunicación II;La Web;rosco;empieza;W;Organización que dicta los estándares de la web;w3c
+Tecnologías de la Información y la Comunicación II;La Web;rosco;contiene;X;Tipo de archivo que se recomienda usar para el código;texto
+Tecnologías de la Información y la Comunicación II;La Web;rosco;contiene;Y;Sistema de edición visual para páginas web;wysiwyg
+Tecnologías de la Información y la Comunicación II;La Web;rosco;contiene;Z;Dimensiones de pantalla a las que se adapta la web;tamaños
 # JUEGO DEL AHORCADO
-Tecnología de la Información y la Comunicación II;La Web;ahorcado;LENGUAJE PARA ESTRUCTURAR CONTENIDO;HTML
-Tecnología de la Información y la Comunicación II;La Web;ahorcado;ATRIBUTO PARA TEXTO ALTERNATIVO;ALT
-Tecnología de la Información y la Comunicación II;La Web;ahorcado;WEB DE APRENDIZAJE INTERACTIVO;W3SCHOOLS
+Tecnologías de la Información y la Comunicación II;La Web;ahorcado;LENGUAJE PARA ESTRUCTURAR CONTENIDO;HTML
+Tecnologías de la Información y la Comunicación II;La Web;ahorcado;ATRIBUTO PARA TEXTO ALTERNATIVO;ALT
+Tecnologías de la Información y la Comunicación II;La Web;ahorcado;WEB DE APRENDIZAJE INTERACTIVO;W3SCHOOLS
 # JUEGO DE LAS PAREJAS
-Tecnología de la Información y la Comunicación II;La Web;pareja;ESTRUCTURA;HEADER;NAV;BODY;FOOTER;SECTION;DIV
-Tecnología de la Información y la Comunicación II;La Web;pareja;TABLAS;TABLE;TR;TH;TD;ROWSPAN;COLSPAN
-Tecnología de la Información y la Comunicación II;La Web;pareja;FORMULARIOS;INPUT;TEXTAREA;BUTTON;SUBMIT;PASSWORD;TARGET
+Tecnologías de la Información y la Comunicación II;La Web;pareja;ESTRUCTURA;HEADER;NAV;BODY;FOOTER;SECTION;DIV
+Tecnologías de la Información y la Comunicación II;La Web;pareja;TABLAS;TABLE;TR;TH;TD;ROWSPAN;COLSPAN
+Tecnologías de la Información y la Comunicación II;La Web;pareja;FORMULARIOS;INPUT;TEXTAREA;BUTTON;SUBMIT;PASSWORD;TARGET
 # JUEGO DE VERDADERO O FALSO
-Tecnología de la Información y la Comunicación II;La Web;verdadero;Arquitectura;JavaScript es un lenguaje que se ejecuta en el navegador;VERDADERO;JavaScript es un lenguaje del lado del cliente que se ejecuta en el navegador
-Tecnología de la Información y la Comunicación II;La Web;verdadero;Tablas;El atributo colspan sirve para unir filas de una tabla;FALSO;El atributo colspan sirve para unir columnas, rowspan es para filas
-Tecnología de la Información y la Comunicación II;La Web;verdadero;Multimedia;La etiqueta <video> se utiliza para insertar clips de película;VERDADERO;La etiqueta <video> es la estándar en HTML5 para contenido audiovisual
-Tecnología de la Información y la Comunicación II;La Web;verdadero;Estructura;La declaración <!DOCTYPE html> indica la versión de HTML;VERDADERO;<!DOCTYPE html> informa al navegador que el documento es HTML5
-Tecnología de la Información y la Comunicación II;La Web;verdadero;Semántica;El elemento <footer> se utiliza para la cabecera de la página;FALSO;<footer> es para el pie de página, <header> es para la cabecera
-Tecnología de la Información y la Comunicación II;La Web;verdadero;Atributos;El atributo alt en las imágenes es para el texto alternativo;VERDADERO;alt muestra un texto si la imagen no se puede cargar
-Tecnología de la Información y la Comunicación II;La Web;verdadero;Listas;La etiqueta <ul> crea una lista ordenada por números;FALSO;<ul> crea una lista no ordenada con viñetas, <ol> es para listas ordenadas
-Tecnología de la Información y la Comunicación II;La Web;verdadero;Formularios;El tipo de input submit crea un botón para enviar datos;VERDADERO;submit es el tipo de entrada encargado de enviar el formulario
-Tecnología de la Información y la Comunicación II;La Web;verdadero;Accesibilidad;WCAG es una iniciativa para promover el diseño web accesible;VERDADERO;WCAG son las pautas de accesibilidad para el contenido web
-Tecnología de la Información y la Comunicación II;La Web;verdadero;Estilos;La etiqueta <div> es un contenedor de nivel de línea;FALSO;<div> es un contenedor genérico de nivel de bloque que ocupa todo el ancho
+Tecnologías de la Información y la Comunicación II;La Web;verdadero;Arquitectura;JavaScript es un lenguaje que se ejecuta en el navegador;VERDADERO;JavaScript es un lenguaje del lado del cliente que se ejecuta en el navegador
+Tecnologías de la Información y la Comunicación II;La Web;verdadero;Tablas;El atributo colspan sirve para unir filas de una tabla;FALSO;El atributo colspan sirve para unir columnas, rowspan es para filas
+Tecnologías de la Información y la Comunicación II;La Web;verdadero;Multimedia;La etiqueta <video> se utiliza para insertar clips de película;VERDADERO;La etiqueta <video> es la estándar en HTML5 para contenido audiovisual
+Tecnologías de la Información y la Comunicación II;La Web;verdadero;Estructura;La declaración <!DOCTYPE html> indica la versión de HTML;VERDADERO;<!DOCTYPE html> informa al navegador que el documento es HTML5
+Tecnologías de la Información y la Comunicación II;La Web;verdadero;Semántica;El elemento <footer> se utiliza para la cabecera de la página;FALSO;<footer> es para el pie de página, <header> es para la cabecera
+Tecnologías de la Información y la Comunicación II;La Web;verdadero;Atributos;El atributo alt en las imágenes es para el texto alternativo;VERDADERO;alt muestra un texto si la imagen no se puede cargar
+Tecnologías de la Información y la Comunicación II;La Web;verdadero;Listas;La etiqueta <ul> crea una lista ordenada por números;FALSO;<ul> crea una lista no ordenada con viñetas, <ol> es para listas ordenadas
+Tecnologías de la Información y la Comunicación II;La Web;verdadero;Formularios;El tipo de input submit crea un botón para enviar datos;VERDADERO;submit es el tipo de entrada encargado de enviar el formulario
+Tecnologías de la Información y la Comunicación II;La Web;verdadero;Accesibilidad;WCAG es una iniciativa para promover el diseño web accesible;VERDADERO;WCAG son las pautas de accesibilidad para el contenido web
+Tecnologías de la Información y la Comunicación II;La Web;verdadero;Estilos;La etiqueta <div> es un contenedor de nivel de línea;FALSO;<div> es un contenedor genérico de nivel de bloque que ocupa todo el ancho
 # JUEGO DEL ROSCO
-Tecnología de la Información y la Comunicación II;Trabajo colaborativo;rosco;empieza;A;Variable que suele fijarse al principio en la gestión tradicional;alcance
-Tecnología de la Información y la Comunicación II;Trabajo colaborativo;rosco;empieza;B;Lista dinámica y ordenada de requisitos y entregables en Scrum;backlog
-Tecnología de la Información y la Comunicación II;Trabajo colaborativo;rosco;empieza;C;Elemento situado en el centro del Triángulo de Hierro;calidad
-Tecnología de la Información y la Comunicación II;Trabajo colaborativo;rosco;empieza;D;Reunión breve para sincronizar al equipo y detectar bloqueos;daily
-Tecnología de la Información y la Comunicación II;Trabajo colaborativo;rosco;empieza;E;Grupo autoorganizado que decide cómo realizar el trabajo en Scrum;equipo
-Tecnología de la Información y la Comunicación II;Trabajo colaborativo;rosco;empieza;F;Motor que impulsa la mejora y valida si el producto es correcto;feedback
-Tecnología de la Información y la Comunicación II;Trabajo colaborativo;rosco;empieza;G;Sistema de control de versiones utilizado en desarrollo;git
-Tecnología de la Información y la Comunicación II;Trabajo colaborativo;rosco;contiene;H;Lo que posee un equipo multidisciplinar para crear el producto;habilidades
-Tecnología de la Información y la Comunicación II;Trabajo colaborativo;rosco;empieza;I;Enfoque que divide el trabajo en partes que se completan al cien por cien;incremental
-Tecnología de la Información y la Comunicación II;Trabajo colaborativo;rosco;contiene;J;Lo que gestiona y optimiza el método Kanban;flujo
-Tecnología de la Información y la Comunicación II;Trabajo colaborativo;rosco;empieza;K;Método que tiene su origen en el sistema de producción de Toyota;kanban
-Tecnología de la Información y la Comunicación II;Trabajo colaborativo;rosco;empieza;L;Métrica que mide el tiempo total desde la solicitud hasta la entrega;lead
-Tecnología de la Información y la Comunicación II;Trabajo colaborativo;rosco;empieza;M;Componente que actúa como el cerebro de un dispositivo inteligente;microcontrolador
-Tecnología de la Información y la Comunicación II;Trabajo colaborativo;rosco;contiene;N;Constante que las metodologías ágiles asumen que existe;incertidumbre
-Tecnología de la Información y la Comunicación II;Trabajo colaborativo;rosco;contiene;Ñ;Propiedad del equipo Scrum que recomienda ser de diez personas o menos;tamaño
-Tecnología de la Información y la Comunicación II;Trabajo colaborativo;rosco;contiene;O;Responsable de gestionar el Product Backlog en Scrum;owner
-Tecnología de la Información y la Comunicación II;Trabajo colaborativo;rosco;empieza;P;Reunión donde se seleccionan tareas para el ciclo de trabajo;planning
-Tecnología de la Información y la Comunicación II;Trabajo colaborativo;rosco;contiene;Q;Lo que mantiene planes flexibles y actualizados en agilidad;requisitos
-Tecnología de la Información y la Comunicación II;Trabajo colaborativo;rosco;empieza;R;Evento para analizar cómo mejorar los procesos y la colaboración;retrospective
-Tecnología de la Información y la Comunicación II;Trabajo colaborativo;rosco;empieza;S;Marco ligero para generar soluciones a problemas complejos;scrum
-Tecnología de la Información y la Comunicación II;Trabajo colaborativo;rosco;empieza;T;Vértice del Triángulo de Hierro junto al Alcance y el Coste;tiempo
-Tecnología de la Información y la Comunicación II;Trabajo colaborativo;rosco;empieza;U;Pruebas para verificar que cada pequeña parte del código funciona;unitarias
-Tecnología de la Información y la Comunicación II;Trabajo colaborativo;rosco;empieza;V;Control que permite trabajar a varios desarrolladores sin sobrescribirse;versiones
-Tecnología de la Información y la Comunicación II;Trabajo colaborativo;rosco;empieza;W;Sigla que representa el trabajo en curso que debe limitarse;wip
-Tecnología de la Información y la Comunicación II;Trabajo colaborativo;rosco;contiene;X;Tipo de problemas para los que Scrum genera soluciones;complejos
-Tecnología de la Información y la Comunicación II;Trabajo colaborativo;rosco;contiene;Y;Sistema de producción donde nace el método Kanban;toyota
-Tecnología de la Información y la Comunicación II;Trabajo colaborativo;rosco;contiene;Z;Objetivo buscado al medir el flujo de trabajo con métricas;optimizar
+Tecnologías de la Información y la Comunicación II;Trabajo colaborativo;rosco;empieza;A;Variable que suele fijarse al principio en la gestión tradicional;alcance
+Tecnologías de la Información y la Comunicación II;Trabajo colaborativo;rosco;empieza;B;Lista dinámica y ordenada de requisitos y entregables en Scrum;backlog
+Tecnologías de la Información y la Comunicación II;Trabajo colaborativo;rosco;empieza;C;Elemento situado en el centro del Triángulo de Hierro;calidad
+Tecnologías de la Información y la Comunicación II;Trabajo colaborativo;rosco;empieza;D;Reunión breve para sincronizar al equipo y detectar bloqueos;daily
+Tecnologías de la Información y la Comunicación II;Trabajo colaborativo;rosco;empieza;E;Grupo autoorganizado que decide cómo realizar el trabajo en Scrum;equipo
+Tecnologías de la Información y la Comunicación II;Trabajo colaborativo;rosco;empieza;F;Motor que impulsa la mejora y valida si el producto es correcto;feedback
+Tecnologías de la Información y la Comunicación II;Trabajo colaborativo;rosco;empieza;G;Sistema de control de versiones utilizado en desarrollo;git
+Tecnologías de la Información y la Comunicación II;Trabajo colaborativo;rosco;contiene;H;Lo que posee un equipo multidisciplinar para crear el producto;habilidades
+Tecnologías de la Información y la Comunicación II;Trabajo colaborativo;rosco;empieza;I;Enfoque que divide el trabajo en partes que se completan al cien por cien;incremental
+Tecnologías de la Información y la Comunicación II;Trabajo colaborativo;rosco;contiene;J;Lo que gestiona y optimiza el método Kanban;flujo
+Tecnologías de la Información y la Comunicación II;Trabajo colaborativo;rosco;empieza;K;Método que tiene su origen en el sistema de producción de Toyota;kanban
+Tecnologías de la Información y la Comunicación II;Trabajo colaborativo;rosco;empieza;L;Métrica que mide el tiempo total desde la solicitud hasta la entrega;lead
+Tecnologías de la Información y la Comunicación II;Trabajo colaborativo;rosco;empieza;M;Componente que actúa como el cerebro de un dispositivo inteligente;microcontrolador
+Tecnologías de la Información y la Comunicación II;Trabajo colaborativo;rosco;contiene;N;Constante que las metodologías ágiles asumen que existe;incertidumbre
+Tecnologías de la Información y la Comunicación II;Trabajo colaborativo;rosco;contiene;Ñ;Propiedad del equipo Scrum que recomienda ser de diez personas o menos;tamaño
+Tecnologías de la Información y la Comunicación II;Trabajo colaborativo;rosco;contiene;O;Responsable de gestionar el Product Backlog en Scrum;owner
+Tecnologías de la Información y la Comunicación II;Trabajo colaborativo;rosco;empieza;P;Reunión donde se seleccionan tareas para el ciclo de trabajo;planning
+Tecnologías de la Información y la Comunicación II;Trabajo colaborativo;rosco;contiene;Q;Lo que mantiene planes flexibles y actualizados en agilidad;requisitos
+Tecnologías de la Información y la Comunicación II;Trabajo colaborativo;rosco;empieza;R;Evento para analizar cómo mejorar los procesos y la colaboración;retrospective
+Tecnologías de la Información y la Comunicación II;Trabajo colaborativo;rosco;empieza;S;Marco ligero para generar soluciones a problemas complejos;scrum
+Tecnologías de la Información y la Comunicación II;Trabajo colaborativo;rosco;empieza;T;Vértice del Triángulo de Hierro junto al Alcance y el Coste;tiempo
+Tecnologías de la Información y la Comunicación II;Trabajo colaborativo;rosco;empieza;U;Pruebas para verificar que cada pequeña parte del código funciona;unitarias
+Tecnologías de la Información y la Comunicación II;Trabajo colaborativo;rosco;empieza;V;Control que permite trabajar a varios desarrolladores sin sobrescribirse;versiones
+Tecnologías de la Información y la Comunicación II;Trabajo colaborativo;rosco;empieza;W;Sigla que representa el trabajo en curso que debe limitarse;wip
+Tecnologías de la Información y la Comunicación II;Trabajo colaborativo;rosco;contiene;X;Tipo de problemas para los que Scrum genera soluciones;complejos
+Tecnologías de la Información y la Comunicación II;Trabajo colaborativo;rosco;contiene;Y;Sistema de producción donde nace el método Kanban;toyota
+Tecnologías de la Información y la Comunicación II;Trabajo colaborativo;rosco;contiene;Z;Objetivo buscado al medir el flujo de trabajo con métricas;optimizar
 # JUEGO DEL AHORCADO
-Tecnología de la Información y la Comunicación II;Trabajo colaborativo;ahorcado;PRODUCTBACKLOG
-Tecnología de la Información y la Comunicación II;Trabajo colaborativo;ahorcado;MICROCONTROLADOR
-Tecnología de la Información y la Comunicación II;Trabajo colaborativo;ahorcado;TRIANGULODEHIERRO
+Tecnologías de la Información y la Comunicación II;Trabajo colaborativo;ahorcado;PRODUCTBACKLOG
+Tecnologías de la Información y la Comunicación II;Trabajo colaborativo;ahorcado;MICROCONTROLADOR
+Tecnologías de la Información y la Comunicación II;Trabajo colaborativo;ahorcado;TRIANGULODEHIERRO
 # JUEGO DE LAS PAREJAS
-Tecnología de la Información y la Comunicación II;Trabajo colaborativo;pareja;Roles Scrum;PRODUCT OWNER;VALOR;SCRUM MASTER;IMPEDIMENTOS;EQUIPO;AUTOORGANIZADO
-Tecnología de la Información y la Comunicación II;Trabajo colaborativo;pareja;Métricas Kanban;LEAD TIME;SOLICITUD;CYCLE TIME;COMIENZO;WIP;TRABAJO CURSO
-Tecnología de la Información y la Comunicación II;Trabajo colaborativo;pareja;Robótica;SENSOR;ENTORNO;ACTUADOR;ACCION;MICROCONTROLADOR;CEREBRO
+Tecnologías de la Información y la Comunicación II;Trabajo colaborativo;pareja;Roles Scrum;PRODUCT OWNER;VALOR;SCRUM MASTER;IMPEDIMENTOS;EQUIPO;AUTOORGANIZADO
+Tecnologías de la Información y la Comunicación II;Trabajo colaborativo;pareja;Métricas Kanban;LEAD TIME;SOLICITUD;CYCLE TIME;COMIENZO;WIP;TRABAJO CURSO
+Tecnologías de la Información y la Comunicación II;Trabajo colaborativo;pareja;Robótica;SENSOR;ENTORNO;ACTUADOR;ACCION;MICROCONTROLADOR;CEREBRO
 # JUEGO DE VERDADERO O FALSO
-Tecnología de la Información y la Comunicación II;Trabajo colaborativo;verdadero;Agilidad;Las metodologías ágiles asumen que la incertidumbre es una constante;VERDADERO;Las ágiles asumen que la incertidumbre es una constante.
-Tecnología de la Información y la Comunicación II;Trabajo colaborativo;verdadero;Triángulo de Hierro;Fijar los tres vértices simultáneamente mejora la calidad del producto;FALSO;Si se fijan los tres vértices la calidad se ve afectada negativamente.
-Tecnología de la Información y la Comunicación II;Trabajo colaborativo;verdadero;Scrum;Un equipo de Scrum debe tener preferiblemente más de 50 personas;FALSO;El tamaño máximo recomendado es de 10 personas o menos.
-Tecnología de la Información y la Comunicación II;Trabajo colaborativo;verdadero;Scrum;El Product Owner es responsable de maximizar el valor del producto;VERDADERO;Es el responsable de maximizar el valor y gestionar el Product Backlog.
-Tecnología de la Información y la Comunicación II;Trabajo colaborativo;verdadero;Kanban;El primer paso en Kanban es hacer visible el trabajo mediante un tablero;VERDADERO;Es fundamental para implementar Kanban correctamente.
-Tecnología de la Información y la Comunicación II;Trabajo colaborativo;verdadero;Kanban;Limitar el WIP ayuda a evitar la multitarea y exponer cuellos de botella;VERDADERO;Es vital para mantener un flujo de trabajo saludable.
-Tecnología de la Información y la Comunicación II;Trabajo colaborativo;verdadero;Programación;Las estructuras iterativas sirven para tomar decisiones de verdadero o falso;FALSO;Las iterativas sirven para repetir instrucciones, las condicionales toman decisiones.
-Tecnología de la Información y la Comunicación II;Trabajo colaborativo;verdadero;Robótica;Un actuador se encarga de recoger información del entorno físico;FALSO;El sensor recoge información, el actuador ejecuta una acción física.
-Tecnología de la Información y la Comunicación II;Trabajo colaborativo;verdadero;Scrum;La Sprint Review sirve para demostrar el producto funcionando a los interesados;VERDADERO;Esa es su finalidad principal.
-Tecnología de la Información y la Comunicación II;Trabajo colaborativo;verdadero;Software;El IDE es un entorno que facilita la programación de aplicaciones;VERDADERO;Es un Entorno de Desarrollo Integrado.
+Tecnologías de la Información y la Comunicación II;Trabajo colaborativo;verdadero;Agilidad;Las metodologías ágiles asumen que la incertidumbre es una constante;VERDADERO;Las ágiles asumen que la incertidumbre es una constante.
+Tecnologías de la Información y la Comunicación II;Trabajo colaborativo;verdadero;Triángulo de Hierro;Fijar los tres vértices simultáneamente mejora la calidad del producto;FALSO;Si se fijan los tres vértices la calidad se ve afectada negativamente.
+Tecnologías de la Información y la Comunicación II;Trabajo colaborativo;verdadero;Scrum;Un equipo de Scrum debe tener preferiblemente más de 50 personas;FALSO;El tamaño máximo recomendado es de 10 personas o menos.
+Tecnologías de la Información y la Comunicación II;Trabajo colaborativo;verdadero;Scrum;El Product Owner es responsable de maximizar el valor del producto;VERDADERO;Es el responsable de maximizar el valor y gestionar el Product Backlog.
+Tecnologías de la Información y la Comunicación II;Trabajo colaborativo;verdadero;Kanban;El primer paso en Kanban es hacer visible el trabajo mediante un tablero;VERDADERO;Es fundamental para implementar Kanban correctamente.
+Tecnologías de la Información y la Comunicación II;Trabajo colaborativo;verdadero;Kanban;Limitar el WIP ayuda a evitar la multitarea y exponer cuellos de botella;VERDADERO;Es vital para mantener un flujo de trabajo saludable.
+Tecnologías de la Información y la Comunicación II;Trabajo colaborativo;verdadero;Programación;Las estructuras iterativas sirven para tomar decisiones de verdadero o falso;FALSO;Las iterativas sirven para repetir instrucciones, las condicionales toman decisiones.
+Tecnologías de la Información y la Comunicación II;Trabajo colaborativo;verdadero;Robótica;Un actuador se encarga de recoger información del entorno físico;FALSO;El sensor recoge información, el actuador ejecuta una acción física.
+Tecnologías de la Información y la Comunicación II;Trabajo colaborativo;verdadero;Scrum;La Sprint Review sirve para demostrar el producto funcionando a los interesados;VERDADERO;Esa es su finalidad principal.
+Tecnologías de la Información y la Comunicación II;Trabajo colaborativo;verdadero;Software;El IDE es un entorno que facilita la programación de aplicaciones;VERDADERO;Es un Entorno de Desarrollo Integrado.
 # JUEGO DEL ROSCO
 Tecnologías de la Información y la Comunicación II;Privacidad y uso responsable;rosco;empieza;A;Capacidad para localizar, evaluar y utilizar información de forma ética;alfabetizacion
 Tecnologías de la Información y la Comunicación II;Privacidad y uso responsable;rosco;empieza;B;Configuración necesaria como PIN o patrón para proteger el dispositivo;bloqueo
@@ -939,3 +939,49 @@ Tecnología y Digitalización 3º;Mecanismos;verdadero;Máquinas;Las máquinas n
 Tecnología y Digitalización 3º;Mecanismos;verdadero;Engranajes;En un par de engranajes la rueda pequeña gira más lento;FALSO;La rueda pequeña siempre gira más rápido que la grande
 Tecnología y Digitalización 3º;Mecanismos;verdadero;Mecanismos;En un polipasto con 2 poleas móviles la fuerza necesaria es R dividido entre 4;VERDADERO;Siguiendo la fórmula F = R / (2*n) siendo n=2
 Tecnología y Digitalización 3º;Mecanismos;verdadero;Máquinas;Al afilar una cuña disminuye la presión de corte;FALSO;Al afilar una cuña o cuchillo aumenta la presión facilitando el corte
+# JUEGO DEL ROSCO
+Tecnología y Digitalización 3º;Electricidad;rosco;empieza;A;Aparato que se utiliza para medir la intensidad de corriente;amperímetro
+Tecnología y Digitalización 3º;Electricidad;rosco;empieza;B;Ejemplo común de un dispositivo que genera corriente continua;batería
+Tecnología y Digitalización 3º;Electricidad;rosco;empieza;C;Elemento de un circuito que se encarga de transportar la corriente;conductor
+Tecnología y Digitalización 3º;Electricidad;rosco;empieza;D;Dispositivo que genera corriente continua usado en bicicletas antiguas;dinamo
+Tecnología y Digitalización 3º;Electricidad;rosco;empieza;E;Partícula del átomo que posee carga eléctrica negativa;electrón
+Tecnología y Digitalización 3º;Electricidad;rosco;contiene;F;Dispositivo que sube el voltaje para perder menos energía en el transporte;transformador
+Tecnología y Digitalización 3º;Electricidad;rosco;empieza;G;Elemento cuya función es suministrar energía para mover los electrones;generador
+Tecnología y Digitalización 3º;Electricidad;rosco;contiene;H;Unidad de medida de la resistencia eléctrica;ohmio
+Tecnología y Digitalización 3º;Electricidad;rosco;empieza;I;Componente que controla el paso de la corriente eléctrica;interruptor
+Tecnología y Digitalización 3º;Electricidad;rosco;contiene;J;Magnitud que mide la energía que impulsa a los electrones;voltaje
+Tecnología y Digitalización 3º;Electricidad;rosco;empieza;K;Unidad que representa la energía consumida en un tiempo determinado;kilovatio-hora
+Tecnología y Digitalización 3º;Electricidad;rosco;empieza;L;Tecnología de bombillas que supone una medida de eficiencia energética;led
+Tecnología y Digitalización 3º;Electricidad;rosco;empieza;M;Tipo de receptor que transforma la electricidad en movimiento;motor
+Tecnología y Digitalización 3º;Electricidad;rosco;empieza;N;Partícula que se encuentra en el núcleo del átomo y no tiene carga;neutrón
+Tecnología y Digitalización 3º;Electricidad;rosco;empieza;O;Instrumento que requiere realizar la medida sin corriente en el circuito;óhmetro
+Tecnología y Digitalización 3º;Electricidad;rosco;empieza;P;Dispositivo que solo actúa mientras se mantiene presionado;pulsador
+Tecnología y Digitalización 3º;Electricidad;rosco;contiene;Q;Distintivo que indica si un electrodoméstico es eficiente;etiqueta
+Tecnología y Digitalización 3º;Electricidad;rosco;empieza;R;Componente que se utiliza específicamente para producir calor;resistencia
+Tecnología y Digitalización 3º;Electricidad;rosco;empieza;S;Tipo de circuito donde los componentes se conectan uno tras otro;serie
+Tecnología y Digitalización 3º;Electricidad;rosco;empieza;T;Dispositivo que transforma la energía eléctrica en energía sonora;timbre
+Tecnología y Digitalización 3º;Electricidad;rosco;contiene;U;Flujo ordenado de electrones por un conductor;circuito
+Tecnología y Digitalización 3º;Electricidad;rosco;empieza;V;Magnitud que en España se sitúa en 230V para uso doméstico;voltaje
+Tecnología y Digitalización 3º;Electricidad;rosco;contiene;W;Unidad en la que se mide la potencia eléctrica;vatios
+Tecnología y Digitalización 3º;Electricidad;rosco;contiene;X;Tipo de circuito que combina partes en serie y en paralelo;mixto
+Tecnología y Digitalización 3º;Electricidad;rosco;contiene;Y;Fórmula que relaciona voltaje, intensidad y resistencia;ley
+Tecnología y Digitalización 3º;Electricidad;rosco;contiene;Z;Acción de emplear un material como el cobre en los cables;utiliza
+# JUEGO DEL AHORCADO
+Tecnología y Digitalización 3º;Electricidad;ahorcado;Aparato que agrupa varios instrumentos de medida;POLIMETRO
+Tecnología y Digitalización 3º;Electricidad;ahorcado;Fenómeno físico en el que se basan los generadores;INDUCCION
+Tecnología y Digitalización 3º;Electricidad;ahorcado;Máquina de las centrales para generar corriente alterna;ALTERNADOR
+# JUEGO DE LAS PAREJAS
+Tecnología y Digitalización 3º;Electricidad;pareja;Magnitudes;VOLTAJE;VOLTIOS;INTENSIDAD;AMPERIOS;POTENCIA;VATIOS
+Tecnología y Digitalización 3º;Electricidad;pareja;Materiales;COBRE;CONDUCTOR;PLASTICO;AISLANTE;RESISTENCIA;CALOR
+Tecnología y Digitalización 3º;Electricidad;pareja;Instrumentos;AMPERIMETRO;SERIE;VOLTIMETRO;PARALELO;OHMETRO;SINCORRIENTE
+# JUEGO DE VERDADERO O FALSO
+Tecnología y Digitalización 3º;Electricidad;verdadero;Atomos;El neutrón tiene carga eléctrica negativa;FALSO;El neutrón no tiene carga y el electrón es el que tiene carga negativa
+Tecnología y Digitalización 3º;Electricidad;verdadero;Corriente;En la corriente alterna los electrones circulan siempre en el mismo sentido;FALSO;En la corriente alterna los electrones cambian de sentido periódicamente
+Tecnología y Digitalización 3º;Electricidad;verdadero;Materiales;El cobre se utiliza habitualmente en el interior de los cables por ser conductor;VERDADERO;El cobre es un excelente conductor eléctrico
+Tecnología y Digitalización 3º;Electricidad;verdadero;Receptores;Un motor transforma la energía eléctrica en movimiento;VERDADERO;Los motores convierten la electricidad en giro o movimiento
+Tecnología y Digitalización 3º;Electricidad;verdadero;Medida;El voltímetro debe conectarse en serie para realizar una medida;FALSO;El voltímetro se debe conectar siempre en paralelo
+Tecnología y Digitalización 3º;Electricidad;verdadero;Circuitos;En un circuito en serie la intensidad es igual en todo el circuito;VERDADERO;Al haber un solo camino la corriente no se reparte
+Tecnología y Digitalización 3º;Electricidad;verdadero;Energía;La energía eólica es una fuente de energía renovable;VERDADERO;La energía eólica proviene del viento y es renovable
+Tecnología y Digitalización 3º;Electricidad;verdadero;Componentes;Un relé es un interruptor controlado por un electroimán;VERDADERO;El electroimán acciona el mecanismo de interrupción
+Tecnología y Digitalización 3º;Electricidad;verdadero;Conductores;Cuanto más grueso es un cable más difícilmente pasa la corriente;FALSO;Cuanto más grueso es el cable más fácil pasa la corriente eléctrica
+Tecnología y Digitalización 3º;Electricidad;verdadero;Ley de Ohm;La fórmula de la Ley de Ohm es V igual a intensidad por resistencia;VERDADERO;La fórmula correcta es V = I · R
