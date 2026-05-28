@@ -896,6 +896,53 @@ Tecnología y Digitalización 2º;La electricidad;verdadero;Ley de Ohm;Si la res
 Tecnología y Digitalización 2º;La electricidad;verdadero;Receptores;Un motor eléctrico transforma la electricidad en energía química;FALSO;Un motor eléctrico transforma la electricidad en energía mecánica
 Tecnología y Digitalización 2º;La electricidad;verdadero;Seguridad;Es seguro manipular aparatos eléctricos con las manos mojadas;FALSO;No se deben manipular aparatos mojados por riesgo de descarga
 # JUEGO DEL ROSCO
+Tecnología y Digitalización 2º;Estructuras;rosco;empieza;A;Elemento arquitectonico que permitio abrir grandes huecos sin dinteles;arco
+Tecnología y Digitalización 2º;Estructuras;rosco;empieza;B;Pieza para rellenar el espacio y servir de molde en un forjado;bovedilla
+Tecnología y Digitalización 2º;Estructuras;rosco;empieza;C;Nombre tecnico de las fuerzas que actuan sobre una estructura;carga
+Tecnología y Digitalización 2º;Estructuras;rosco;empieza;D;Metodo de diseño basado en la prueba y error antes del calculo moderno;empirico
+Tecnología y Digitalización 2º;Estructuras;rosco;empieza;E;Propiedad de una estructura para no volcarse ante fuerzas como el viento;estable
+Tecnología y Digitalización 2º;Estructuras;rosco;empieza;F;Esfuerzo que sufre la balda de una estanteria llena de libros;flexion
+Tecnología y Digitalización 2º;Estructuras;rosco;contiene;G;Condicion necesaria para evitar que una estructura se deforme excesivamente;rigida
+Tecnología y Digitalización 2º;Estructuras;rosco;empieza;H;Mezcla de material con barras de acero interior muy usada en construccion;hormigon
+Tecnología y Digitalización 2º;Estructuras;rosco;empieza;I;Profesional encargado de calcular la estructura exacta para dar seguridad;ingeniero
+Tecnología y Digitalización 2º;Estructuras;rosco;contiene;J;Nombre del techo o suelo de un piso en un edificio;forjado
+Tecnología y Digitalización 2º;Estructuras;rosco;empieza;L;Espacio libre horizontal entre los extremos de un arco;luz
+Tecnología y Digitalización 2º;Estructuras;rosco;empieza;M;Estructura que utiliza una enorme cantidad de material pesado como las piramides;masiva
+Tecnología y Digitalización 2º;Estructuras;rosco;empieza;N;Estructuras ligeras que se construyen inflando sacos con aire a presion;neumaticas
+Tecnología y Digitalización 2º;Estructuras;rosco;contiene;Ñ;Accion que se realizaba mediante el metodo empirico antes de la matematica;diseñaban
+Tecnología y Digitalización 2º;Estructuras;rosco;empieza;O;Fuerzas que actuan en sentidos contrarios para estirar o aplastar un cuerpo;opuestas
+Tecnología y Digitalización 2º;Estructuras;rosco;empieza;P;Elemento vertical de un edificio sometido principalmente a compresion;pilar
+Tecnología y Digitalización 2º;Estructuras;rosco;contiene;Q;Pieza central que cierra un arco en su parte alta;clave
+Tecnología y Digitalización 2º;Estructuras;rosco;empieza;R;Capacidad de una estructura para soportar fuerzas sin romperse;resistente
+Tecnología y Digitalización 2º;Estructuras;rosco;contiene;S;Esfuerzo que tiende a cortar o rasgar un material;cizalladura
+Tecnología y Digitalización 2º;Estructuras;rosco;empieza;T;Esfuerzo al que estan sometidos siempre los tirantes de un puente;traccion
+Tecnología y Digitalización 2º;Estructuras;rosco;contiene;U;Estructura formada por laminas delgadas de material como una botella;laminar
+Tecnología y Digitalización 2º;Estructuras;rosco;empieza;V;Carga dinámica que cambia en el tiempo y es un desafio para ingenieros;variable
+Tecnología y Digitalización 2º;Estructuras;rosco;contiene;X;Tipo de calculo que debe hacer el ingeniero para garantizar seguridad;exacto
+Tecnología y Digitalización 2º;Estructuras;rosco;contiene;Y;Accion de desplazar un arco en linea recta para crear una boveda;proyectar
+Tecnología y Digitalización 2º;Estructuras;rosco;empieza;Z;Base que reparte el peso de un pilar al terreno;zapata
+# JUEGO DEL AHORCADO
+Tecnología y Digitalización 2º;Estructuras;ahorcado;Elemento de hormigon con barras de acero;HORMIGONARMADO
+Tecnología y Digitalización 2º;Estructuras;ahorcado;Figura geometrica indeformable por excelencia;TRIANGULO
+Tecnología y Digitalización 2º;Estructuras;ahorcado;Esfuerzo que tiende a retorcer el cuerpo sobre su eje;TORSION
+# JUEGO DE LAS PAREJAS
+Tecnología y Digitalización 2º;Estructuras;pareja;Esfuerzos;TRACCION;ESTIRAR;COMPRESION;APLASTAR;TORSION;RETORCER
+Tecnología y Digitalización 2º;Estructuras;pareja;Estructuras;PIRAMIDES;MASIVAS;TORREEIFFEL;TRIANGULADAS;BOTELLA;LAMINAR
+Tecnología y Digitalización 2º;Estructuras;pareja;Elementos;CLAVE;ARCO;TIRANTE;PUENTE;ZAPATA;CIMIENTO
+# JUEGO DE VERDADERO O FALSO
+Tecnología y Digitalización 2º;Estructuras;verdadero;Naturaleza;Las nerviaciones de las hojas actuan como un esqueleto para mantener la forma plana;VERDADERO;Las nerviaciones de las hojas actúan como un esqueleto para mantener la forma plana
+Tecnología y Digitalización 2º;Estructuras;verdadero;Estabilidad;Una estructura es estable cuando se deforma excesivamente;FALSO;Una estructura es estable cuando no se vuelca ante fuerzas como el viento
+Tecnología y Digitalización 2º;Estructuras;verdadero;Cargas;El peso propio de una estructura es el ejemplo mas universal de carga fija;VERDADERO;El peso propio de la estructura es una carga fija o estática
+Tecnología y Digitalización 2º;Estructuras;verdadero;Esfuerzos;Los cables o tirantes de un puente moderno trabajan a compresion;FALSO;Los cables o tirantes de acero trabajan principalmente a tracción
+Tecnología y Digitalización 2º;Estructuras;verdadero;Esfuerzos;La compresion consiste en fuerzas opuestas que tienden a aplastar un cuerpo;VERDADERO;La compresión consiste en fuerzas opuestas que tienden a aplastar el objeto
+Tecnología y Digitalización 2º;Estructuras;verdadero;Materiales;La piedra es un material que resiste perfectamente el esfuerzo de flexion;FALSO;La piedra resiste mal la flexión por eso no se hacían dinteles largos
+Tecnología y Digitalización 2º;Estructuras;verdadero;Geometria;El triangulo es la figura geometrica indeformable por excelencia;VERDADERO;El triángulo es la figura geométrica indeformable por excelencia
+Tecnología y Digitalización 2º;Estructuras;verdadero;Construccion;La cupula se crea al hacer girar un arco sobre un eje vertical;VERDADERO;La cúpula se crea al hacer girar un arco sobre un eje vertical
+Tecnología y Digitalización 2º;Estructuras;verdadero;Edificacion;En los bloques de viviendas lo mas comun son las estructuras masivas;FALSO;En los bloques de viviendas lo más común son las estructuras entramadas
+Tecnología y Digitalización 2º;Estructuras;verdadero;Componentes;El acero se combina con el hormigon porque resiste bien la traccion;VERDADERO;El acero se añade al hormigón porque resiste bien los esfuerzos de tracción
+
+
+# JUEGO DEL ROSCO
 Tecnología y Digitalización 3º;Mecanismos;rosco;empieza;A;Efecto que tiene sobre la presión el afilar el filo de una cuña;aumenta
 Tecnología y Digitalización 3º;Mecanismos;rosco;empieza;B;Mecanismo fundamental en un motor de combustión;bielamanivela
 Tecnología y Digitalización 3º;Mecanismos;rosco;empieza;C;Elemento que conecta los engranajes en la transmisión por cadena;cadena
